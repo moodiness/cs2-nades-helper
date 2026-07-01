@@ -12,6 +12,9 @@ from kv3parser import kv3_to_json
 
 INPUT_DIR = Path("nades")
 OUTPUT_DIR = Path("out")
+HBN_OUTPUT_FOLDER = "hbn"
+SECRET_SERVICE_OUTPUT_FOLDER = "secretservice"
+SECRET_SERVICE_FILENAME = "grenade_helper.json"
 
 MAP_ORDER = (
     "ancient",
@@ -36,6 +39,10 @@ GRENADE_TYPE_IDS = {
     "incendiary": 46,
 }
 
+SECRET_SERVICE_GRENADE_NAMES = {
+    "he": "hegrenade",
+}
+
 LOGGER = logging.getLogger("nades-helper")
 
 
@@ -50,20 +57,42 @@ class SourceFile:
 class Grenade:
     name: str
     desc: str
+    nade_type: str
     type_id: int
     pos: list[Any] | None
     ang: list[Any] | None
     img: str = ""
 
     def to_dict(self) -> dict[str, Any]:
-        return {
+        grenade = {
             "name": self.name,
             "desc": self.desc,
             "type": self.type_id,
-            "pos": self.pos,
-            "ang": self.ang,
             "img": self.img,
         }
+
+        if self.pos is not None:
+            grenade["pos"] = self.pos
+
+        if self.ang is not None:
+            grenade["ang"] = self.ang
+
+        return grenade
+
+    def to_secret_service_spot(self, map_name: str) -> dict[str, Any]:
+        spot = {}
+        if self.ang is not None:
+            spot["Angle"] = self.ang
+
+        spot["Desc"] = self.desc
+        spot["MapName"] = map_name
+        spot["Nade"] = SECRET_SERVICE_GRENADE_NAMES.get(self.nade_type, self.nade_type)
+        spot["Name"] = self.name
+
+        if self.pos is not None:
+            spot["Pos"] = self.pos
+
+        return spot
 
 
 def parse_args() -> argparse.Namespace:
@@ -81,6 +110,13 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         default=OUTPUT_DIR,
         help="Directory where JSON files are written. Default: out",
+    )
+    parser.add_argument(
+        "--format",
+        choices=("all", "hbn", "secretservice"),
+        default="all",
+        dest="output_format",
+        help="Output format. Default: all",
     )
     return parser.parse_args()
 
@@ -169,6 +205,7 @@ def build_grenades(data: dict[str, Any]) -> list[Grenade]:
             Grenade(
                 name=node["name"],
                 desc=aim_desc or node["desc"],
+                nade_type=grenade_type,
                 type_id=GRENADE_TYPE_IDS.get(grenade_type, -1),
                 pos=node["position"],
                 ang=first_aim["angles"] if first_aim else None,
@@ -225,7 +262,10 @@ def source_sort_key(source: SourceFile) -> tuple[int, str]:
 
 
 def write_map_output(output_dir: Path, map_name: str, grenades: list[dict[str, Any]]) -> Path:
-    output_path = output_dir / f"de_{map_name}.json"
+    format_output_dir = output_dir / HBN_OUTPUT_FOLDER
+    format_output_dir.mkdir(parents=True, exist_ok=True)
+
+    output_path = format_output_dir / f"de_{map_name}.json"
     payload = {"grenades": grenades}
 
     output_path.write_text(
@@ -236,7 +276,42 @@ def write_map_output(output_dir: Path, map_name: str, grenades: list[dict[str, A
     return output_path
 
 
-def convert_sources(input_dir: Path, output_dir: Path) -> int:
+def secret_service_map_name(map_name: str) -> str:
+    if map_name.startswith(("de_", "cs_", "aim_")):
+        return map_name
+
+    return f"de_{map_name}"
+
+
+def write_secret_service_output(
+    output_dir: Path, grenades_by_map: dict[str, list[Grenade]]
+) -> Path:
+    format_output_dir = output_dir / SECRET_SERVICE_OUTPUT_FOLDER
+    format_output_dir.mkdir(parents=True, exist_ok=True)
+
+    output_path = format_output_dir / SECRET_SERVICE_FILENAME
+    known_maps = ["<empty>"]
+    spots: list[dict[str, Any]] = []
+
+    for map_name in sorted(grenades_by_map, key=map_sort_key):
+        formatted_map_name = secret_service_map_name(map_name)
+        known_maps.append(formatted_map_name)
+        spots.extend(
+            grenade.to_secret_service_spot(formatted_map_name)
+            for grenade in grenades_by_map[map_name]
+        )
+
+    payload = {"knownMaps": known_maps, "spots": spots}
+
+    output_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    return output_path
+
+
+def convert_sources(input_dir: Path, output_dir: Path, output_format: str) -> int:
     sources_by_map = discover_source_files(input_dir)
     if not sources_by_map:
         LOGGER.error("No source files found in %s", input_dir)
@@ -251,23 +326,33 @@ def convert_sources(input_dir: Path, output_dir: Path) -> int:
 
     total_maps = 0
     total_grenades = 0
+    grenades_by_map: dict[str, list[Grenade]] = {}
 
     for map_name in sorted(sources_by_map, key=map_sort_key):
-        grenades: list[dict[str, Any]] = []
+        grenades: list[Grenade] = []
 
         for source in sorted(sources_by_map[map_name], key=source_sort_key):
             parsed_grenades = build_grenades(load_kv3_as_dict(source.path))
-            grenades.extend(grenade.to_dict() for grenade in parsed_grenades)
+            grenades.extend(parsed_grenades)
             LOGGER.info("Parsed %s (%s grenades)", source.path, len(parsed_grenades))
 
         if not grenades:
             LOGGER.warning("No grenades parsed for %s", map_name)
             continue
 
-        output_path = write_map_output(output_dir, map_name, grenades)
+        grenades_by_map[map_name] = grenades
         total_maps += 1
         total_grenades += len(grenades)
-        LOGGER.info("Wrote %s (%s total grenades)", output_path, len(grenades))
+
+        if output_format in {"all", "hbn"}:
+            output_path = write_map_output(
+                output_dir, map_name, [grenade.to_dict() for grenade in grenades]
+            )
+            LOGGER.info("Wrote %s (%s total grenades)", output_path, len(grenades))
+
+    if output_format in {"all", "secretservice"}:
+        output_path = write_secret_service_output(output_dir, grenades_by_map)
+        LOGGER.info("Wrote %s (%s total grenades)", output_path, total_grenades)
 
     LOGGER.info("Done: %s maps, %s grenades", total_maps, total_grenades)
     return 0
@@ -278,7 +363,7 @@ def main() -> int:
     args = parse_args()
 
     try:
-        return convert_sources(args.input_dir, args.output_dir)
+        return convert_sources(args.input_dir, args.output_dir, args.output_format)
     except Exception as exc:
         LOGGER.error("Conversion failed: %s", exc)
         return 1
