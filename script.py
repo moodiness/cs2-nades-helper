@@ -12,9 +12,12 @@ from kv3parser import kv3_to_json
 
 INPUT_DIR = Path("nades")
 OUTPUT_DIR = Path("out")
+DEFAULT_OUTPUT_FOLDER = "default"
+DEFAULT_FILENAME = "nades.json"
 HBN_OUTPUT_FOLDER = "hbn"
 SECRET_SERVICE_OUTPUT_FOLDER = "secretservice"
 SECRET_SERVICE_FILENAME = "grenade_helper.json"
+FORMAT_CHOICES = ("all", "default", "hbn", "secretservice")
 
 MAP_ORDER = (
     "ancient",
@@ -63,37 +66,6 @@ class Grenade:
     ang: list[Any] | None
     img: str = ""
 
-    def to_dict(self) -> dict[str, Any]:
-        grenade = {
-            "name": self.name,
-            "desc": self.desc,
-            "type": self.type_id,
-            "img": self.img,
-        }
-
-        if self.pos is not None:
-            grenade["pos"] = self.pos
-
-        if self.ang is not None:
-            grenade["ang"] = self.ang
-
-        return grenade
-
-    def to_secret_service_spot(self, map_name: str) -> dict[str, Any]:
-        spot = {}
-        if self.ang is not None:
-            spot["Angle"] = self.ang
-
-        spot["Desc"] = self.desc
-        spot["MapName"] = map_name
-        spot["Nade"] = SECRET_SERVICE_GRENADE_NAMES.get(self.nade_type, self.nade_type)
-        spot["Name"] = self.name
-
-        if self.pos is not None:
-            spot["Pos"] = self.pos
-
-        return spot
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -113,7 +85,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--format",
-        choices=("all", "hbn", "secretservice"),
+        choices=FORMAT_CHOICES,
         default="all",
         dest="output_format",
         help="Output format. Default: all",
@@ -261,54 +233,155 @@ def source_sort_key(source: SourceFile) -> tuple[int, str]:
     return SIDE_ORDER[source.side], source.path.name.lower()
 
 
-def write_map_output(output_dir: Path, map_name: str, grenades: list[dict[str, Any]]) -> Path:
-    format_output_dir = output_dir / HBN_OUTPUT_FOLDER
-    format_output_dir.mkdir(parents=True, exist_ok=True)
-
-    output_path = format_output_dir / f"de_{map_name}.json"
-    payload = {"grenades": grenades}
-
-    output_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-
-    return output_path
-
-
-def secret_service_map_name(map_name: str) -> str:
+def game_map_name(map_name: str) -> str:
     if map_name.startswith(("de_", "cs_", "aim_")):
         return map_name
 
     return f"de_{map_name}"
 
 
-def write_secret_service_output(
-    output_dir: Path, grenades_by_map: dict[str, list[Grenade]]
-) -> Path:
-    format_output_dir = output_dir / SECRET_SERVICE_OUTPUT_FOLDER
-    format_output_dir.mkdir(parents=True, exist_ok=True)
+class JsonExporter:
+    output_folder: str
 
-    output_path = format_output_dir / SECRET_SERVICE_FILENAME
-    known_maps = ["<empty>"]
-    spots: list[dict[str, Any]] = []
+    def __init__(self, output_dir: Path) -> None:
+        self.output_dir = output_dir
 
-    for map_name in sorted(grenades_by_map, key=map_sort_key):
-        formatted_map_name = secret_service_map_name(map_name)
-        known_maps.append(formatted_map_name)
-        spots.extend(
-            grenade.to_secret_service_spot(formatted_map_name)
-            for grenade in grenades_by_map[map_name]
+    def format_output_dir(self) -> Path:
+        output_dir = self.output_dir / self.output_folder
+        output_dir.mkdir(parents=True, exist_ok=True)
+        return output_dir
+
+    def write_json(self, output_path: Path, payload: dict[str, Any]) -> Path:
+        output_path.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2),
+            encoding="utf-8",
         )
 
-    payload = {"knownMaps": known_maps, "spots": spots}
+        return output_path
 
-    output_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    def export(self, grenades_by_map: dict[str, list[Grenade]]) -> list[Path]:
+        raise NotImplementedError
 
-    return output_path
+
+class DefaultExporter(JsonExporter):
+    output_folder = DEFAULT_OUTPUT_FOLDER
+
+    @staticmethod
+    def grenade_to_dict(grenade: Grenade) -> dict[str, Any]:
+        payload = {
+            "name": grenade.name,
+            "desc": grenade.desc,
+            "type": grenade.type_id,
+        }
+
+        if grenade.pos is not None:
+            payload["pos"] = grenade.pos
+
+        if grenade.ang is not None:
+            payload["ang"] = grenade.ang
+
+        return payload
+
+    def export(self, grenades_by_map: dict[str, list[Grenade]]) -> list[Path]:
+        maps = {
+            game_map_name(map_name): [
+                self.grenade_to_dict(grenade) for grenade in grenades_by_map[map_name]
+            ]
+            for map_name in sorted(grenades_by_map, key=map_sort_key)
+        }
+        payload = {"version": 1, "maps": maps}
+        output_path = self.format_output_dir() / DEFAULT_FILENAME
+
+        return [self.write_json(output_path, payload)]
+
+
+class HbnExporter(JsonExporter):
+    output_folder = HBN_OUTPUT_FOLDER
+
+    @staticmethod
+    def grenade_to_dict(grenade: Grenade) -> dict[str, Any]:
+        payload = {
+            "name": grenade.name,
+            "desc": grenade.desc,
+            "type": grenade.type_id,
+            "img": grenade.img,
+        }
+
+        if grenade.pos is not None:
+            payload["pos"] = grenade.pos
+
+        if grenade.ang is not None:
+            payload["ang"] = grenade.ang
+
+        return payload
+
+    def export(self, grenades_by_map: dict[str, list[Grenade]]) -> list[Path]:
+        output_dir = self.format_output_dir()
+        output_paths: list[Path] = []
+
+        for map_name in sorted(grenades_by_map, key=map_sort_key):
+            output_path = output_dir / f"{game_map_name(map_name)}.json"
+            payload = {
+                "grenades": [
+                    self.grenade_to_dict(grenade) for grenade in grenades_by_map[map_name]
+                ]
+            }
+            output_paths.append(self.write_json(output_path, payload))
+
+        return output_paths
+
+
+class SecretServiceExporter(JsonExporter):
+    output_folder = SECRET_SERVICE_OUTPUT_FOLDER
+
+    @staticmethod
+    def grenade_to_spot(map_name: str, grenade: Grenade) -> dict[str, Any]:
+        spot = {}
+        if grenade.ang is not None:
+            spot["Angle"] = grenade.ang
+
+        spot["Desc"] = grenade.desc
+        spot["MapName"] = map_name
+        spot["Nade"] = SECRET_SERVICE_GRENADE_NAMES.get(
+            grenade.nade_type, grenade.nade_type
+        )
+        spot["Name"] = grenade.name
+
+        if grenade.pos is not None:
+            spot["Pos"] = grenade.pos
+
+        return spot
+
+    def export(self, grenades_by_map: dict[str, list[Grenade]]) -> list[Path]:
+        known_maps = ["<empty>"]
+        spots: list[dict[str, Any]] = []
+
+        for map_name in sorted(grenades_by_map, key=map_sort_key):
+            formatted_map_name = game_map_name(map_name)
+            known_maps.append(formatted_map_name)
+            spots.extend(
+                self.grenade_to_spot(formatted_map_name, grenade)
+                for grenade in grenades_by_map[map_name]
+            )
+
+        payload = {"knownMaps": known_maps, "spots": spots}
+        output_path = self.format_output_dir() / SECRET_SERVICE_FILENAME
+
+        return [self.write_json(output_path, payload)]
+
+
+EXPORTERS = {
+    "default": DefaultExporter,
+    "hbn": HbnExporter,
+    "secretservice": SecretServiceExporter,
+}
+
+
+def selected_exporters(output_dir: Path, output_format: str) -> list[JsonExporter]:
+    if output_format == "all":
+        return [exporter(output_dir) for exporter in EXPORTERS.values()]
+
+    return [EXPORTERS[output_format](output_dir)]
 
 
 def convert_sources(input_dir: Path, output_dir: Path, output_format: str) -> int:
@@ -344,15 +417,9 @@ def convert_sources(input_dir: Path, output_dir: Path, output_format: str) -> in
         total_maps += 1
         total_grenades += len(grenades)
 
-        if output_format in {"all", "hbn"}:
-            output_path = write_map_output(
-                output_dir, map_name, [grenade.to_dict() for grenade in grenades]
-            )
-            LOGGER.info("Wrote %s (%s total grenades)", output_path, len(grenades))
-
-    if output_format in {"all", "secretservice"}:
-        output_path = write_secret_service_output(output_dir, grenades_by_map)
-        LOGGER.info("Wrote %s (%s total grenades)", output_path, total_grenades)
+    for exporter in selected_exporters(output_dir, output_format):
+        for output_path in exporter.export(grenades_by_map):
+            LOGGER.info("Wrote %s", output_path)
 
     LOGGER.info("Done: %s maps, %s grenades", total_maps, total_grenades)
     return 0

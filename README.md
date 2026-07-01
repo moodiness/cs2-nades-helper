@@ -54,11 +54,12 @@ Run:
 start.bat
 ```
 
-This executes `script.py` and writes both generated formats into `out/`.
+This executes `script.py` and writes all generated formats into `out/`.
 
 Example output:
 
 ```text
+out/default/nades.json
 out/hbn/de_ancient.json
 out/hbn/de_anubis.json
 out/hbn/de_cache.json
@@ -80,9 +81,10 @@ Optional custom paths:
 env\Scripts\python.exe script.py --input-dir nades --output-dir out
 ```
 
-By default, both HBN and SecretService are generated. You can limit the output to one format:
+By default, all formats are generated. You can limit the output to one format:
 
 ```bat
+env\Scripts\python.exe script.py --format default
 env\Scripts\python.exe script.py --format hbn
 env\Scripts\python.exe script.py --format secretservice
 ```
