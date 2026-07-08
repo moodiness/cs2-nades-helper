@@ -1,0 +1,37 @@
+name: Sync nades
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          repository: FNScence/CSAFAP-config-package
+          path: source
+
+      - name: Sync nades folder
+        run: |
+          rm -rf nades
+          mkdir -p nades
+          cp -R source/csafap/csgo/annotations/local/. nades/
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add nades
+          git diff --cached --quiet || git commit -m "chore(nades): sync source annotations"
+          git push

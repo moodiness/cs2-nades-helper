@@ -1,0 +1,1721 @@
+{
+  "grenades": [
+    {
+      "name": "B Stairs Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2314.647705,
+        1096.970947,
+        11755.921875
+      ],
+      "ang": [
+        -5.463842,
+        -92.52211
+      ]
+    },
+    {
+      "name": "B Stairs Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2056.186768,
+        1036.037598,
+        11747.59668
+      ],
+      "ang": [
+        -5.895033,
+        -109.215767
+      ]
+    },
+    {
+      "name": "B Stairs Solo Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2217.866943,
+        437.967834,
+        11744.03125
+      ],
+      "ang": [
+        -31.982563,
+        90.122353
+      ]
+    },
+    {
+      "name": "B Main HE",
+      "desc": "jumping throw \n (release at apex)",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -2285.336182,
+        217.363205,
+        11744.03125
+      ],
+      "ang": [
+        49.113667,
+        -53.743786
+      ]
+    },
+    {
+      "name": "B Main Solo Flash",
+      "desc": "running throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2273.367188,
+        544.817627,
+        11744.03125
+      ],
+      "ang": [
+        7.314964,
+        -115.886444
+      ]
+    },
+    {
+      "name": "White Solo Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2533.799561,
+        623.559937,
+        11744.03125
+      ],
+      "ang": [
+        -18.15324,
+        -23.944868
+      ]
+    },
+    {
+      "name": "B Main Solo Flash",
+      "desc": "crouched M2 throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2285.336182,
+        217.363205,
+        11744.03125
+      ],
+      "ang": [
+        -76.737984,
+        -90.696571
+      ]
+    },
+    {
+      "name": "B Stairs Incendiary",
+      "desc": "running throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2273.367188,
+        544.817627,
+        11744.03125
+      ],
+      "ang": [
+        2.05146,
+        -84.388855
+      ]
+    },
+    {
+      "name": "B Main Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2633.959717,
+        1048.996216,
+        11755.918945
+      ],
+      "ang": [
+        8.535048,
+        -72.086906
+      ]
+    },
+    {
+      "name": "Under Stairs Molotov",
+      "desc": "running throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2633.968506,
+        1048.982422,
+        11755.920898
+      ],
+      "ang": [
+        2.298054,
+        -84.098923
+      ]
+    },
+    {
+      "name": "B Main Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2053.573975,
+        1096.969116,
+        11755.920898
+      ],
+      "ang": [
+        6.43716,
+        -127.109436
+      ]
+    },
+    {
+      "name": "Yellow Solo Flash",
+      "desc": "standing M2 throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1135.967896,
+        -1221.96875,
+        11776.03125
+      ],
+      "ang": [
+        0.66242,
+        51.780125
+      ]
+    },
+    {
+      "name": "Ramp Solo Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1135.967896,
+        -1221.96875,
+        11776.03125
+      ],
+      "ang": [
+        -13.520966,
+        53.997715
+      ]
+    },
+    {
+      "name": "Yellow Solo Flash",
+      "desc": "standing M2 throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1055.967041,
+        -1339.03125,
+        11784.03125
+      ],
+      "ang": [
+        2.18705,
+        60.902996
+      ]
+    },
+    {
+      "name": "Ramp Solo Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1055.967041,
+        -1339.03125,
+        11784.03125
+      ],
+      "ang": [
+        -2.509951,
+        35.570068
+      ]
+    },
+    {
+      "name": "Yellow Incendiary",
+      "desc": "running throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -1135.971069,
+        -720.899658,
+        11776.03125
+      ],
+      "ang": [
+        -6.483179,
+        -78.242104
+      ]
+    },
+    {
+      "name": "Gap \n One-Way Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1041.03125,
+        -713.965881,
+        11818.03125
+      ],
+      "ang": [
+        -37.591782,
+        -170.299072
+      ]
+    },
+    {
+      "name": "Yellow Smoke",
+      "desc": "running throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1063.96875,
+        39.968746,
+        11776.03125
+      ],
+      "ang": [
+        -21.76034,
+        -70.441574
+      ]
+    },
+    {
+      "name": "Mid Smoke",
+      "desc": "running throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1405.485229,
+        331.214874,
+        11776.03125
+      ],
+      "ang": [
+        -22.160248,
+        -138.674805
+      ]
+    },
+    {
+      "name": "Mid HE",
+      "desc": "standing M1+M2 Jumpthrow",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -1764.303955,
+        155.031219,
+        11776.03125
+      ],
+      "ang": [
+        8.100707,
+        -106.243568
+      ]
+    },
+    {
+      "name": "Mid HE",
+      "desc": "standing throw",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -1686.78125,
+        438.964355,
+        11840.027344
+      ],
+      "ang": [
+        -12.427486,
+        -106.028275
+      ]
+    },
+    {
+      "name": "Mid HE",
+      "desc": "crouched Jumpthrow",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -1551.968628,
+        443.96875,
+        11874.03125
+      ],
+      "ang": [
+        13.382887,
+        -113.768631
+      ]
+    },
+    {
+      "name": "Mid Solo Flash",
+      "desc": "running M2 Jumpthrow",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1780.041016,
+        63.880981,
+        11776.03125
+      ],
+      "ang": [
+        7.592359,
+        -87.061295
+      ]
+    },
+    {
+      "name": "Mid Incendiary",
+      "desc": "running throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -1295.96875,
+        980.363098,
+        11776.03125
+      ],
+      "ang": [
+        -19.049749,
+        -107.265289
+      ]
+    },
+    {
+      "name": "B White Flash",
+      "desc": "standing Jumpthrow",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1389.96875,
+        411.884796,
+        11776.03125
+      ],
+      "ang": [
+        10.105534,
+        179.780197
+      ]
+    },
+    {
+      "name": "Bottom B Stairs \n Incendiary/HE",
+      "desc": "standing Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -1860.032349,
+        438.968353,
+        11779.550781
+      ],
+      "ang": [
+        -7.465852,
+        -146.970886
+      ]
+    },
+    {
+      "name": "",
+      "desc": "",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -1860.032349,
+        438.968353,
+        11779.550781
+      ],
+      "ang": [
+        -7.465852,
+        -146.970886
+      ]
+    },
+    {
+      "name": "B Main Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1394.15686,
+        673.03125,
+        11839.03125
+      ],
+      "ang": [
+        -35.832619,
+        -157.335464
+      ]
+    },
+    {
+      "name": "B Stairs Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1713.03125,
+        1096.967896,
+        11755.920898
+      ],
+      "ang": [
+        -2.768848,
+        -111.86541
+      ]
+    },
+    {
+      "name": "",
+      "desc": "",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -1492.80188,
+        578.99115,
+        11874.03125
+      ],
+      "ang": [
+        -2.014089,
+        145.660934
+      ]
+    },
+    {
+      "name": "B Default \n Incendiary/HE",
+      "desc": "standing throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -1492.80188,
+        578.99115,
+        11874.03125
+      ],
+      "ang": [
+        -2.014089,
+        145.660934
+      ]
+    },
+    {
+      "name": "A Ramp re-Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -90.033203,
+        -1454.94397,
+        11776.03125
+      ],
+      "ang": [
+        -27.67358,
+        151.566284
+      ]
+    },
+    {
+      "name": "Ramp Solo Flash",
+      "desc": "standing M1+M2 throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -146.969482,
+        -1417.917969,
+        11776.03125
+      ],
+      "ang": [
+        -20.589523,
+        145.326767
+      ]
+    },
+    {
+      "name": "X-Box Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -146.969482,
+        -1417.917969,
+        11776.03125
+      ],
+      "ang": [
+        -12.997937,
+        160.972076
+      ]
+    },
+    {
+      "name": "Bridge Smoke / \n Forklift Molotov",
+      "desc": "go a few steps back, then \n [smoke:] running throw \n [molly:] walking throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -656.03125,
+        -1108.034668,
+        11648.03125
+      ],
+      "ang": [
+        5.932494,
+        107.701591
+      ]
+    },
+    {
+      "name": "",
+      "desc": "",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -656.03125,
+        -1108.031494,
+        11648.03125
+      ]
+    },
+    {
+      "name": "Ramp Incendiary",
+      "desc": "crouched line-up, then \n standing throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -768.03125,
+        -390.96875,
+        11776.03125
+      ],
+      "ang": [
+        -12.135358,
+        -126.621925
+      ]
+    },
+    {
+      "name": "Ramp GOD Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -503.962646,
+        -513.056519,
+        11776.03125
+      ],
+      "ang": [
+        -18.649261,
+        -113.277458
+      ]
+    },
+    {
+      "name": "Ramp GOD Flash",
+      "desc": "move right, then \n standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -768.03125,
+        -390.967773,
+        11776.03125
+      ],
+      "ang": [
+        -12.797195,
+        -97.353386
+      ]
+    },
+    {
+      "name": "Xantares HE",
+      "desc": "standing throw",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -63.050049,
+        -205.255127,
+        11776.03125
+      ],
+      "ang": [
+        -8.624446,
+        -113.103226
+      ]
+    },
+    {
+      "name": "Ramp Molotov",
+      "desc": "standing throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -417.96875,
+        -848.014587,
+        11805.03125
+      ],
+      "ang": [
+        -60.090515,
+        -179.948456
+      ]
+    },
+    {
+      "name": "Ramp HE",
+      "desc": "",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -417.96875,
+        -848.014587,
+        11805.03125
+      ],
+      "ang": [
+        -60.105915,
+        -179.948456
+      ]
+    },
+    {
+      "name": "X-Box Solo Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -417.96875,
+        -848.014587,
+        11805.03125
+      ],
+      "ang": [
+        -56.902729,
+        -141.232864
+      ]
+    },
+    {
+      "name": "Ramp Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -953.052551,
+        -471.961426,
+        11777.03125
+      ],
+      "ang": [
+        -9.578976,
+        -83.223419
+      ]
+    },
+    {
+      "name": "Ramp HE",
+      "desc": "standing throw",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -802.045227,
+        -496.931702,
+        11819.03125
+      ],
+      "ang": [
+        -3.788719,
+        -131.144867
+      ]
+    },
+    {
+      "name": "X-Box Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -503.962646,
+        -513.056519,
+        11776.03125
+      ],
+      "ang": [
+        -10.533908,
+        -140.908554
+      ]
+    },
+    {
+      "name": "Default HE",
+      "desc": "running throw",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -720.96875,
+        -108.03125,
+        11776.03125
+      ],
+      "ang": [
+        -13.136512,
+        -30.126575
+      ]
+    },
+    {
+      "name": "Yellow Smoke",
+      "desc": "running throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -919.027466,
+        77.863968,
+        11776.03125
+      ],
+      "ang": [
+        -19.019169,
+        -90.831863
+      ]
+    },
+    {
+      "name": "A Ramp Smoke",
+      "desc": "running throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -919.040894,
+        18.485226,
+        11776.03125
+      ],
+      "ang": [
+        -23.392521,
+        -86.358383
+      ]
+    },
+    {
+      "name": "Gap GOD Flash",
+      "desc": "crouched Jumpthrow",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -108.96875,
+        -431.968018,
+        11830.03125
+      ],
+      "ang": [
+        12.276767,
+        -164.018005
+      ]
+    },
+    {
+      "name": "Crane Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -63.032288,
+        -79.03125,
+        11776.03125
+      ],
+      "ang": [
+        -11.008016,
+        -113.706543
+      ]
+    },
+    {
+      "name": "Crane Flash",
+      "desc": "standing Jumpthrow",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -63.028076,
+        -79.031372,
+        11776.03125
+      ],
+      "ang": [
+        7.256815,
+        -112.020523
+      ]
+    },
+    {
+      "name": "Sandbags Retake Incendiary",
+      "desc": "running throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -187.034729,
+        238.96875,
+        11783.03125
+      ],
+      "ang": [
+        -17.340744,
+        -85.151894
+      ]
+    },
+    {
+      "name": "Default HE",
+      "desc": "standing throw",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -187.03125,
+        238.968719,
+        11783.03125
+      ],
+      "ang": [
+        -8.100764,
+        -98.495407
+      ]
+    },
+    {
+      "name": "Retake Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -187.03125,
+        238.968719,
+        11783.03125
+      ],
+      "ang": [
+        -57.057274,
+        -118.376572
+      ]
+    },
+    {
+      "name": "B Default Incendiary",
+      "desc": "standing W-Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -815.03125,
+        967.965881,
+        11776.03125
+      ],
+      "ang": [
+        8.885461,
+        -174.948395
+      ]
+    },
+    {
+      "name": "Lobby Smoke",
+      "desc": "crouch-walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2205.971924,
+        -1530.308838,
+        11776.03125
+      ],
+      "ang": [
+        -12.353439,
+        37.665253
+      ]
+    },
+    {
+      "name": "B Stairs Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2352.963623,
+        -609.489807,
+        11488.03125
+      ],
+      "ang": [
+        -53.825394,
+        73.909317
+      ]
+    },
+    {
+      "name": "B Stairs Extinguish/ \n Lurk Smoke",
+      "desc": "running throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2100.170898,
+        -508.146851,
+        11525.949219
+      ],
+      "ang": [
+        -8.441689,
+        36.765194
+      ]
+    },
+    {
+      "name": "B Stairs Flash",
+      "desc": "running throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1944.24585,
+        -423.224976,
+        11552.03125
+      ],
+      "ang": [
+        -4.499279,
+        107.435989
+      ]
+    },
+    {
+      "name": "B Right Gen Smoke",
+      "desc": "crouched line-up, then \n standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2374.268311,
+        -112.955261,
+        11552.03125
+      ],
+      "ang": [
+        -62.819019,
+        57.580177
+      ]
+    },
+    {
+      "name": "B Left Gen Smoke",
+      "desc": "",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2374.269775,
+        -112.96875,
+        11552.03125
+      ],
+      "ang": [
+        -62.819019,
+        57.580177
+      ]
+    },
+    {
+      "name": "B Default Molotov",
+      "desc": "standing throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2374.270996,
+        -112.968323,
+        11552.03125
+      ],
+      "ang": [
+        -32.71233,
+        77.662064
+      ]
+    },
+    {
+      "name": "B Flash",
+      "desc": "standing throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2374.27124,
+        -112.970886,
+        11552.03125
+      ],
+      "ang": [
+        -37.68668,
+        65.57283
+      ]
+    },
+    {
+      "name": "B Lurk Smoke",
+      "desc": "standing M1+M2 Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2528.969971,
+        -186.357361,
+        11552.03125
+      ],
+      "ang": [
+        -8.134143,
+        74.935234
+      ]
+    },
+    {
+      "name": "Quad Molotov",
+      "desc": "standing Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2528.96875,
+        -186.352417,
+        11552.03125
+      ],
+      "ang": [
+        1.460009,
+        85.51487
+      ]
+    },
+    {
+      "name": "B Default Molotov",
+      "desc": "crouched Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2529.122314,
+        -186.697876,
+        11620.03125
+      ],
+      "ang": [
+        2.738208,
+        70.977249
+      ]
+    },
+    {
+      "name": "B Flash",
+      "desc": "crouched throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2529.122314,
+        -186.697876,
+        11620.03125
+      ],
+      "ang": [
+        -32.989742,
+        63.461552
+      ]
+    },
+    {
+      "name": "B Default Molotov",
+      "desc": "standing throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2257.412109,
+        -198.740112,
+        11620.741211
+      ],
+      "ang": [
+        -29.617096,
+        82.742226
+      ]
+    },
+    {
+      "name": "B Flash",
+      "desc": "",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2257.412109,
+        -198.740112,
+        11620.741211
+      ]
+    },
+    {
+      "name": "Quad Molotov",
+      "desc": "standing Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2216.965088,
+        -295.959351,
+        11616.03125
+      ],
+      "ang": [
+        -0.095321,
+        99.959068
+      ]
+    },
+    {
+      "name": "White HE",
+      "desc": "standing Jumpthrow",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -2533.968018,
+        -3.96875,
+        11552.03125
+      ],
+      "ang": [
+        -22.533123,
+        88.038094
+      ]
+    },
+    {
+      "name": "White HE",
+      "desc": "crouched throw",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -2128.033203,
+        -210.972839,
+        11616.03125
+      ],
+      "ang": [
+        -21.701494,
+        113.86586
+      ]
+    },
+    {
+      "name": "",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -2257.436279,
+        -198.744263,
+        11620.75293
+      ],
+      "ang": [
+        -28.954863,
+        114.803902
+      ]
+    },
+    {
+      "name": "Heaven Molotov",
+      "desc": "standing Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2488.250977,
+        169.03125,
+        11749.03125
+      ],
+      "ang": [
+        3.822596,
+        16.344481
+      ]
+    },
+    {
+      "name": "B Right Gen Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1875.965698,
+        -1167.892334,
+        11488.03125
+      ],
+      "ang": [
+        -52.562786,
+        89.453766
+      ]
+    },
+    {
+      "name": "B Left Gen Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1919.96875,
+        -1196.032104,
+        11549.019531
+      ],
+      "ang": [
+        -51.946789,
+        84.540771
+      ]
+    },
+    {
+      "name": "Gap Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1418.031494,
+        -1599.96875,
+        11489.03125
+      ],
+      "ang": [
+        -80.974602,
+        56.590847
+      ]
+    },
+    {
+      "name": "Heaven Smoke",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1977.96875,
+        -1037.968262,
+        11488.03125
+      ],
+      "ang": [
+        -62.982693,
+        76.38575
+      ]
+    },
+    {
+      "name": "Left B Smoke",
+      "desc": "crouched W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1977.96875,
+        -1037.96875,
+        11488.03125
+      ],
+      "ang": [
+        -62.767197,
+        80.23642
+      ]
+    },
+    {
+      "name": "CT Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1969.967529,
+        -72.167236,
+        11776.03125
+      ],
+      "ang": [
+        -11.427002,
+        26.456072
+      ]
+    },
+    {
+      "name": "Heaven Molotov",
+      "desc": "standing throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -1947.530884,
+        -295.968445,
+        11799.03125
+      ],
+      "ang": [
+        -13.829371,
+        61.389729
+      ]
+    },
+    {
+      "name": "Lobby Smoke",
+      "desc": "crouched W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1969.965332,
+        -72.167236,
+        11776.03125
+      ],
+      "ang": [
+        2.544633,
+        47.188454
+      ]
+    },
+    {
+      "name": "Heaven/B Flash",
+      "desc": "standing Jumpthrow",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1917.623047,
+        -592.033508,
+        11776.03125
+      ],
+      "ang": [
+        0.049937,
+        85.057159
+      ]
+    },
+    {
+      "name": "",
+      "desc": "",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1917.623047,
+        -592.033508,
+        11776.03125
+      ],
+      "ang": [
+        -0.011663,
+        93.357986
+      ]
+    },
+    {
+      "name": "Gap + 51 Molotov",
+      "desc": "crouched Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -1216.03125,
+        -731.271423,
+        11818.03125
+      ],
+      "ang": [
+        -9.4214,
+        -136.179398
+      ]
+    },
+    {
+      "name": "A Site Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1423.969727,
+        -689.970154,
+        11776.03125
+      ],
+      "ang": [
+        -65.215904,
+        8.991033
+      ]
+    },
+    {
+      "name": "Ramp Lurk Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1082.988647,
+        -163.96875,
+        11488.03125
+      ],
+      "ang": [
+        -15.674319,
+        -56.880188
+      ]
+    },
+    {
+      "name": "Ramp Flash",
+      "desc": "standing M1+M2 throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1081.968628,
+        -12.032715,
+        11488.03125
+      ],
+      "ang": [
+        -32.244736,
+        -66.321823
+      ]
+    },
+    {
+      "name": "Ramp Close Lurk Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1081.972656,
+        -12.031372,
+        11488.03125
+      ],
+      "ang": [
+        -10.145805,
+        -50.439362
+      ]
+    },
+    {
+      "name": "A Short Molotov",
+      "desc": "standing M2 Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -1001.971619,
+        -929.38916,
+        11648.03125
+      ],
+      "ang": [
+        -33.35252,
+        95.300018
+      ]
+    },
+    {
+      "name": "Gap Solo Flash",
+      "desc": "standing throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1001.971619,
+        -929.38916,
+        11648.03125
+      ],
+      "ang": [
+        -24.528353,
+        -43.931343
+      ]
+    },
+    {
+      "name": "Catwalk Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1001.971619,
+        -929.38916,
+        11648.03125
+      ],
+      "ang": [
+        -57.654362,
+        20.440071
+      ]
+    },
+    {
+      "name": "51 Molotov",
+      "desc": "crouched line-up, then \n standing Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -1423.968262,
+        -824.959229,
+        11776.03125
+      ],
+      "ang": [
+        -41.792034,
+        -9.372032
+      ]
+    },
+    {
+      "name": "51 Flash",
+      "desc": "standing W-Jumpthrow",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -1423.96875,
+        -824.967285,
+        11776.03125
+      ],
+      "ang": [
+        -43.547626,
+        -9.279633
+      ]
+    },
+    {
+      "name": "Mid Lurk Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1680.03125,
+        19.968126,
+        11776.03125
+      ],
+      "ang": [
+        -2.290982,
+        169.078918
+      ]
+    },
+    {
+      "name": "B Split Smoke",
+      "desc": "walking throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1925.948608,
+        9.860936,
+        11776.03125
+      ],
+      "ang": [
+        2.621619,
+        38.286747
+      ]
+    },
+    {
+      "name": "Left A Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -656.032104,
+        -1016.96875,
+        11648.03125
+      ],
+      "ang": [
+        -38.958015,
+        150.692276
+      ]
+    },
+    {
+      "name": "A Short Molotov",
+      "desc": "standing M1+M2 throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -656.034424,
+        -1016.96875,
+        11648.03125
+      ],
+      "ang": [
+        -52.050064,
+        130.57045
+      ]
+    },
+    {
+      "name": "Gap Flash",
+      "desc": "walking M2 Jumpthrow",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -656.032959,
+        -1016.96875,
+        11648.03125
+      ],
+      "ang": [
+        -35.462303,
+        -140.485077
+      ]
+    },
+    {
+      "name": "New Gap Smoke",
+      "desc": "standing M1+M2 throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -656.033691,
+        -1016.96875,
+        11648.03125
+      ],
+      "ang": [
+        -51.878841,
+        111.29467
+      ]
+    },
+    {
+      "name": "Lobby Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -880.02832,
+        -1295.96875,
+        11648.03125
+      ],
+      "ang": [
+        -6.125671,
+        37.654213
+      ]
+    },
+    {
+      "name": "Heaven Molotov",
+      "desc": "standing W-Jumpthrow",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -880.02832,
+        -1295.96875,
+        11648.03125
+      ],
+      "ang": [
+        -3.646277,
+        62.70993
+      ]
+    },
+    {
+      "name": "A GOD Flash",
+      "desc": "standing Jumpthrow",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -880.02832,
+        -1295.96875,
+        11648.03125
+      ],
+      "ang": [
+        -2.907077,
+        34.266235
+      ]
+    },
+    {
+      "name": "New Gap Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -842.166138,
+        -1358.942871,
+        11648.03125
+      ],
+      "ang": [
+        -0.843478,
+        93.110909
+      ]
+    },
+    {
+      "name": "Lobby Smoke",
+      "desc": "running throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -635.299377,
+        -1358.962524,
+        11654.933594
+      ],
+      "ang": [
+        -29.010149,
+        45.668434
+      ]
+    },
+    {
+      "name": "Right A Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -462.87793,
+        -1136.030396,
+        11712.407227
+      ],
+      "ang": [
+        -13.594802,
+        43.389244
+      ]
+    },
+    {
+      "name": "Orange Molotov",
+      "desc": "standing throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -462.87793,
+        -1136.030396,
+        11712.407227
+      ],
+      "ang": [
+        -21.95697,
+        56.109589
+      ]
+    },
+    {
+      "name": "Solo A Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -656.03125,
+        -1016.96875,
+        11648.03125
+      ],
+      "ang": [
+        -11.83939,
+        143.141968
+      ]
+    },
+    {
+      "name": "A GOD Flash",
+      "desc": "standing Jumpthrow",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -656.03125,
+        -1016.96814,
+        11648.03125
+      ],
+      "ang": [
+        -11.839356,
+        156.754745
+      ]
+    },
+    {
+      "name": "A Site Waterfall Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -842.166077,
+        -1358.944458,
+        11648.03125
+      ],
+      "ang": [
+        -70.206238,
+        59.847107
+      ]
+    },
+    {
+      "name": "Orange Waterfall Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -880.02832,
+        -1295.96875,
+        11648.03125
+      ],
+      "ang": [
+        -64.461914,
+        52.162472
+      ]
+    },
+    {
+      "name": "Gap Molotov",
+      "desc": "running throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -796.40332,
+        -371.925964,
+        11489.013672
+      ],
+      "ang": [
+        -29.826954,
+        -107.517258
+      ]
+    },
+    {
+      "name": "Sandbags Molotov",
+      "desc": "standing throw",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -876.960144,
+        -868.655029,
+        11613.196289
+      ],
+      "ang": [
+        -25.545137,
+        -36.706318
+      ]
+    },
+    {
+      "name": "Side-Ramp Flash",
+      "desc": "running throw",
+      "type": 43,
+      "img": "",
+      "pos": [
+        -880.491211,
+        72.967094,
+        11520.03125
+      ],
+      "ang": [
+        -8.559274,
+        -89.814034
+      ]
+    }
+  ]
+}
