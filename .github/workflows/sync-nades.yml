@@ -22,16 +22,27 @@ jobs:
           repository: FNScence/CSAFAP-config-package
           path: source
 
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
       - name: Sync nades folder
         run: |
           rm -rf nades
           mkdir -p nades
           cp -R source/csafap/csgo/annotations/local/. nades/
 
+      - name: Generate outputs
+        run: python script.py
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add nades
-          git diff --cached --quiet || git commit -m "chore(nades): sync source annotations"
+          git add nades out
+          git diff --cached --quiet || git commit -m "chore(nades): sync annotations and outputs"
           git push
