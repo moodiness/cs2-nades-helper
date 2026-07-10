@@ -5245,6 +5245,21 @@
     },
     {
       "Angle": [
+        -5.436242,
+        -141.05927
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "Criss-Cross Smoke",
+      "Pos": [
+        1793.9688,
+        833.9245,
+        1612.0312
+      ]
+    },
+    {
+      "Angle": [
         -22.265116,
         -23.132168
       ],
