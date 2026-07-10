@@ -2343,8 +2343,8 @@
     },
     {
       "Angle": [
-        -30.769165,
-        -58.62378
+        -31.477531,
+        -58.56796
       ],
       "Desc": "standing jumpthrow",
       "MapName": "de_anubis",
@@ -2358,8 +2358,8 @@
     },
     {
       "Angle": [
-        -26.95015,
-        -43.439255
+        -28.181992,
+        -43.383636
       ],
       "Desc": "standing W-Jumpthrow",
       "MapName": "de_anubis",
@@ -2403,8 +2403,8 @@
     },
     {
       "Angle": [
-        -39.16229,
-        -62.658466
+        -39.40865,
+        -62.511524
       ],
       "Desc": "standing jumpthrow",
       "MapName": "de_anubis",
@@ -2418,8 +2418,8 @@
     },
     {
       "Angle": [
-        -38.83873,
-        -45.318268
+        -40.342834,
+        -45.434296
       ],
       "Desc": "standing W-Jumpthrow",
       "MapName": "de_anubis",
@@ -8896,8 +8896,8 @@
     },
     {
       "Angle": [
-        -25.671616,
-        41.377945
+        -25.641052,
+        41.393402
       ],
       "Desc": "standing W-Jumpthrow",
       "MapName": "de_mirage",
