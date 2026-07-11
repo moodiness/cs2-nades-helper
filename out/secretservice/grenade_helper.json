@@ -978,17 +978,17 @@
     },
     {
       "Angle": [
-        -26.623077,
-        46.166382
+        -25.764122,
+        45.848724
       ],
       "Desc": "running throw",
       "MapName": "de_ancient",
       "Nade": "molotov",
       "Name": "Cubby Molotov",
       "Pos": [
-        -1369.716797,
-        -1166.428223,
-        -7.765015
+        -1371.4968,
+        -1166.9563,
+        -7.0550537
       ]
     },
     {
@@ -1008,32 +1008,32 @@
     },
     {
       "Angle": [
-        -17.972067,
-        65.617897
+        -17.063192,
+        66.11513
       ],
       "Desc": "standing Jumpthrow",
       "MapName": "de_ancient",
       "Nade": "smoke",
       "Name": "Window Smoke",
       "Pos": [
-        -1306.869629,
-        -1629.24646,
-        -25.49585
+        -1305.166,
+        -1629.6625,
+        -25.419128
       ]
     },
     {
       "Angle": [
-        -14.768852,
-        76.073593
+        -14.676187,
+        76.20163
       ],
       "Desc": "standing Jumpthrow",
       "MapName": "de_ancient",
       "Nade": "flash",
       "Name": "Mid Support Flash",
       "Pos": [
-        -1306.869629,
-        -1629.24646,
-        -25.49585
+        -1305.166,
+        -1629.6625,
+        -25.419128
       ]
     },
     {
@@ -1203,16 +1203,16 @@
     },
     {
       "Angle": [
-        -16.185345,
-        58.540867
+        -16.03122,
+        57.982445
       ],
       "Desc": "standing Jumpthrow",
       "MapName": "de_ancient",
       "Nade": "smoke",
       "Name": "Donut Smoke",
       "Pos": [
-        -1952.031372,
-        340.027649,
+        -1952.0312,
+        340.05856,
         88.03125
       ]
     },
@@ -1608,17 +1608,17 @@
     },
     {
       "Angle": [
-        -33.968948,
-        92.995331
+        -34.28033,
+        92.910675
       ],
       "Desc": "standing throw",
       "MapName": "de_ancient",
       "Nade": "smoke",
       "Name": "A CT Smoke",
       "Pos": [
-        -990.94812,
-        -244.967896,
-        101.269241
+        -990.9686,
+        -244.96875,
+        101.274376
       ]
     },
     {
@@ -5125,32 +5125,32 @@
     },
     {
       "Angle": [
-        -28.609768,
-        -153.575
+        -28.02462,
+        -153.74551
       ],
       "Desc": "standing (or crouched) throw",
       "MapName": "de_cache",
       "Nade": "smoke",
       "Name": "Connector Smoke",
       "Pos": [
-        1012.8128,
-        595.0493,
-        1734.3848
+        1013.1104,
+        594.7484,
+        1738.5421
       ]
     },
     {
       "Angle": [
-        -9.806396,
-        -176.02142
+        -8.9750805,
+        -175.92764
       ],
       "Desc": "crouched throw",
       "MapName": "de_cache",
-      "Nade": "molotov",
+      "Nade": "flash",
       "Name": "White box Molotov / \n Highway GOD flash",
       "Pos": [
-        1008.61005,
-        526.031,
-        1737.0436
+        999.6133,
+        526.03125,
+        1748.7255
       ]
     },
     {
