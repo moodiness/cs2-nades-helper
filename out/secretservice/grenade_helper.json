@@ -11880,8 +11880,8 @@
     },
     {
       "Angle": [
-        -40.126526,
-        6.156799
+        -40.16327,
+        4.4659424
       ],
       "Desc": "running Jumpthrow",
       "MapName": "de_nuke",
@@ -11895,8 +11895,8 @@
     },
     {
       "Angle": [
-        -40.126526,
-        6.156799
+        -40.16327,
+        4.4659424
       ],
       "Desc": "running Jumpthrow",
       "MapName": "de_nuke",
@@ -11910,8 +11910,8 @@
     },
     {
       "Angle": [
-        -40.126526,
-        6.156799
+        -40.16327,
+        4.4659424
       ],
       "Desc": "running Jumpthrow",
       "MapName": "de_nuke",
@@ -11925,8 +11925,8 @@
     },
     {
       "Angle": [
-        -40.126526,
-        6.156799
+        -40.16327,
+        4.4659424
       ],
       "Desc": "running Jumpthrow",
       "MapName": "de_nuke",
@@ -11940,8 +11940,8 @@
     },
     {
       "Angle": [
-        -40.126526,
-        6.156799
+        -40.16327,
+        4.4659424
       ],
       "Desc": "running Jumpthrow",
       "MapName": "de_nuke",
@@ -11955,8 +11955,8 @@
     },
     {
       "Angle": [
-        -40.126526,
-        6.156799
+        -40.16327,
+        4.4659424
       ],
       "Desc": "running Jumpthrow",
       "MapName": "de_nuke",
@@ -11970,8 +11970,8 @@
     },
     {
       "Angle": [
-        -40.126526,
-        6.156799
+        -40.16327,
+        4.4659424
       ],
       "Desc": "running Jumpthrow",
       "MapName": "de_nuke",
@@ -11985,8 +11985,8 @@
     },
     {
       "Angle": [
-        -40.126526,
-        6.156799
+        -40.16327,
+        4.4659424
       ],
       "Desc": "running Jumpthrow",
       "MapName": "de_nuke",
@@ -12030,16 +12030,16 @@
     },
     {
       "Angle": [
-        -40.126526,
-        6.156799
+        -40.224693,
+        4.4483385
       ],
-      "Desc": "run along the red crate, then \n running Jumpthrow",
+      "Desc": "running Jumpthrow",
       "MapName": "de_nuke",
       "Nade": "smoke",
       "Name": "Heaven Smoke",
       "Pos": [
-        -1641.986694,
-        -1083.043335,
+        -1567.8513,
+        -1072.061,
         -415.96875
       ]
     },
@@ -12135,8 +12135,8 @@
     },
     {
       "Angle": [
-        -18.511776,
-        -17.776777
+        -19.588783,
+        -18.513706
       ],
       "Desc": "",
       "MapName": "de_nuke",
