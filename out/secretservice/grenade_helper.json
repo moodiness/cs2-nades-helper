@@ -2268,6 +2268,21 @@
     },
     {
       "Angle": [
+        -4.1887956,
+        110.88271
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_ancient",
+      "Nade": "flash",
+      "Name": "B Pillar GOD Flash",
+      "Pos": [
+        1159.9686,
+        -919.18225,
+        9.03125
+      ]
+    },
+    {
+      "Angle": [
         -13.656453,
         -82.972549
       ],
