@@ -5275,6 +5275,21 @@
     },
     {
       "Angle": [
+        -45.707245,
+        -171.64009
+      ],
+      "Desc": "running Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "Instant B cross smoke",
+      "Pos": [
+        3041.76,
+        -21.080017,
+        1608.0314
+      ]
+    },
+    {
+      "Angle": [
         -22.265116,
         -23.132168
       ],
