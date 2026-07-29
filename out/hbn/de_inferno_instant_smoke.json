@@ -1,0 +1,169 @@
+{
+  "grenades": [
+    {
+      "name": "Instant FaZe Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2472.349854,
+        2005.969971,
+        134.505051
+      ],
+      "ang": [
+        -30.846163,
+        -141.310181
+      ]
+    },
+    {
+      "name": "Instant FaZe Smoke",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2493.0,
+        2090.0,
+        132.551376
+      ],
+      "ang": [
+        -29.183121,
+        -140.08873
+      ]
+    },
+    {
+      "name": "Instant FaZe Smoke",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2456.830078,
+        2153.159912,
+        132.077179
+      ],
+      "ang": [
+        -26.087723,
+        -138.391693
+      ]
+    },
+    {
+      "name": "Instant FaZe Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2353.0,
+        1977.0,
+        135.518875
+      ],
+      "ang": [
+        -34.511387,
+        -140.193527
+      ]
+    },
+    {
+      "name": "Instant FaZe Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2397.0,
+        2079.0,
+        132.767548
+      ],
+      "ang": [
+        -30.029957,
+        -138.867615
+      ]
+    },
+    {
+      "name": "Instant FaZe Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2292.060059,
+        2027.689941,
+        135.956955
+      ],
+      "ang": [
+        -27.22719,
+        -137.785599
+      ]
+    },
+    {
+      "name": "Instant Half-Wall Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2472.350098,
+        2005.969971,
+        134.505051
+      ],
+      "ang": [
+        -28.798111,
+        -178.308411
+      ]
+    },
+    {
+      "name": "Instant Half-Wall Smoke",
+      "desc": "crouched Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2493.0,
+        2090.0,
+        132.551376
+      ],
+      "ang": [
+        -41.225929,
+        -176.105652
+      ]
+    },
+    {
+      "name": "Instant Half-Wall Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2456.830078,
+        2153.159912,
+        132.077179
+      ],
+      "ang": [
+        -36.31337,
+        -176.321167
+      ]
+    },
+    {
+      "name": "Instant Half-Wall Smoke",
+      "desc": "crouched Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2397.0,
+        2079.0,
+        132.767548
+      ],
+      "ang": [
+        -46.908482,
+        -176.228806
+      ]
+    },
+    {
+      "name": "Instant Half-Wall Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        2353.0,
+        1977.0,
+        135.518875
+      ],
+      "ang": [
+        -44.30582,
+        179.352158
+      ]
+    }
+  ]
+}

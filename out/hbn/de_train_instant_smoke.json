@@ -1,0 +1,184 @@
+{
+  "grenades": [
+    {
+      "name": "Instant Gate Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2000.0,
+        1434.233154,
+        -171.96875
+      ],
+      "ang": [
+        -27.319565,
+        -25.258942
+      ]
+    },
+    {
+      "name": "Instant Sandwich Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2000.0,
+        1434.233154,
+        -171.96875
+      ],
+      "ang": [
+        -18.895788,
+        -26.644793
+      ]
+    },
+    {
+      "name": "Instant Sandwich Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2033.0,
+        1362.233154,
+        -171.96875
+      ],
+      "ang": [
+        -34.187965,
+        -22.078741
+      ]
+    },
+    {
+      "name": "Instant Gate Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1916.000122,
+        1456.233154,
+        -171.96875
+      ],
+      "ang": [
+        -25.379105,
+        -26.839935
+      ]
+    },
+    {
+      "name": "Instant Sandwich Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1916.000122,
+        1456.233154,
+        -171.96875
+      ],
+      "ang": [
+        -24.562908,
+        -24.837942
+      ]
+    },
+    {
+      "name": "Instant Bombtrain Smoke #2",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1925.0,
+        1394.0,
+        -171.96875
+      ],
+      "ang": [
+        -35.065788,
+        -36.331379
+      ]
+    },
+    {
+      "name": "Instant Bombtrain Smoke #1",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1925.0,
+        1394.0,
+        -171.96875
+      ],
+      "ang": [
+        -45.583942,
+        -31.4188
+      ]
+    },
+    {
+      "name": "Instant Sandwich Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1925.0,
+        1394.0,
+        -171.96875
+      ],
+      "ang": [
+        -31.693188,
+        -23.641788
+      ]
+    },
+    {
+      "name": "Instant Gate Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1925.0,
+        1394.0,
+        -171.96875
+      ],
+      "ang": [
+        -33.510361,
+        -25.597458
+      ]
+    },
+    {
+      "name": "Instant A Main Smoke",
+      "desc": "sideways running Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        1552.0,
+        -1232.0,
+        -327.759521
+      ],
+      "ang": [
+        -57.85778,
+        -172.68689
+      ]
+    },
+    {
+      "name": "Instant A Main Smoke",
+      "desc": "sideways running Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        1542.0,
+        -1336.0,
+        -327.917725
+      ],
+      "ang": [
+        -50.696747,
+        -177.845306
+      ]
+    },
+    {
+      "name": "Instant A Main Smoke",
+      "desc": "sideways running Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        1600.0,
+        -1440.0,
+        -327.963867
+      ],
+      "ang": [
+        -51.081619,
+        -178.116531
+      ]
+    }
+  ]
+}

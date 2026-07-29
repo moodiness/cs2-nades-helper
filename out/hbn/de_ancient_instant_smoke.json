@@ -1,0 +1,229 @@
+{
+  "grenades": [
+    {
+      "name": "Instant Mid Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -192.0,
+        1696.0,
+        26.053041
+      ],
+      "ang": [
+        -31.169586,
+        -108.40416
+      ]
+    },
+    {
+      "name": "Instant Mid Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -256.0,
+        1728.0,
+        25.602617
+      ],
+      "ang": [
+        -26.826904,
+        -107.095413
+      ]
+    },
+    {
+      "name": "Instant Mid Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -352.000366,
+        1728.000244,
+        28.813251
+      ],
+      "ang": [
+        -27.181213,
+        -105.462227
+      ]
+    },
+    {
+      "name": "Instant Mid Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -448.0,
+        1728.0,
+        30.739714
+      ],
+      "ang": [
+        -25.394562,
+        -103.013306
+      ]
+    },
+    {
+      "name": "Instant Mid Smoke",
+      "desc": "walking Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -512.0,
+        1696.0,
+        26.8372
+      ],
+      "ang": [
+        -26.087723,
+        -101.718979
+      ]
+    },
+    {
+      "name": "Instant Window Smoke",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -584.000732,
+        -2288.000732,
+        -162.42041
+      ],
+      "ang": [
+        -34.003021,
+        88.522003
+      ]
+    },
+    {
+      "name": "Instant Window Smoke",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -392.0,
+        -2224.0,
+        -163.255737
+      ],
+      "ang": [
+        -29.752686,
+        93.449707
+      ]
+    },
+    {
+      "name": "Instant Window Smoke",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -328.0,
+        -2288.0,
+        -163.255737
+      ],
+      "ang": [
+        -31.508453,
+        94.096863
+      ]
+    },
+    {
+      "name": "Instant Window Smoke",
+      "desc": "move left, then \n standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -520.0,
+        -2224.0,
+        -163.255737
+      ],
+      "ang": [
+        -36.57486,
+        88.62912
+      ]
+    },
+    {
+      "name": "Instant Window Smoke",
+      "desc": "move right, then \n standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -456.0,
+        -2288.0,
+        -163.255737
+      ],
+      "ang": [
+        -29.691238,
+        92.079163
+      ]
+    },
+    {
+      "name": "Instant B Doors Smoke",
+      "desc": "running Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -192.0,
+        1696.0,
+        26.053041
+      ],
+      "ang": [
+        -17.802307,
+        -51.315079
+      ]
+    },
+    {
+      "name": "Instant B Doors Smoke",
+      "desc": "running Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -256.0,
+        1728.0,
+        25.602617
+      ],
+      "ang": [
+        -22.668915,
+        -49.359512
+      ]
+    },
+    {
+      "name": "Instant B Doors Smoke",
+      "desc": "running Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -352.000366,
+        1728.000244,
+        28.813251
+      ],
+      "ang": [
+        -13.983185,
+        -52.131157
+      ]
+    },
+    {
+      "name": "Instant A Main Smoke",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -512.0,
+        1696.0,
+        26.8372
+      ],
+      "ang": [
+        -40.609589,
+        -126.813126
+      ]
+    },
+    {
+      "name": "Anti Elbow Smoke Molotov",
+      "desc": "walking Jumpthrow \n (until the next big brick)",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -328.0,
+        -2288.0,
+        -163.255737
+      ],
+      "ang": [
+        -23.685486,
+        115.194397
+      ]
+    }
+  ]
+}

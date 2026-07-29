@@ -10,7 +10,13 @@
     "de_nuke",
     "de_overpass",
     "de_train",
-    "de_vertigo"
+    "de_vertigo",
+    "de_ancient_instant_smoke",
+    "de_anubis_instant_smoke",
+    "de_inferno_instant_smoke",
+    "de_mirage_instant_smoke",
+    "de_overpass_instant_smoke",
+    "de_train_instant_smoke"
   ],
   "spots": [
     {
@@ -17297,6 +17303,1176 @@
         -880.491211,
         72.967094,
         11520.03125
+      ]
+    },
+    {
+      "Angle": [
+        -31.169586,
+        -108.40416
+      ],
+      "Desc": "walking Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Mid Smoke",
+      "Pos": [
+        -192.0,
+        1696.0,
+        26.053041
+      ]
+    },
+    {
+      "Angle": [
+        -26.826904,
+        -107.095413
+      ],
+      "Desc": "walking Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Mid Smoke",
+      "Pos": [
+        -256.0,
+        1728.0,
+        25.602617
+      ]
+    },
+    {
+      "Angle": [
+        -27.181213,
+        -105.462227
+      ],
+      "Desc": "walking Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Mid Smoke",
+      "Pos": [
+        -352.000366,
+        1728.000244,
+        28.813251
+      ]
+    },
+    {
+      "Angle": [
+        -25.394562,
+        -103.013306
+      ],
+      "Desc": "walking Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Mid Smoke",
+      "Pos": [
+        -448.0,
+        1728.0,
+        30.739714
+      ]
+    },
+    {
+      "Angle": [
+        -26.087723,
+        -101.718979
+      ],
+      "Desc": "walking Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Mid Smoke",
+      "Pos": [
+        -512.0,
+        1696.0,
+        26.8372
+      ]
+    },
+    {
+      "Angle": [
+        -34.003021,
+        88.522003
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        -584.000732,
+        -2288.000732,
+        -162.42041
+      ]
+    },
+    {
+      "Angle": [
+        -29.752686,
+        93.449707
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        -392.0,
+        -2224.0,
+        -163.255737
+      ]
+    },
+    {
+      "Angle": [
+        -31.508453,
+        94.096863
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        -328.0,
+        -2288.0,
+        -163.255737
+      ]
+    },
+    {
+      "Angle": [
+        -36.57486,
+        88.62912
+      ],
+      "Desc": "move left, then \n standing W-Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        -520.0,
+        -2224.0,
+        -163.255737
+      ]
+    },
+    {
+      "Angle": [
+        -29.691238,
+        92.079163
+      ],
+      "Desc": "move right, then \n standing W-Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        -456.0,
+        -2288.0,
+        -163.255737
+      ]
+    },
+    {
+      "Angle": [
+        -17.802307,
+        -51.315079
+      ],
+      "Desc": "running Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant B Doors Smoke",
+      "Pos": [
+        -192.0,
+        1696.0,
+        26.053041
+      ]
+    },
+    {
+      "Angle": [
+        -22.668915,
+        -49.359512
+      ],
+      "Desc": "running Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant B Doors Smoke",
+      "Pos": [
+        -256.0,
+        1728.0,
+        25.602617
+      ]
+    },
+    {
+      "Angle": [
+        -13.983185,
+        -52.131157
+      ],
+      "Desc": "running Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant B Doors Smoke",
+      "Pos": [
+        -352.000366,
+        1728.000244,
+        28.813251
+      ]
+    },
+    {
+      "Angle": [
+        -40.609589,
+        -126.813126
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant A Main Smoke",
+      "Pos": [
+        -512.0,
+        1696.0,
+        26.8372
+      ]
+    },
+    {
+      "Angle": [
+        -23.685486,
+        115.194397
+      ],
+      "Desc": "walking Jumpthrow \n (until the next big brick)",
+      "MapName": "de_ancient_instant_smoke",
+      "Nade": "molotov",
+      "Name": "Anti Elbow Smoke Molotov",
+      "Pos": [
+        -328.0,
+        -2288.0,
+        -163.255737
+      ]
+    },
+    {
+      "Angle": [
+        -47.92717,
+        99.075378
+      ],
+      "Desc": "crouched Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Con Smoke",
+      "Pos": [
+        -384.0,
+        -1552.0,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -48.371037,
+        100.709259
+      ],
+      "Desc": "crouched Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Con Smoke",
+      "Pos": [
+        -328.0,
+        -1528.0,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -42.665741,
+        103.424622
+      ],
+      "Desc": "crouched W-Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Con Smoke",
+      "Pos": [
+        -304.0,
+        -1608.0,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -35.849075,
+        101.928406
+      ],
+      "Desc": "crouched W-Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Con Smoke",
+      "Pos": [
+        -264.0,
+        -1560.0,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -39.766724,
+        104.106445
+      ],
+      "Desc": "crouched Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Con Smoke",
+      "Pos": [
+        -234.0,
+        -1503.079956,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -35.757065,
+        109.27655
+      ],
+      "Desc": "crouched W-Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Con Smoke",
+      "Pos": [
+        -154.0,
+        -1503.079956,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -15.816879,
+        83.212524
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        -384.0,
+        -1552.0,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -14.415436,
+        83.751526
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke ",
+      "Pos": [
+        -328.0,
+        -1528.0,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -14.122925,
+        84.289856
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke ",
+      "Pos": [
+        -304.0,
+        -1608.0,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -14.92424,
+        85.200348
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke ",
+      "Pos": [
+        -264.0,
+        -1560.0,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -14.293722,
+        86.569466
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke ",
+      "Pos": [
+        -234.0,
+        -1503.079956,
+        -11.96875
+      ]
+    },
+    {
+      "Angle": [
+        -31.523746,
+        -58.600311
+      ],
+      "Desc": "standing jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant T-stairs Smoke",
+      "Pos": [
+        -560.0,
+        2192.0,
+        25.03125
+      ]
+    },
+    {
+      "Angle": [
+        -27.103956,
+        -56.36515
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant T-stairs Smoke",
+      "Pos": [
+        -608.0,
+        2120.0,
+        16.056595
+      ]
+    },
+    {
+      "Angle": [
+        -28.361523,
+        -62.223072
+      ],
+      "Desc": "standing jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant T-stairs Smoke",
+      "Pos": [
+        -400.0,
+        2192.0,
+        25.03125
+      ]
+    },
+    {
+      "Angle": [
+        -31.908745,
+        -61.171192
+      ],
+      "Desc": "standing jumpthrow",
+      "MapName": "de_anubis_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant T-stairs Smoke",
+      "Pos": [
+        -476.0,
+        2216.0,
+        25.03125
+      ]
+    },
+    {
+      "Angle": [
+        -30.846163,
+        -141.310181
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant FaZe Smoke",
+      "Pos": [
+        2472.349854,
+        2005.969971,
+        134.505051
+      ]
+    },
+    {
+      "Angle": [
+        -29.183121,
+        -140.08873
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant FaZe Smoke",
+      "Pos": [
+        2493.0,
+        2090.0,
+        132.551376
+      ]
+    },
+    {
+      "Angle": [
+        -26.087723,
+        -138.391693
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant FaZe Smoke",
+      "Pos": [
+        2456.830078,
+        2153.159912,
+        132.077179
+      ]
+    },
+    {
+      "Angle": [
+        -34.511387,
+        -140.193527
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant FaZe Smoke",
+      "Pos": [
+        2353.0,
+        1977.0,
+        135.518875
+      ]
+    },
+    {
+      "Angle": [
+        -30.029957,
+        -138.867615
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant FaZe Smoke",
+      "Pos": [
+        2397.0,
+        2079.0,
+        132.767548
+      ]
+    },
+    {
+      "Angle": [
+        -27.22719,
+        -137.785599
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant FaZe Smoke",
+      "Pos": [
+        2292.060059,
+        2027.689941,
+        135.956955
+      ]
+    },
+    {
+      "Angle": [
+        -28.798111,
+        -178.308411
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Half-Wall Smoke",
+      "Pos": [
+        2472.350098,
+        2005.969971,
+        134.505051
+      ]
+    },
+    {
+      "Angle": [
+        -41.225929,
+        -176.105652
+      ],
+      "Desc": "crouched Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Half-Wall Smoke",
+      "Pos": [
+        2493.0,
+        2090.0,
+        132.551376
+      ]
+    },
+    {
+      "Angle": [
+        -36.31337,
+        -176.321167
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Half-Wall Smoke",
+      "Pos": [
+        2456.830078,
+        2153.159912,
+        132.077179
+      ]
+    },
+    {
+      "Angle": [
+        -46.908482,
+        -176.228806
+      ],
+      "Desc": "crouched Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Half-Wall Smoke",
+      "Pos": [
+        2397.0,
+        2079.0,
+        132.767548
+      ]
+    },
+    {
+      "Angle": [
+        -44.30582,
+        179.352158
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_inferno_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Half-Wall Smoke",
+      "Pos": [
+        2353.0,
+        1977.0,
+        135.518875
+      ]
+    },
+    {
+      "Angle": [
+        -42.719299,
+        -173.902924
+      ],
+      "Desc": "standing W+Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        1296.000244,
+        -352.0,
+        -167.96875
+      ]
+    },
+    {
+      "Angle": [
+        -44.78302,
+        -166.542435
+      ],
+      "Desc": "standing W+Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        1216.0,
+        -16.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -45.491638,
+        -168.498688
+      ],
+      "Desc": "standing W+Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        1216.0,
+        -115.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -46.030655,
+        -170.26474
+      ],
+      "Desc": "standing W+Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        1216.000244,
+        -211.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -29.013519,
+        -165.977661
+      ],
+      "Desc": "standing W+Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Window Smoke",
+      "Pos": [
+        1296.0,
+        32.0,
+        -167.96875
+      ]
+    },
+    {
+      "Angle": [
+        -56.710224,
+        -167.687408
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Top Mid Smoke",
+      "Pos": [
+        1216.0,
+        -211.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -56.540794,
+        -164.745483
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Top Mid Smoke",
+      "Pos": [
+        1216.0,
+        -115.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -58.596779,
+        -158.30925
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Top Mid Smoke",
+      "Pos": [
+        1216.0,
+        -16.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -54.369411,
+        -174.372162
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Top Mid Smoke",
+      "Pos": [
+        1296.0,
+        -352.0,
+        -167.96875
+      ]
+    },
+    {
+      "Angle": [
+        -51.689762,
+        -160.835419
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Top Mid Smoke",
+      "Pos": [
+        1296.0,
+        32.0,
+        -167.96875
+      ]
+    },
+    {
+      "Angle": [
+        -33.417957,
+        -157.230499
+      ],
+      "Desc": "standing S+Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Connector Smoke",
+      "Pos": [
+        1296.0,
+        32.000023,
+        -167.96875
+      ]
+    },
+    {
+      "Angle": [
+        -52.521122,
+        -156.601166
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Connector Smoke",
+      "Pos": [
+        1216.0,
+        -16.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -36.313599,
+        -148.312012
+      ],
+      "Desc": "standing W+Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Top Con Smoke",
+      "Pos": [
+        1216.0,
+        -16.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -55.085743,
+        -161.969727
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Connector Smoke",
+      "Pos": [
+        1216.0,
+        -211.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -41.272552,
+        -150.160461
+      ],
+      "Desc": "standing W+Jumpthrow",
+      "MapName": "de_mirage_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Top Con Smoke",
+      "Pos": [
+        1216.0,
+        -115.0,
+        -163.96875
+      ]
+    },
+    {
+      "Angle": [
+        -10.961475,
+        -41.646973
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Monster Smoke",
+      "Pos": [
+        -2199.0,
+        740.0,
+        476.03125
+      ]
+    },
+    {
+      "Angle": [
+        -22.234262,
+        -43.202065
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Monster Smoke",
+      "Pos": [
+        -2273.0,
+        770.0,
+        476.03125
+      ]
+    },
+    {
+      "Angle": [
+        -20.90983,
+        -39.998764
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Monster Smoke",
+      "Pos": [
+        -2343.0,
+        797.0,
+        476.03125
+      ]
+    },
+    {
+      "Angle": [
+        -12.901867,
+        -46.928764
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Monster Smoke",
+      "Pos": [
+        -2190.0,
+        817.0,
+        476.03125
+      ]
+    },
+    {
+      "Angle": [
+        -14.62667,
+        -45.635117
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Monster Smoke",
+      "Pos": [
+        -2275.0,
+        842.0,
+        476.03125
+      ]
+    },
+    {
+      "Angle": [
+        4.530823,
+        -74.090767
+      ],
+      "Desc": "running Jumpthrow \n on banana bench",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "incendiary",
+      "Name": "Mid Incendiary",
+      "Pos": [
+        -2199.0,
+        740.0,
+        476.031281
+      ]
+    },
+    {
+      "Angle": [
+        4.530823,
+        -74.090767
+      ],
+      "Desc": "running Jumpthrow \n on banana bench",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "incendiary",
+      "Name": "Mid Incendiary",
+      "Pos": [
+        -2273.0,
+        770.0,
+        476.03125
+      ]
+    },
+    {
+      "Angle": [
+        4.530823,
+        -74.090767
+      ],
+      "Desc": "running Jumpthrow \n on banana bench",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "incendiary",
+      "Name": "Mid Incendiary",
+      "Pos": [
+        -2343.0,
+        797.0,
+        476.031281
+      ]
+    },
+    {
+      "Angle": [
+        4.530823,
+        -74.090767
+      ],
+      "Desc": "running Jumpthrow \n on banana bench",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "incendiary",
+      "Name": "Mid Incendiary",
+      "Pos": [
+        -2190.0,
+        817.0,
+        476.031281
+      ]
+    },
+    {
+      "Angle": [
+        4.530823,
+        -74.090767
+      ],
+      "Desc": "running Jumpthrow \n on banana bench",
+      "MapName": "de_overpass_instant_smoke",
+      "Nade": "incendiary",
+      "Name": "Mid Incendiary",
+      "Pos": [
+        -2275.0,
+        842.0,
+        476.031281
+      ]
+    },
+    {
+      "Angle": [
+        -27.319565,
+        -25.258942
+      ],
+      "Desc": "walking Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Gate Smoke",
+      "Pos": [
+        -2000.0,
+        1434.233154,
+        -171.96875
+      ]
+    },
+    {
+      "Angle": [
+        -18.895788,
+        -26.644793
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Sandwich Smoke",
+      "Pos": [
+        -2000.0,
+        1434.233154,
+        -171.96875
+      ]
+    },
+    {
+      "Angle": [
+        -34.187965,
+        -22.078741
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Sandwich Smoke",
+      "Pos": [
+        -2033.0,
+        1362.233154,
+        -171.96875
+      ]
+    },
+    {
+      "Angle": [
+        -25.379105,
+        -26.839935
+      ],
+      "Desc": "walking Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Gate Smoke",
+      "Pos": [
+        -1916.000122,
+        1456.233154,
+        -171.96875
+      ]
+    },
+    {
+      "Angle": [
+        -24.562908,
+        -24.837942
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Sandwich Smoke",
+      "Pos": [
+        -1916.000122,
+        1456.233154,
+        -171.96875
+      ]
+    },
+    {
+      "Angle": [
+        -35.065788,
+        -36.331379
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Bombtrain Smoke #2",
+      "Pos": [
+        -1925.0,
+        1394.0,
+        -171.96875
+      ]
+    },
+    {
+      "Angle": [
+        -45.583942,
+        -31.4188
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Bombtrain Smoke #1",
+      "Pos": [
+        -1925.0,
+        1394.0,
+        -171.96875
+      ]
+    },
+    {
+      "Angle": [
+        -31.693188,
+        -23.641788
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Sandwich Smoke",
+      "Pos": [
+        -1925.0,
+        1394.0,
+        -171.96875
+      ]
+    },
+    {
+      "Angle": [
+        -33.510361,
+        -25.597458
+      ],
+      "Desc": "walking Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant Gate Smoke",
+      "Pos": [
+        -1925.0,
+        1394.0,
+        -171.96875
+      ]
+    },
+    {
+      "Angle": [
+        -57.85778,
+        -172.68689
+      ],
+      "Desc": "sideways running Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant A Main Smoke",
+      "Pos": [
+        1552.0,
+        -1232.0,
+        -327.759521
+      ]
+    },
+    {
+      "Angle": [
+        -50.696747,
+        -177.845306
+      ],
+      "Desc": "sideways running Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant A Main Smoke",
+      "Pos": [
+        1542.0,
+        -1336.0,
+        -327.917725
+      ]
+    },
+    {
+      "Angle": [
+        -51.081619,
+        -178.116531
+      ],
+      "Desc": "sideways running Jumpthrow",
+      "MapName": "de_train_instant_smoke",
+      "Nade": "smoke",
+      "Name": "Instant A Main Smoke",
+      "Pos": [
+        1600.0,
+        -1440.0,
+        -327.963867
       ]
     }
   ]

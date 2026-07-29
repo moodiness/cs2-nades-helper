@@ -1,0 +1,229 @@
+{
+  "grenades": [
+    {
+      "name": "Instant Con Smoke",
+      "desc": "crouched Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -384.0,
+        -1552.0,
+        -11.96875
+      ],
+      "ang": [
+        -47.92717,
+        99.075378
+      ]
+    },
+    {
+      "name": "Instant Con Smoke",
+      "desc": "crouched Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -328.0,
+        -1528.0,
+        -11.96875
+      ],
+      "ang": [
+        -48.371037,
+        100.709259
+      ]
+    },
+    {
+      "name": "Instant Con Smoke",
+      "desc": "crouched W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -304.0,
+        -1608.0,
+        -11.96875
+      ],
+      "ang": [
+        -42.665741,
+        103.424622
+      ]
+    },
+    {
+      "name": "Instant Con Smoke",
+      "desc": "crouched W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -264.0,
+        -1560.0,
+        -11.96875
+      ],
+      "ang": [
+        -35.849075,
+        101.928406
+      ]
+    },
+    {
+      "name": "Instant Con Smoke",
+      "desc": "crouched Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -234.0,
+        -1503.079956,
+        -11.96875
+      ],
+      "ang": [
+        -39.766724,
+        104.106445
+      ]
+    },
+    {
+      "name": "Instant Con Smoke",
+      "desc": "crouched W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -154.0,
+        -1503.079956,
+        -11.96875
+      ],
+      "ang": [
+        -35.757065,
+        109.27655
+      ]
+    },
+    {
+      "name": "Instant Window Smoke",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -384.0,
+        -1552.0,
+        -11.96875
+      ],
+      "ang": [
+        -15.816879,
+        83.212524
+      ]
+    },
+    {
+      "name": "Instant Window Smoke ",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -328.0,
+        -1528.0,
+        -11.96875
+      ],
+      "ang": [
+        -14.415436,
+        83.751526
+      ]
+    },
+    {
+      "name": "Instant Window Smoke ",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -304.0,
+        -1608.0,
+        -11.96875
+      ],
+      "ang": [
+        -14.122925,
+        84.289856
+      ]
+    },
+    {
+      "name": "Instant Window Smoke ",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -264.0,
+        -1560.0,
+        -11.96875
+      ],
+      "ang": [
+        -14.92424,
+        85.200348
+      ]
+    },
+    {
+      "name": "Instant Window Smoke ",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -234.0,
+        -1503.079956,
+        -11.96875
+      ],
+      "ang": [
+        -14.293722,
+        86.569466
+      ]
+    },
+    {
+      "name": "Instant T-stairs Smoke",
+      "desc": "standing jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -560.0,
+        2192.0,
+        25.03125
+      ],
+      "ang": [
+        -31.523746,
+        -58.600311
+      ]
+    },
+    {
+      "name": "Instant T-stairs Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -608.0,
+        2120.0,
+        16.056595
+      ],
+      "ang": [
+        -27.103956,
+        -56.36515
+      ]
+    },
+    {
+      "name": "Instant T-stairs Smoke",
+      "desc": "standing jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -400.0,
+        2192.0,
+        25.03125
+      ],
+      "ang": [
+        -28.361523,
+        -62.223072
+      ]
+    },
+    {
+      "name": "Instant T-stairs Smoke",
+      "desc": "standing jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -476.0,
+        2216.0,
+        25.03125
+      ],
+      "ang": [
+        -31.908745,
+        -61.171192
+      ]
+    }
+  ]
+}

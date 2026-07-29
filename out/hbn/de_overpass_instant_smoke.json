@@ -1,0 +1,154 @@
+{
+  "grenades": [
+    {
+      "name": "Instant Monster Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2199.0,
+        740.0,
+        476.03125
+      ],
+      "ang": [
+        -10.961475,
+        -41.646973
+      ]
+    },
+    {
+      "name": "Instant Monster Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2273.0,
+        770.0,
+        476.03125
+      ],
+      "ang": [
+        -22.234262,
+        -43.202065
+      ]
+    },
+    {
+      "name": "Instant Monster Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2343.0,
+        797.0,
+        476.03125
+      ],
+      "ang": [
+        -20.90983,
+        -39.998764
+      ]
+    },
+    {
+      "name": "Instant Monster Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2190.0,
+        817.0,
+        476.03125
+      ],
+      "ang": [
+        -12.901867,
+        -46.928764
+      ]
+    },
+    {
+      "name": "Instant Monster Smoke",
+      "desc": "standing Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -2275.0,
+        842.0,
+        476.03125
+      ],
+      "ang": [
+        -14.62667,
+        -45.635117
+      ]
+    },
+    {
+      "name": "Mid Incendiary",
+      "desc": "running Jumpthrow \n on banana bench",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2199.0,
+        740.0,
+        476.031281
+      ],
+      "ang": [
+        4.530823,
+        -74.090767
+      ]
+    },
+    {
+      "name": "Mid Incendiary",
+      "desc": "running Jumpthrow \n on banana bench",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2273.0,
+        770.0,
+        476.03125
+      ],
+      "ang": [
+        4.530823,
+        -74.090767
+      ]
+    },
+    {
+      "name": "Mid Incendiary",
+      "desc": "running Jumpthrow \n on banana bench",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2343.0,
+        797.0,
+        476.031281
+      ],
+      "ang": [
+        4.530823,
+        -74.090767
+      ]
+    },
+    {
+      "name": "Mid Incendiary",
+      "desc": "running Jumpthrow \n on banana bench",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2190.0,
+        817.0,
+        476.031281
+      ],
+      "ang": [
+        4.530823,
+        -74.090767
+      ]
+    },
+    {
+      "name": "Mid Incendiary",
+      "desc": "running Jumpthrow \n on banana bench",
+      "type": 46,
+      "img": "",
+      "pos": [
+        -2275.0,
+        842.0,
+        476.031281
+      ],
+      "ang": [
+        4.530823,
+        -74.090767
+      ]
+    }
+  ]
+}
