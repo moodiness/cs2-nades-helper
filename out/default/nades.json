@@ -8817,440 +8817,6 @@
         ]
       },
       {
-        "name": "Instant Window Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1296.000244,
-          -352.0,
-          -167.96875
-        ],
-        "ang": [
-          -42.719299,
-          -173.902924
-        ]
-      },
-      {
-        "name": "Instant Window Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1216.0,
-          -16.0,
-          -163.96875
-        ],
-        "ang": [
-          -44.78302,
-          -166.542435
-        ]
-      },
-      {
-        "name": "Instant Window Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1216.0,
-          -115.0,
-          -163.96875
-        ],
-        "ang": [
-          -45.383835,
-          -168.23639
-        ]
-      },
-      {
-        "name": "Instant Window Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1216.0,
-          -211.0,
-          -163.96875
-        ],
-        "ang": [
-          -45.938293,
-          -170.29599
-        ]
-      },
-      {
-        "name": "Instant Connector Smoke",
-        "desc": "crouched Jumpthrow",
-        "type": 45,
-        "pos": [
-          1273.241211,
-          -354.42041,
-          -163.96875
-        ],
-        "ang": [
-          -46.528473,
-          -168.154678
-        ]
-      },
-      {
-        "name": "Instant B Short Boost Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1273.241211,
-          -354.42041,
-          -163.96875
-        ],
-        "ang": [
-          -42.27298,
-          170.777649
-        ]
-      },
-      {
-        "name": "Instant Top Con Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1273.241211,
-          -354.42041,
-          -163.96875
-        ],
-        "ang": [
-          -45.630005,
-          -156.112289
-        ]
-      },
-      {
-        "name": "Instant Connector Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1193.740601,
-          -21.329468,
-          -163.96875
-        ],
-        "ang": [
-          -54.130669,
-          -156.871033
-        ]
-      },
-      {
-        "name": "Instant B Short Boost Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1193.740601,
-          -21.329468,
-          -163.96875
-        ],
-        "ang": [
-          -48.66394,
-          179.52002
-        ]
-      },
-      {
-        "name": "Instant Top Con Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1193.740601,
-          -21.329468,
-          -163.96875
-        ],
-        "ang": [
-          -40.917892,
-          -148.170197
-        ]
-      },
-      {
-        "name": "Instant Connector Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1193.575317,
-          -119.565796,
-          -163.96875
-        ],
-        "ang": [
-          -54.96254,
-          -159.428787
-        ]
-      },
-      {
-        "name": "Instant B Short Boost Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1193.575317,
-          -119.565796,
-          -163.96875
-        ],
-        "ang": [
-          -48.525238,
-          176.593201
-        ]
-      },
-      {
-        "name": "Instant Top Con Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1193.575073,
-          -119.565796,
-          -163.96875
-        ],
-        "ang": [
-          -41.657074,
-          -150.126114
-        ]
-      },
-      {
-        "name": "Instant Connector Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1192.877,
-          -214.94556,
-          -163.96875
-        ],
-        "ang": [
-          -55.563354,
-          -161.90277
-        ]
-      },
-      {
-        "name": "Instant B Short Boost Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1192.877,
-          -214.94556,
-          -163.96875
-        ],
-        "ang": [
-          -47.509087,
-          174.22678
-        ]
-      },
-      {
-        "name": "Instant Top Con Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1192.877,
-          -214.94556,
-          -163.96875
-        ],
-        "ang": [
-          -56.564484,
-          -147.27242
-        ]
-      },
-      {
-        "name": "Instant Window Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1296.0,
-          32.0,
-          -167.96875
-        ],
-        "ang": [
-          -29.013519,
-          -165.977661
-        ]
-      },
-      {
-        "name": "Instant Connector Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1273.786255,
-          26.431511,
-          -167.96875
-        ],
-        "ang": [
-          -51.327789,
-          -156.552429
-        ]
-      },
-      {
-        "name": "Instant B Short Boost Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1273.786255,
-          26.431511,
-          -167.96875
-        ],
-        "ang": [
-          -43.042667,
-          -179.190445
-        ]
-      },
-      {
-        "name": "Instant Top Con Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1273.786255,
-          26.431511,
-          -167.96875
-        ],
-        "ang": [
-          -30.460968,
-          -148.113556
-        ]
-      },
-      {
-        "name": "Top Mid Smoke",
-        "desc": "standing throw",
-        "type": 45,
-        "pos": [
-          1422.968018,
-          70.96875,
-          -112.46875
-        ],
-        "ang": [
-          -37.787838,
-          -161.351593
-        ]
-      },
-      {
-        "name": "Top Connector Smoke",
-        "desc": "crouch-walking Jumpthrow",
-        "type": 45,
-        "pos": [
-          1422.968628,
-          36.46875,
-          -167.96875
-        ],
-        "ang": [
-          -33.907051,
-          -149.878662
-        ]
-      },
-      {
-        "name": "Connector Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1422.96875,
-          36.468685,
-          -167.96875
-        ],
-        "ang": [
-          -17.490644,
-          -157.783752
-        ]
-      },
-      {
-        "name": "A Ramp Lurk Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1422.96875,
-          36.465752,
-          -167.96875
-        ],
-        "ang": [
-          -20.22015,
-          -128.776367
-        ]
-      },
-      {
-        "name": "A Stairs Smoke",
-        "desc": "crouched W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1422.96875,
-          36.46875,
-          -167.96875
-        ],
-        "ang": [
-          -41.85714,
-          -140.113037
-        ]
-      },
-      {
-        "name": "A Bench Smoke",
-        "desc": "standing W-Jumpthrow",
-        "type": 45,
-        "pos": [
-          1422.96875,
-          36.468746,
-          -167.96875
-        ],
-        "ang": [
-          -29.721941,
-          -142.763275
-        ]
-      },
-      {
-        "name": "Window Smoke",
-        "desc": "hold D + standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1389.463623,
-          70.96875,
-          -167.96875
-        ],
-        "ang": [
-          -35.312191,
-          -162.251877
-        ]
-      },
-      {
-        "name": "B Left Pillar Smoke",
-        "desc": "walking Jumpthrow",
-        "type": 45,
-        "pos": [
-          1455.96875,
-          -198.287292,
-          -147.96875
-        ],
-        "ang": [
-          -30.549862,
-          167.718231
-        ]
-      },
-      {
-        "name": "B Short Boost Smoke",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1422.968384,
-          -367.96875,
-          -167.96875
-        ],
-        "ang": [
-          -38.188271,
-          171.436615
-        ]
-      },
-      {
-        "name": "Kitchen Window Smoke",
-        "desc": "running Jumpthrow",
-        "type": 45,
-        "pos": [
-          1135.966187,
-          647.976257,
-          -259.467407
-        ],
-        "ang": [
-          -19.773579,
-          -163.498383
-        ]
-      },
-      {
-        "name": "B Back-Site Smoke",
-        "desc": "running Jumpthrow",
-        "type": 45,
-        "pos": [
-          1359.684692,
-          519.968506,
-          -258.837463
-        ],
-        "ang": [
-          -24.239559,
-          -173.893616
-        ]
-      },
-      {
         "name": "B Window Lurk Smoke",
         "desc": "running Jumpthrow",
         "type": 45,
@@ -9318,20 +8884,6 @@
         "ang": [
           -24.839674,
           4.644435
-        ]
-      },
-      {
-        "name": "Connector Solo Flash",
-        "desc": "standing throw",
-        "type": 43,
-        "pos": [
-          -1039.971191,
-          -327.166321,
-          -367.96875
-        ],
-        "ang": [
-          -8.208212,
-          -72.629089
         ]
       },
       {
@@ -9420,20 +8972,20 @@
       },
       {
         "name": "Kitchen Window Smoke",
-        "desc": "standing Jumpthrow",
+        "desc": "standing M1+M2 throw",
         "type": 45,
         "pos": [
-          -1969.032471,
-          450.03125,
+          -1969.0312,
+          450.05014,
           -159.96875
         ],
         "ang": [
-          -7.992294,
-          -141.085587
+          -43.25665,
+          -86.59851
         ]
       },
       {
-        "name": "L Molotov",
+        "name": "L Molotov/Flash",
         "desc": "standing M1+M2 Jumpthrow",
         "type": 46,
         "pos": [
@@ -9444,16 +8996,6 @@
         "ang": [
           8.685906,
           -117.877739
-        ]
-      },
-      {
-        "name": "L Solo Flash",
-        "desc": "",
-        "type": 43,
-        "pos": [
-          -1969.03186,
-          450.03125,
-          -159.96875
         ]
       },
       {
@@ -9587,13 +9129,13 @@
         "desc": "standing throw",
         "type": 43,
         "pos": [
-          -896.160889,
-          -788.968628,
+          -896.68854,
+          -788.9671,
           -221.96875
         ],
         "ang": [
-          -16.939821,
-          91.147476
+          -16.585304,
+          90.90889
         ]
       },
       {
@@ -9601,27 +9143,13 @@
         "desc": "standing throw",
         "type": 45,
         "pos": [
-          -968.031311,
-          -380.012878,
-          -345.958618
+          -968.03125,
+          -380.0083,
+          -345.96094
         ],
         "ang": [
-          -58.612221,
-          -76.465683
-        ]
-      },
-      {
-        "name": "Window Smoke",
-        "desc": "standing throw",
-        "type": 45,
-        "pos": [
-          -968.088501,
-          -379.956848,
-          -345.986633
-        ],
-        "ang": [
-          -35.188885,
-          -123.758362
+          -58.612057,
+          -76.33409
         ]
       },
       {
@@ -9629,13 +9157,13 @@
         "desc": "standing throw",
         "type": 46,
         "pos": [
-          -968.033447,
-          -380.010742,
-          -345.959717
+          -968.03125,
+          -380.0083,
+          -345.96094
         ],
         "ang": [
-          -29.383249,
-          -114.390862
+          -29.244385,
+          -114.35695
         ]
       },
       {
@@ -9643,13 +9171,13 @@
         "desc": "standing M2 Jumpthrow",
         "type": 43,
         "pos": [
-          -801.967773,
-          -788.966797,
+          -801.96875,
+          -788.968,
           -261.96875
         ],
         "ang": [
-          7.823155,
-          160.958893
+          7.807933,
+          160.85114
         ]
       },
       {
@@ -9727,13 +9255,13 @@
         "desc": "running throw",
         "type": 43,
         "pos": [
-          -930.03125,
-          -788.968567,
+          -930.03845,
+          -788.96875,
           -261.96875
         ],
         "ang": [
-          -21.590744,
-          66.239624
+          -21.575155,
+          66.25758
         ]
       },
       {
@@ -9825,13 +9353,13 @@
         "desc": "standing Jumpthrow",
         "type": 45,
         "pos": [
-          -161.03125,
-          576.001892,
-          -69.767273
+          -161.03113,
+          576.04974,
+          -69.76727
         ],
         "ang": [
-          -8.115986,
-          -154.723755
+          -8.083999,
+          -154.85477
         ]
       },
       {
@@ -9840,12 +9368,12 @@
         "type": 45,
         "pos": [
           -463.96875,
-          887.968628,
+          887.9499,
           -71.96875
         ],
         "ang": [
-          -9.898974,
-          -91.209969
+          -10.348376,
+          -91.29849
         ]
       },
       {
@@ -9905,20 +9433,6 @@
         ]
       },
       {
-        "name": "Jungle Smoke",
-        "desc": "move around the corner, then \n walking/running throw",
-        "type": 45,
-        "pos": [
-          288.03125,
-          -2374.966797,
-          -39.96875
-        ],
-        "ang": [
-          -0.797305,
-          138.105606
-        ]
-      },
-      {
         "name": "CT Smoke",
         "desc": "running Jumpthrow",
         "type": 45,
@@ -9951,13 +9465,13 @@
         "desc": "standing throw",
         "type": 43,
         "pos": [
-          837.080261,
-          -1036.036621,
+          837.682,
+          -1036.0312,
           -251.96875
         ],
         "ang": [
-          -35.912926,
-          -148.697449
+          -37.375534,
+          -148.82162
         ]
       },
       {
@@ -9965,13 +9479,13 @@
         "desc": "move into Ramp corner, then \n crouched Jumpthrow",
         "type": 45,
         "pos": [
-          621.484436,
-          -1200.156982,
-          -255.2146
+          621.5229,
+          -1200.0563,
+          -255.20593
         ],
         "ang": [
-          3.449364,
-          -177.372955
+          4.219841,
+          -177.20404
         ]
       },
       {
@@ -10101,20 +9615,6 @@
         ]
       },
       {
-        "name": "Jungle Smoke",
-        "desc": "",
-        "type": 45,
-        "pos": [
-          283.046814,
-          -1598.805664,
-          -175.96875
-        ],
-        "ang": [
-          -13.336483,
-          174.0522
-        ]
-      },
-      {
         "name": "Triple (A Split) Smoke",
         "desc": "standing Jumpthrow",
         "type": 45,
@@ -10161,13 +9661,13 @@
         "desc": "standing throw",
         "type": 46,
         "pos": [
-          176.035324,
-          -230.206909,
+          176.05244,
+          -230.04224,
           -151.96875
         ],
         "ang": [
-          -11.253135,
-          -145.045883
+          -11.641963,
+          -144.97739
         ]
       },
       {
@@ -10185,13 +9685,13 @@
         "desc": "standing Jumpthrow",
         "type": 45,
         "pos": [
-          176.035324,
-          -230.206909,
+          176.05244,
+          -230.04224,
           -151.96875
         ],
         "ang": [
-          -1.058283,
-          -129.862595
+          -0.7541669,
+          -129.74646
         ]
       },
       {
@@ -10199,13 +9699,13 @@
         "desc": "walking Jumpthrow",
         "type": 43,
         "pos": [
-          270.913483,
-          -130.755676,
+          271.54556,
+          -129.86957,
           -165.46875
         ],
         "ang": [
-          0.882116,
-          -128.446075
+          0.031177975,
+          -128.41187
         ]
       },
       {
@@ -10279,13 +9779,13 @@
         "desc": "standing throw",
         "type": 45,
         "pos": [
-          502.968475,
+          502.96875,
           -64.03125,
-          -160.002014
+          -160.00208
         ],
         "ang": [
-          -14.502429,
-          -147.124283
+          -14.090597,
+          -147.15317
         ]
       },
       {
@@ -10293,13 +9793,13 @@
         "desc": "standing throw",
         "type": 45,
         "pos": [
-          176.035324,
-          -230.206909,
+          176.05244,
+          -230.04224,
           -151.96875
         ],
         "ang": [
-          1.359559,
-          -143.748154
+          0.89361614,
+          -143.86835
         ]
       },
       {
@@ -10307,13 +9807,13 @@
         "desc": "running throw",
         "type": 46,
         "pos": [
-          336.375031,
-          -157.207947,
-          -165.769775
+          302.9658,
+          -172.69788,
+          -168.31854
         ],
         "ang": [
-          -16.56599,
-          -153.263138
+          -17.093605,
+          -153.26746
         ]
       },
       {
@@ -10335,27 +9835,13 @@
         "desc": "running throw",
         "type": 46,
         "pos": [
-          336.375031,
-          -157.207947,
-          -165.769775
+          302.9658,
+          -172.69788,
+          -168.31854
         ],
         "ang": [
-          -4.57385,
-          -146.388794
-        ]
-      },
-      {
-        "name": "Top Connector Smoke",
-        "desc": "",
-        "type": 45,
-        "pos": [
-          421.963989,
-          350.038025,
-          -251.96875
-        ],
-        "ang": [
-          -37.679874,
-          -128.741379
+          -4.7736106,
+          -145.96796
         ]
       },
       {
@@ -10363,13 +9849,13 @@
         "desc": "standing Jumpthrow",
         "type": 45,
         "pos": [
-          421.963989,
-          350.038025,
+          422.02286,
+          350.06287,
           -251.96875
         ],
         "ang": [
-          -30.441906,
-          -125.183777
+          -30.522589,
+          -125.12302
         ]
       },
       {
@@ -10429,31 +9915,17 @@
         ]
       },
       {
-        "name": "Bench Smoke (tall) \n (needs stairs smoke)",
+        "name": "Bench Smoke (deep) \n (needs stairs smoke)",
         "desc": "standing Jumpthrow",
         "type": 45,
         "pos": [
-          1127.96875,
-          -1183.968384,
-          -256.070435
+          1239.9686,
+          -1128.0128,
+          -254.24847
         ],
         "ang": [
-          -34.634598,
-          -169.3116
-        ]
-      },
-      {
-        "name": "CT Smoke (tall)",
-        "desc": "standing Jumpthrow",
-        "type": 45,
-        "pos": [
-          1088.312744,
-          -1015.731506,
-          -257.894775
-        ],
-        "ang": [
-          -29.106056,
-          -143.74292
+          -20.912106,
+          -169.22412
         ]
       },
       {
@@ -10475,13 +9947,13 @@
         "desc": "standing Jumpthrow",
         "type": 45,
         "pos": [
-          1239.96875,
-          -1159.967651,
-          -246.394592
+          1239.944,
+          -1159.9688,
+          -246.3974
         ],
         "ang": [
-          -24.347551,
-          -176.190918
+          -24.56274,
+          -176.32571
         ]
       },
       {
@@ -10489,13 +9961,13 @@
         "desc": "standing W-Jumpthrow",
         "type": 45,
         "pos": [
-          1239.968506,
-          -1159.96875,
-          -246.394287
+          1239.944,
+          -1159.9688,
+          -246.3974
         ],
         "ang": [
-          -27.150347,
-          168.393143
+          -27.103735,
+          168.38226
         ]
       },
       {
@@ -10538,6 +10010,398 @@
         "ang": [
           -37.710819,
           146.682327
+        ]
+      },
+      {
+        "name": "Bench Smoke",
+        "desc": "standing Jumpthrow",
+        "type": 45,
+        "pos": [
+          1239.9438,
+          -1128.0067,
+          -254.25189
+        ],
+        "ang": [
+          -46.692047,
+          -166.85675
+        ]
+      },
+      {
+        "name": "Stairs+Sandwich Molotov",
+        "desc": "walking Jumpthrow",
+        "type": 46,
+        "pos": [
+          1239.9515,
+          -1128.0352,
+          -254.25037
+        ],
+        "ang": [
+          -2.986922,
+          -164.13113
+        ]
+      },
+      {
+        "name": "B Short Boost Smoke",
+        "desc": "standing Jumpthrow",
+        "type": 45,
+        "pos": [
+          1422.968384,
+          -367.96875,
+          -167.96875
+        ],
+        "ang": [
+          -38.188271,
+          171.436615
+        ]
+      },
+      {
+        "name": "B Left Pillar Smoke",
+        "desc": "walking Jumpthrow",
+        "type": 45,
+        "pos": [
+          1455.96875,
+          -198.287292,
+          -147.96875
+        ],
+        "ang": [
+          -30.549862,
+          167.718231
+        ]
+      },
+      {
+        "name": "B Back-Site Smoke",
+        "desc": "running Jumpthrow",
+        "type": 45,
+        "pos": [
+          1359.684692,
+          519.968506,
+          -258.837463
+        ],
+        "ang": [
+          -24.239559,
+          -173.893616
+        ]
+      },
+      {
+        "name": "Kitchen Window Smoke",
+        "desc": "running Jumpthrow",
+        "type": 45,
+        "pos": [
+          1135.966187,
+          647.976257,
+          -259.467407
+        ],
+        "ang": [
+          -19.773579,
+          -163.498383
+        ]
+      },
+      {
+        "name": "Top Mid Smoke",
+        "desc": "standing throw",
+        "type": 45,
+        "pos": [
+          1422.9436,
+          36.46875,
+          -167.96875
+        ],
+        "ang": [
+          -42.348778,
+          -160.67654
+        ]
+      },
+      {
+        "name": "Top Connector Smoke",
+        "desc": "crouch-walking Jumpthrow",
+        "type": 45,
+        "pos": [
+          1422.968628,
+          36.46875,
+          -167.96875
+        ],
+        "ang": [
+          -33.907051,
+          -149.878662
+        ]
+      },
+      {
+        "name": "Connector Smoke",
+        "desc": "standing Jumpthrow",
+        "type": 45,
+        "pos": [
+          1422.96875,
+          36.468685,
+          -167.96875
+        ],
+        "ang": [
+          -17.490644,
+          -157.783752
+        ]
+      },
+      {
+        "name": "A Ramp Lurk Smoke",
+        "desc": "standing Jumpthrow",
+        "type": 45,
+        "pos": [
+          1422.96875,
+          36.465752,
+          -167.96875
+        ],
+        "ang": [
+          -20.22015,
+          -128.776367
+        ]
+      },
+      {
+        "name": "A Stairs Smoke",
+        "desc": "",
+        "type": 45,
+        "pos": [
+          1422.96875,
+          36.46875,
+          -167.96875
+        ],
+        "ang": [
+          -41.85714,
+          -140.113037
+        ]
+      },
+      {
+        "name": "A Bench Smoke",
+        "desc": "crouched/standing \n W-Jumpthrows",
+        "type": 45,
+        "pos": [
+          1422.96875,
+          36.468746,
+          -167.96875
+        ],
+        "ang": [
+          -29.721941,
+          -142.763275
+        ]
+      },
+      {
+        "name": "Window Smoke",
+        "desc": "sideways running Jumpthrow",
+        "type": 45,
+        "pos": [
+          1422.9706,
+          36.465374,
+          -167.96875
+        ],
+        "ang": [
+          -20.388433,
+          163.50204
+        ]
+      },
+      {
+        "name": "Instant Window Smoke",
+        "desc": "standing W+Jumpthrow",
+        "type": 45,
+        "pos": [
+          1296.000244,
+          -352.0,
+          -167.96875
+        ],
+        "ang": [
+          -42.719299,
+          -173.902924
+        ]
+      },
+      {
+        "name": "Instant Window Smoke",
+        "desc": "standing W+Jumpthrow",
+        "type": 45,
+        "pos": [
+          1216.0,
+          -16.0,
+          -163.96875
+        ],
+        "ang": [
+          -44.78302,
+          -166.542435
+        ]
+      },
+      {
+        "name": "Instant Window Smoke",
+        "desc": "standing W+Jumpthrow",
+        "type": 45,
+        "pos": [
+          1216.0,
+          -115.0,
+          -163.96875
+        ],
+        "ang": [
+          -45.491638,
+          -168.498688
+        ]
+      },
+      {
+        "name": "Instant Window Smoke",
+        "desc": "standing W+Jumpthrow",
+        "type": 45,
+        "pos": [
+          1216.000244,
+          -211.0,
+          -163.96875
+        ],
+        "ang": [
+          -46.030655,
+          -170.26474
+        ]
+      },
+      {
+        "name": "Instant Window Smoke",
+        "desc": "standing W+Jumpthrow",
+        "type": 45,
+        "pos": [
+          1296.0,
+          32.0,
+          -167.96875
+        ],
+        "ang": [
+          -29.013519,
+          -165.977661
+        ]
+      },
+      {
+        "name": "Instant Top Mid Smoke",
+        "desc": "standing throw",
+        "type": 45,
+        "pos": [
+          1216.0,
+          -211.0,
+          -163.96875
+        ],
+        "ang": [
+          -56.710224,
+          -167.687408
+        ]
+      },
+      {
+        "name": "Instant Top Mid Smoke",
+        "desc": "standing throw",
+        "type": 45,
+        "pos": [
+          1216.0,
+          -115.0,
+          -163.96875
+        ],
+        "ang": [
+          -56.540794,
+          -164.745483
+        ]
+      },
+      {
+        "name": "Instant Top Mid Smoke",
+        "desc": "standing throw",
+        "type": 45,
+        "pos": [
+          1216.0,
+          -16.0,
+          -163.96875
+        ],
+        "ang": [
+          -58.596779,
+          -158.30925
+        ]
+      },
+      {
+        "name": "Instant Top Mid Smoke",
+        "desc": "standing throw",
+        "type": 45,
+        "pos": [
+          1296.0,
+          -352.0,
+          -167.96875
+        ],
+        "ang": [
+          -54.369411,
+          -174.372162
+        ]
+      },
+      {
+        "name": "Instant Top Mid Smoke",
+        "desc": "standing throw",
+        "type": 45,
+        "pos": [
+          1296.0,
+          32.0,
+          -167.96875
+        ],
+        "ang": [
+          -51.689762,
+          -160.835419
+        ]
+      },
+      {
+        "name": "Instant Connector Smoke",
+        "desc": "standing S+Jumpthrow",
+        "type": 45,
+        "pos": [
+          1296.0,
+          32.000023,
+          -167.96875
+        ],
+        "ang": [
+          -33.417957,
+          -157.230499
+        ]
+      },
+      {
+        "name": "Instant Connector Smoke",
+        "desc": "standing Jumpthrow",
+        "type": 45,
+        "pos": [
+          1216.0,
+          -16.0,
+          -163.96875
+        ],
+        "ang": [
+          -52.521122,
+          -156.601166
+        ]
+      },
+      {
+        "name": "Instant Top Con Smoke",
+        "desc": "standing W+Jumpthrow",
+        "type": 45,
+        "pos": [
+          1216.0,
+          -16.0,
+          -163.96875
+        ],
+        "ang": [
+          -36.313599,
+          -148.312012
+        ]
+      },
+      {
+        "name": "Instant Connector Smoke",
+        "desc": "standing Jumpthrow",
+        "type": 45,
+        "pos": [
+          1216.0,
+          -211.0,
+          -163.96875
+        ],
+        "ang": [
+          -55.085743,
+          -161.969727
+        ]
+      },
+      {
+        "name": "Instant Top Con Smoke",
+        "desc": "standing W+Jumpthrow",
+        "type": 45,
+        "pos": [
+          1216.0,
+          -115.0,
+          -163.96875
+        ],
+        "ang": [
+          -41.272552,
+          -150.160461
         ]
       }
     ],
