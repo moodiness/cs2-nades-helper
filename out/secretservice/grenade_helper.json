@@ -4426,15 +4426,15 @@
     },
     {
       "Angle": [
-        -31.046227,
-        -165.33896
+        -31.5699,
+        -165.17395
       ],
       "Desc": "standing M1+M2 Jumpthrow",
       "MapName": "de_cache",
       "Nade": "smoke",
       "Name": "A Cross Waterfall Smoke",
       "Pos": [
-        1315.9491,
+        1315.942,
         1587.9688,
         1704.0312
       ]
@@ -4456,32 +4456,32 @@
     },
     {
       "Angle": [
-        -11.950374,
-        174.00754
+        -11.919453,
+        173.99055
       ],
       "Desc": "standing throw",
       "MapName": "de_cache",
       "Nade": "smoke",
       "Name": "Criss-Cross Smoke",
       "Pos": [
-        1764.0312,
-        194.1177,
-        1612.0034
+        1765.5312,
+        193.9153,
+        1611.9829
       ]
     },
     {
       "Angle": [
-        -11.703962,
-        -174.5657
+        -11.549831,
+        -174.55095
       ],
       "Desc": "standing throw",
       "MapName": "de_cache",
       "Nade": "smoke",
       "Name": "Criss-Cross Smoke",
       "Pos": [
-        1764.0845,
-        311.24655,
-        1612.0027
+        1765.5312,
+        311.37863,
+        1611.9829
       ]
     },
     {
@@ -4591,16 +4591,16 @@
     },
     {
       "Angle": [
-        2.0175362,
-        -25.162724
+        2.3988051,
+        -24.002708
       ],
       "Desc": "crouched W-Jumpthrow",
       "MapName": "de_cache",
       "Nade": "flash",
       "Name": "A Site Flash/Molotov",
       "Pos": [
-        162.03125,
-        2076.036,
+        162.05127,
+        2076.0312,
         1688.0312
       ]
     },
@@ -4711,17 +4711,17 @@
     },
     {
       "Angle": [
-        -2.6485226,
-        157.13583
+        -2.2330015,
+        160.31612
       ],
       "Desc": "standing M1+M2 W-Jumpthrow",
       "MapName": "de_cache",
       "Nade": "smoke",
       "Name": "B CT Smoke",
       "Pos": [
-        797.478,
-        -1449.968,
-        1613.0312
+        823.9685,
+        -1435.9688,
+        1612.0312
       ]
     },
     {
@@ -4801,16 +4801,16 @@
     },
     {
       "Angle": [
-        -21.343857,
-        137.64151
+        -53.884365,
+        134.09653
       ],
-      "Desc": "standing Jumpthrow",
+      "Desc": "standing W-Jumpthrow",
       "MapName": "de_cache",
       "Nade": "smoke",
       "Name": "Highway Smoke",
       "Pos": [
-        1399.9666,
-        -384.97986,
+        1372.1974,
+        -419.9679,
         1612.0312
       ]
     },
@@ -4966,31 +4966,16 @@
     },
     {
       "Angle": [
-        -16.720804,
-        26.782658
+        2.7876978,
+        25.204449
       ],
-      "Desc": "running throw",
+      "Desc": "running M1+M2 Jumpthrow",
       "MapName": "de_cache",
       "Nade": "incendiary",
       "Name": "Boost Incendiary",
       "Pos": [
-        -401.90173,
-        -31.276672,
-        1666.7812
-      ]
-    },
-    {
-      "Angle": [
-        7.487938,
-        25.273415
-      ],
-      "Desc": "walking Jumpthrow/ \n running Jumpthrow",
-      "MapName": "de_cache",
-      "Nade": "incendiary",
-      "Name": "Boost Incendiary",
-      "Pos": [
-        -401.90173,
-        -31.276672,
+        -432.41248,
+        -32.048645,
         1666.7812
       ]
     },
@@ -5277,6 +5262,156 @@
         3041.76,
         -21.080017,
         1608.0314
+      ]
+    },
+    {
+      "Angle": [
+        -45.509132,
+        -175.33582
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "A Backsite Smoke",
+      "Pos": [
+        1315.9427,
+        1587.9688,
+        1704.0312
+      ]
+    },
+    {
+      "Angle": [
+        -13.401562,
+        149.42609
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "flash",
+      "Name": "A Site Support Flash",
+      "Pos": [
+        1315.9264,
+        1243.9333,
+        1686.2422
+      ]
+    },
+    {
+      "Angle": [
+        -40.67535,
+        -177.19547
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_cache",
+      "Nade": "molotov",
+      "Name": "Catwalk Corner Molotov",
+      "Pos": [
+        1315.9418,
+        1327.6791,
+        1704.0312
+      ]
+    },
+    {
+      "Angle": [
+        -3.4533932,
+        -87.987564
+      ],
+      "Desc": "walk infront of door handle, then \n open & standing throw",
+      "MapName": "de_cache",
+      "Nade": "molotov",
+      "Name": "Forklift Molotov",
+      "Pos": [
+        162.0429,
+        2303.9688,
+        1688.0312
+      ]
+    },
+    {
+      "Angle": [
+        -35.885723,
+        -152.23618
+      ],
+      "Desc": "crouched M1+M2 throw",
+      "MapName": "de_cache",
+      "Nade": "flash",
+      "Name": "A Site Flash",
+      "Pos": [
+        292.81308,
+        2076.0588,
+        1688.0312
+      ]
+    },
+    {
+      "Angle": [
+        -48.032562,
+        -168.66931
+      ],
+      "Desc": "running Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "B Main Smoke",
+      "Pos": [
+        2694.7092,
+        104.96875,
+        1616.0312
+      ]
+    },
+    {
+      "Angle": [
+        -11.472866,
+        176.3769
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "Boost Extinguish Smoke",
+      "Pos": [
+        3007.7715,
+        365.96875,
+        1616.0303
+      ]
+    },
+    {
+      "Angle": [
+        -11.857853,
+        179.33417
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_cache",
+      "Nade": "flash",
+      "Name": "Mid Flash",
+      "Pos": [
+        1765.5312,
+        193.9153,
+        1611.9829
+      ]
+    },
+    {
+      "Angle": [
+        -9.68635,
+        -150.5732
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "Connector Smoke",
+      "Pos": [
+        1451.8958,
+        957.96875,
+        1612.0312
+      ]
+    },
+    {
+      "Angle": [
+        4.45078,
+        -128.999
+      ],
+      "Desc": "W+D running Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "molotov",
+      "Name": "Sandbags Molotov",
+      "Pos": [
+        1451.8958,
+        957.96875,
+        1612.0312
       ]
     },
     {
