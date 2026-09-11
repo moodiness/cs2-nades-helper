@@ -5221,16 +5221,16 @@
     },
     {
       "Angle": [
-        -8.439209,
-        170.51123
+        -12.551193,
+        170.89575
       ],
-      "Desc": "standing W-Jumpthrow",
+      "Desc": "standing Jumpthrow",
       "MapName": "de_cache",
       "Nade": "smoke",
       "Name": "Instant Boost Smoke",
       "Pos": [
-        3019.2686,
-        225.41779,
+        2922.5186,
+        165.66779,
         1616.0303
       ]
     },
@@ -5356,17 +5356,17 @@
     },
     {
       "Angle": [
-        -11.472866,
-        176.3769
+        -16.524124,
+        175.74005
       ],
       "Desc": "standing Jumpthrow",
       "MapName": "de_cache",
       "Nade": "smoke",
       "Name": "Boost Extinguish Smoke",
       "Pos": [
-        3007.7715,
-        365.96875,
-        1616.0303
+        3197.9688,
+        365.96594,
+        1616.0312
       ]
     },
     {
@@ -5412,6 +5412,81 @@
         1451.8958,
         957.96875,
         1612.0312
+      ]
+    },
+    {
+      "Angle": [
+        -18.248968,
+        -166.29637
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_cache",
+      "Nade": "flash",
+      "Name": "B Main GOD Flash",
+      "Pos": [
+        1453.9614,
+        -602.03125,
+        1612.0316
+      ]
+    },
+    {
+      "Angle": [
+        -11.334928,
+        168.4896
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "Instant Boost Smoke",
+      "Pos": [
+        2916.7686,
+        69.417786,
+        1608.0314
+      ]
+    },
+    {
+      "Angle": [
+        -10.734876,
+        163.48512
+      ],
+      "Desc": "standing Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "Instant Boost Smoke",
+      "Pos": [
+        2949.0186,
+        -47.0,
+        1608.0314
+      ]
+    },
+    {
+      "Angle": [
+        -11.936981,
+        169.08887
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "Instant Boost Smoke",
+      "Pos": [
+        3037.8936,
+        66.667786,
+        1608.0314
+      ]
+    },
+    {
+      "Angle": [
+        -11.814423,
+        166.7608
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_cache",
+      "Nade": "smoke",
+      "Name": "Instant Boost Smoke",
+      "Pos": [
+        3041.7686,
+        -21.082214,
+        1608.0314
       ]
     },
     {
