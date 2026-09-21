@@ -1,0 +1,4021 @@
+{
+  "lineups": [
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "6b4b810ae8985a35a766adb0be91ba8b",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Main Flash",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -1282.635498,
+        898.564209,
+        0.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -13.656453,
+        -82.972549
+      ],
+      "target_end": [
+        -1247.08667,
+        32.240402,
+        446.866882
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "8d86e72e92ce57808a24cf425569fe3a",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "B Main Smoke",
+      "notes": "running throw",
+      "origin": [
+        -1023.322632,
+        800.749512,
+        -3.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        2.960139,
+        -162.344666
+      ],
+      "target_end": [
+        -1570.615112,
+        365.037689,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "c3838f1b6dea526489eb31891ea474fa",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A Main Smoke",
+      "notes": "crouched throw",
+      "origin": [
+        -1060.546143,
+        776.032043,
+        -1.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -48.75304,
+        2.445618
+      ],
+      "target_end": [
+        1260.562988,
+        875.154236,
+        -149.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "grenade",
+      "id": "05a337d740fb51919efd1dccc7ca27e8",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "",
+      "notes": "",
+      "origin": [
+        -830.757141,
+        313.385254,
+        -55.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        31.419003,
+        -28.450928
+      ],
+      "target_end": [
+        -554.382568,
+        163.629639,
+        -99.7649
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "94b7805c42295662be49fbf9a3ed054a",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Dark Solo Flash / \n Reveal HE nade",
+      "notes": "standing M2 Jumpthrow",
+      "origin": [
+        -830.757141,
+        313.385254,
+        -55.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "secondary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        31.419003,
+        -28.450928
+      ],
+      "target_end": [
+        -554.382568,
+        163.629639,
+        -99.7649
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "d28d3f41531e5772926c82711ebd0aea",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant T-stairs Smoke",
+      "notes": "standing jumpthrow",
+      "origin": [
+        -560.0,
+        2192.0,
+        25.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -31.477531,
+        -58.56796
+      ],
+      "target_end": [
+        859.8739,
+        -138.05864,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "83a7234dc6ed53e8a07ac9c8a8624f5d",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Rugs Smoke",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -560.0,
+        2192.0,
+        25.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -28.181992,
+        -43.383636
+      ],
+      "target_end": [
+        1394.3411,
+        580.7293,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "5269a71877cc5b93974a7b3ab47d56a3",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant T-stairs Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -608.0,
+        2120.0,
+        16.056595
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -27.103956,
+        -56.36515
+      ],
+      "target_end": [
+        834.690735,
+        -130.553513,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "bcdf3cbad57157e3adb674e9dbdaf94e",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Rugs Smoke",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -608.0,
+        2120.0,
+        16.056595
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -37.144775,
+        -40.995819
+      ],
+      "target_end": [
+        1409.07605,
+        577.177368,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "6b19b90823f854f187e4b8c16002369b",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant T-stairs Smoke",
+      "notes": "standing jumpthrow",
+      "origin": [
+        -400.0,
+        2192.0,
+        25.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -39.40865,
+        -62.511524
+      ],
+      "target_end": [
+        806.19855,
+        -126.22069,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "c788e5a7bffc5268b89e4ef37d32ae78",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Rugs Smoke",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -400.0,
+        2192.0,
+        25.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -40.342834,
+        -45.434296
+      ],
+      "target_end": [
+        1436.6903,
+        562.96234,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "58450c0cb33854448fca51da77f6a4c3",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant T-stairs Smoke",
+      "notes": "standing jumpthrow",
+      "origin": [
+        -476.0,
+        2216.0,
+        25.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -31.785591,
+        -61.10305
+      ],
+      "target_end": [
+        845.3274,
+        -177.88927,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "9d7f3b2797df584a98dc2926489300a8",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Rugs Smoke",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -476.0,
+        2216.0,
+        25.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -31.385193,
+        -45.703125
+      ],
+      "target_end": [
+        1372.532,
+        549.3079,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "grenade",
+      "id": "85c61254d42f52549797efbc1594583d",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Window Reveal HE",
+      "notes": "standing throw",
+      "origin": [
+        141.03125,
+        732.027649,
+        -30.74646
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -19.631598,
+        109.842102
+      ],
+      "target_end": [
+        -41.723339,
+        647.175659,
+        62.309315
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "a29eca92e1e85eb8aa551446a925e80d",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "walking",
+      "name": "Bridge Solo Flash",
+      "notes": "walking throw",
+      "origin": [
+        54.335072,
+        786.364807,
+        2.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -6.329149,
+        -17.943516
+      ],
+      "target_end": [
+        -32.852104,
+        579.150818,
+        22.951097
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "d0e214b980e6558695e82549ed926cf5",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Push Incendiary",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        54.790054,
+        617.964966,
+        0.201843
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        2.451908,
+        -125.344772
+      ],
+      "target_end": [
+        -831.877197,
+        -632.044189,
+        127.513268
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "26a7c203de8d520b95cd2ecb7aa47327",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "walking",
+      "name": "T-Stairs Incendiary",
+      "notes": "walking M1+M2 Jumpthrow",
+      "origin": [
+        58.03125,
+        923.968323,
+        17.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "both",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        1.632375,
+        -50.900848
+      ],
+      "target_end": [
+        860.184937,
+        -67.676361,
+        120.096771
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "f1af0664c9ad51a9a4c5ef7c62608ece",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Water Flash",
+      "notes": "standing throw",
+      "origin": [
+        211.378418,
+        1399.656982,
+        -30.787048
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -10.287282,
+        -87.675766
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "a1c2ac455a5f51c286b59cd264b1fe9e",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Deep Mid Smoke",
+      "notes": "running throw",
+      "origin": [
+        213.62706,
+        1246.524658,
+        -30.997559
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -6.480362,
+        -113.601448
+      ],
+      "target_end": [
+        -106.211342,
+        10.405344,
+        2.20125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "6c5db7c07527593785cb06f3fac406a6",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Bridge Flash",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        408.23206,
+        1247.0372,
+        -22.993042
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -22.287426,
+        -118.45288
+      ],
+      "target_end": [
+        -56.178577,
+        390.02078,
+        643.6163
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "a7790ab285a65ac2ab77ded5ddf6a62e",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A Main Smoke",
+      "notes": "crouched throw",
+      "origin": [
+        67.77282,
+        1520.031738,
+        -29.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -60.67276,
+        -29.689808
+      ],
+      "target_end": [
+        1253.257324,
+        844.125916,
+        -149.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "4781b7a2eb025d1787579c70b91e86e6",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Rugs Smoke",
+      "notes": "crouched throw",
+      "origin": [
+        750.45813,
+        1428.520508,
+        -87.623047
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -33.74131,
+        -62.72047
+      ],
+      "target_end": [
+        1342.215332,
+        516.867126,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "f639d1034e805652bb93d3300fb51664",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A Main Incendiary",
+      "notes": "standing M1+M2 Jumpthrow",
+      "origin": [
+        667.96875,
+        1379.967407,
+        -87.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "both",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        6.994853,
+        -45.590019
+      ],
+      "target_end": [
+        1287.996704,
+        827.035767,
+        -67.095917
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "8361c333ec47513aa054456ac94526b2",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Boat Support Flash",
+      "notes": "crouched throw",
+      "origin": [
+        747.432068,
+        1744.571045,
+        -39.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -18.448807,
+        -55.92812
+      ],
+      "target_end": [
+        1262.922485,
+        938.361023,
+        85.271225
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "grenade",
+      "id": "f973989b4fd552dcad2ea1aefa1ceae8",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "T-stairs HE nade",
+      "notes": "running Jumpthrow",
+      "origin": [
+        835.96875,
+        1726.958,
+        -39.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        14.137199,
+        -89.84582
+      ],
+      "target_end": [
+        838.91547,
+        95.66143,
+        -48.409225
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "grenade",
+      "id": "53e38fab82da5c5590ab05c7449ec153",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "T-stairs HE nade",
+      "notes": "running Jumpthrow",
+      "origin": [
+        892.03125,
+        1687.957,
+        -59.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        10.857037,
+        -92.256836
+      ],
+      "target_end": [
+        840.4204,
+        -4.842534,
+        7.6413608
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "2e662cb8ccfa5a1882180877bae0ce22",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "A Main Solo Flash #1",
+      "notes": "running Jumpthrow",
+      "origin": [
+        1614.479004,
+        1460.025513,
+        -149.20459
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        8.254823,
+        -86.927223
+      ],
+      "target_end": [
+        1202.013062,
+        856.023254,
+        -74.409988
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "8993cb0088ed5f82be598abc66c153f4",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "A Main Solo Flash #2",
+      "notes": "running throw",
+      "origin": [
+        1608.37085,
+        1141.880127,
+        -145.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -13.874972,
+        -83.391022
+      ],
+      "target_end": [
+        1126.515259,
+        881.747192,
+        -132.182114
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "d4d00ae724f45b63b58123a7f3483921",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Solo Flash",
+      "notes": "standing M2 throw",
+      "origin": [
+        -959.968506,
+        744.045898,
+        -1.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "secondary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -63.601936,
+        -100.443733
+      ],
+      "target_end": [
+        -981.52655,
+        622.298157,
+        29.072725
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "2cc014dd794c5d7480dd7e6faec9e5bd",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Dark Solo Flash",
+      "notes": "standing throw",
+      "origin": [
+        -959.96875,
+        744.03894,
+        -1.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -28.61345,
+        -98.98096
+      ],
+      "target_end": [
+        -804.5586,
+        301.58154,
+        -52.295948
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "8111459a25b75fe39bf51955c636f6be",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Water Solo Flash",
+      "notes": "standing M2 Jumpthrow",
+      "origin": [
+        -789.963257,
+        288.922913,
+        -55.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "secondary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        33.125355,
+        -32.330513
+      ],
+      "target_end": [
+        -527.347534,
+        122.702484,
+        -117.122749
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "dc9b60dd05b552ef991b4599530e7595",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Window break flash",
+      "notes": "crouch, then \n crouched throw",
+      "origin": [
+        391.97028,
+        1477.0465,
+        -5.0009155
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -13.117595,
+        -118.48085
+      ],
+      "target_end": [
+        -105.92344,
+        559.306,
+        24.645504
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "721fc92722a4578bab1b6579661593c8",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Solo Flash",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -704.963562,
+        496.940857,
+        38.058857
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -16.351009,
+        4.604304
+      ],
+      "target_end": [
+        -858.384827,
+        537.938232,
+        334.542664
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "aebdc9268fc15a4cbb85bd1a9233340d",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Solo Flash",
+      "notes": "standing M2 Jumpthrow",
+      "origin": [
+        -578.908691,
+        496.970123,
+        38.13485
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "secondary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -26.838428,
+        173.998627
+      ],
+      "target_end": [
+        -866.504578,
+        527.201477,
+        328.328796
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "299182ce56955f12af1905e9a3d677b3",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Solo Flash",
+      "notes": "standing throw",
+      "origin": [
+        -768.5,
+        732.254822,
+        35.031254
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -13.932834,
+        96.704208
+      ],
+      "target_end": [
+        -930.016968,
+        589.955688,
+        -0.13553
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "ebe35fb555ba5580966fd12e7f2ba979",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Main Flash",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -1013.931946,
+        1149.957153,
+        35.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -7.496055,
+        -102.982376
+      ],
+      "target_end": [
+        -1255.702148,
+        101.221878,
+        465.102264
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "4c08903e99c35c46ac33774a2af5f007",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Main Push Flash",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -1124.056641,
+        1236.058716,
+        1.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        5.563157,
+        -114.77948
+      ],
+      "target_end": [
+        -1593.865479,
+        218.337341,
+        183.778458
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "79ede0ed644b5c65b2d4c91142ed08a6",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "2nd B Main Flash",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -1124.056641,
+        1236.058716,
+        1.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -24.574322,
+        -112.379944
+      ],
+      "target_end": [
+        -1583.254395,
+        353.365204,
+        702.322388
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "eb88395e24505f2e82a8802e1a0e3673",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Main Retake Smoke",
+      "notes": "standing throw",
+      "origin": [
+        -1080.211426,
+        1478.109009,
+        -30.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -20.662992,
+        -109.450317
+      ],
+      "target_end": [
+        -1595.070557,
+        270.223267,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "73ada6b9bc2959559871171f9e033de0",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Retake Flash",
+      "notes": "crouched M1+M2 Jumpthrow",
+      "origin": [
+        -1080.205811,
+        1478.114624,
+        -30.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "both",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -0.858601,
+        -109.327057
+      ],
+      "target_end": [
+        -1507.511108,
+        304.02066,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "de33459efacb5bf9850dcbf914df9570",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "walking",
+      "name": "Dark Retake Smoke",
+      "notes": "walking M1+M2 Jumpthrow",
+      "origin": [
+        -1289.968018,
+        1539.9688,
+        -30.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "both",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -1.936258,
+        -70.249496
+      ],
+      "target_end": [
+        -756.093689,
+        401.871796,
+        -53.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "ac225bbfe4c05c92aac2a9ab62fb3b27",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Dark Retake Smoke",
+      "notes": "running throw",
+      "origin": [
+        -800.821167,
+        1175.642212,
+        36.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -19.537117,
+        -114.154861
+      ],
+      "target_end": [
+        -783.789429,
+        386.965698,
+        -53.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "9bde8b00dc6257a8a19091fa77bbbf87",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Pillar retake molly",
+      "notes": "standing throw",
+      "origin": [
+        -812.409485,
+        1174.067993,
+        36.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -7.879309,
+        -108.210861
+      ],
+      "target_end": [
+        -1154.108887,
+        284.622009,
+        -20.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "grenade",
+      "id": "c6bc3ebdec2253f58542eff5057bc3b4",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Rugs HE",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        750.03125,
+        1391.3569,
+        -87.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        5.0050483,
+        -58.669765
+      ],
+      "target_end": [
+        1332.4224,
+        434.62793,
+        107.0456
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "f9d5f9426689520fb0160149f8f299e4",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Temple Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -1151.957153,
+        -1143.998657,
+        64.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -24.147469,
+        83.610695
+      ],
+      "target_end": [
+        -877.447876,
+        1126.324463,
+        37.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "e30402da57e151b9b331aa0ed5a8b36f",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "CT Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -1000.6053,
+        -1067.439,
+        72.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -6.1724973,
+        93.16072
+      ],
+      "target_end": [
+        -1242.7487,
+        1002.3264,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "9dc5e04958f75d0c9f29c7e7eeca9a26",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Lurk Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -1000.80396,
+        -1067.3073,
+        72.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -8.86748,
+        100.645996
+      ],
+      "target_end": [
+        -1422.9033,
+        475.65662,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "d17986ed42f752c49c0f66c4f25b216f",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "B Plateau Molotov",
+      "notes": "running Jumpthrow",
+      "origin": [
+        -1481.96521,
+        -333.990601,
+        104.408264
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -36.497921,
+        65.269379
+      ],
+      "target_end": [
+        -734.588745,
+        618.641235,
+        37.910778
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "965d6193e4b35285a23700771419cbbc",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Temple Smoke",
+      "notes": "standing throw",
+      "origin": [
+        -1267.9688,
+        -314.799683,
+        5.710926
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -46.477226,
+        69.466682
+      ],
+      "target_end": [
+        -930.469666,
+        1090.123901,
+        37.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "9d637abb4a755e789d5f939e95b9746e",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Temple Smoke",
+      "notes": "standing throw",
+      "origin": [
+        -1481.9688,
+        -333.983337,
+        104.408546
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -33.772339,
+        64.14032
+      ],
+      "target_end": [
+        -967.958191,
+        1168.085449,
+        37.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "af19998792905a60b617910d5bdcd77f",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Pillar/Dark Molotov/HE",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -1240.751465,
+        -2.479797,
+        1.374683
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -50.21595,
+        49.494621
+      ],
+      "target_end": [
+        -976.635864,
+        324.046295,
+        -20.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "grenade",
+      "id": "d4907272e32650fa8212b21e55027ef5",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "",
+      "notes": "",
+      "origin": [
+        -1240.751465,
+        -2.479797,
+        1.374683
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -50.23135,
+        49.494621
+      ],
+      "target_end": [
+        -976.762939,
+        323.908417,
+        -20.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "0420f8e76fda56af9f9471bc0047c0e3",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Right B Site Smoke \n Pillar GOD Flash \n Pillar Molotov",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -1267.9688,
+        -314.813782,
+        5.711132
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -26.272678,
+        89.829773
+      ],
+      "target_end": [
+        -816.806946,
+        542.706848,
+        40.16106
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "28a968186f7e55f1b620eb2dd3ad91e0",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Right B Site Smoke",
+      "notes": "running Jumpthrow",
+      "origin": [
+        -1663.969482,
+        -63.967834,
+        0.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        0.385012,
+        84.793678
+      ],
+      "target_end": [
+        -850.396667,
+        548.498474,
+        37.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "319d62f2eb995fc6b58a92e08bc62581",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Left B Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -938.386047,
+        -1363.446655,
+        66.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -12.073981,
+        99.820625
+      ],
+      "target_end": [
+        -1169.592407,
+        784.975342,
+        -1.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "475ea487ae40508381203ae377da3e66",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Dark Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -347.967285,
+        -1315.733887,
+        2.031249
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -60.32188,
+        100.978546
+      ],
+      "target_end": [
+        -695.757019,
+        334.761932,
+        -11.460272
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "a19287edeab2516081bb9f792455e2a7",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Window Molotov",
+      "notes": "running throw",
+      "origin": [
+        -788.046997,
+        -820.742859,
+        106.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -11.734769,
+        62.694874
+      ],
+      "target_end": [
+        -60.585644,
+        815.821777,
+        8.219845
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "3ee78a1d3e205a769df7d60f46f104f1",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Doors Molotov",
+      "notes": "running Jumpthrow",
+      "origin": [
+        -662.100769,
+        -503.576294,
+        64.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        11.118793,
+        42.420906
+      ],
+      "target_end": [
+        133.57753,
+        643.119446,
+        34.036118
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "b67d4bb850cc58ee8d841951e27a8ba2",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Doors Molotov",
+      "notes": "running throw",
+      "origin": [
+        -869.34259,
+        -688.851868,
+        64.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -11.857939,
+        55.033524
+      ],
+      "target_end": [
+        156.47493,
+        496.68573,
+        -9.702046
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "35545d1ef75151f3812a9177c778d16f",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Window Smoke",
+      "notes": "standing M1+M2 Jumpthrow",
+      "origin": [
+        -605.022827,
+        -630.976257,
+        64.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "both",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -16.046728,
+        65.581619
+      ],
+      "target_end": [
+        -32.391842,
+        758.581665,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "db2e46399627520cbd7f747942b62fd5",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Dark Molotov",
+      "notes": "running Jumpthrow",
+      "origin": [
+        -967.277832,
+        -769.029846,
+        64.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -13.136144,
+        98.995789
+      ],
+      "target_end": [
+        -919.859558,
+        523.229126,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "2efd0cb3830c5c6fb009985e3153655f",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "B Window Flash",
+      "notes": "running throw",
+      "origin": [
+        -963.934326,
+        -619.254822,
+        70.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -39.439716,
+        109.065544
+      ],
+      "target_end": [
+        -1388.206665,
+        606.502991,
+        493.256622
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "61b8c6015462515ea599a0cc48279388",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Doors Molotov",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -257.770691,
+        -104.200928,
+        38.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        11.026128,
+        40.348263
+      ],
+      "target_end": [
+        160.507263,
+        617.20575,
+        -5.081761
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "2d3eee433386538ba5ead0acebbbda28",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Pillars Flash",
+      "notes": "standing throw",
+      "origin": [
+        -363.31189,
+        -366.731628,
+        0.256209
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -31.524029,
+        90.259583
+      ],
+      "target_end": [
+        -367.32312,
+        518.269165,
+        325.404449
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "332acd4197705bc386116386455cd8f1",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Mid Solo Flash",
+      "notes": "running throw",
+      "origin": [
+        -368.50592,
+        -314.551575,
+        0.260638
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -7.746676,
+        52.909187
+      ],
+      "target_end": [
+        -223.657303,
+        485.319,
+        26.489988
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "612c980ea38253c29d164be2fce75320",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Temple Smoke",
+      "notes": "running throw",
+      "origin": [
+        -750.03064,
+        185.914551,
+        -95.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -29.983767,
+        117.014366
+      ],
+      "target_end": [
+        -901.17981,
+        1099.230103,
+        37.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "ad6299e1dbd75674b1e020452e4f72ae",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "B Plateau Molotov",
+      "notes": "walking/running Jumpthrow",
+      "origin": [
+        -697.569519,
+        276.518768,
+        -55.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -0.893225,
+        167.264923
+      ],
+      "target_end": [
+        -665.029846,
+        607.788025,
+        38.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "73a193a97b2e5d2cb72aea42a6ba518f",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "CT Solo Flash",
+      "notes": "standing throw",
+      "origin": [
+        -834.679016,
+        337.214233,
+        -55.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -22.11462,
+        111.959076
+      ],
+      "target_end": [
+        -1199.739136,
+        1242.636353,
+        133.090149
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "068a17f2f35b5620a3b05a403a54bbf9",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Temple Smoke",
+      "notes": "standing throw",
+      "origin": [
+        -220.413757,
+        154.031937,
+        -171.792664
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -64.877594,
+        128.698914
+      ],
+      "target_end": [
+        -953.624817,
+        1069.276611,
+        37.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "15f964387cba5eb382e6b7618bdb78df",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Window Flash",
+      "notes": "running throw",
+      "origin": [
+        -137.568604,
+        128.263596,
+        0.062354
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        0.326781,
+        78.58606
+      ],
+      "target_end": [
+        65.452225,
+        760.515686,
+        4.939385
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "4e55fdbb7860554c950eb92d97d25abf",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Dark Molotov",
+      "notes": "move back, then \n running throw",
+      "origin": [
+        -446.967712,
+        305.968964,
+        -119.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -20.278427,
+        -124.977921
+      ],
+      "target_end": [
+        -791.49707,
+        398.698669,
+        -53.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "c33798e7826051a5b465050d7c9b1da7",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "A Connector Smoke",
+      "notes": "running throw",
+      "origin": [
+        -152.102417,
+        515.975403,
+        0.25634
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -4.524221,
+        56.440506
+      ],
+      "target_end": [
+        599.359497,
+        1385.480103,
+        -85.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "37898688bf4b5029941cd0d00227f94e",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Museum Smoke",
+      "notes": "standing throw",
+      "origin": [
+        -160.594971,
+        572.794434,
+        0.266044
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -14.98079,
+        49.433525
+      ],
+      "target_end": [
+        54.098988,
+        1579.844116,
+        -29.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "72ae9682c45157b693284760db03a39b",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Dark Smoke",
+      "notes": "standing (W-)Jumpthrow",
+      "origin": [
+        23.968712,
+        -1744.9688,
+        6.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -12.350805,
+        101.983322
+      ],
+      "target_end": [
+        -486.834717,
+        115.362404,
+        -117.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "6e9f1cb815465bcd98fe4d6b48d14bb0",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Window Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        80.038788,
+        -1752.044678,
+        2.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -20.204803,
+        93.898117
+      ],
+      "target_end": [
+        -100.745277,
+        887.26886,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "0bb537483e74519ea7ad6b7bdac84ed4",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Museum Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        223.03125,
+        -711.968262,
+        -0.093872
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -21.483364,
+        92.010498
+      ],
+      "target_end": [
+        135.823883,
+        1583.57251,
+        -29.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "76297e7e107c58b4960eab7b862190f9",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Doors Flash",
+      "notes": "standing throw",
+      "origin": [
+        -362.26404,
+        -424.9748,
+        0.26654434
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -26.965195,
+        67.67132
+      ],
+      "target_end": [
+        -8.29471,
+        436.8633,
+        261.2456
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "e7268d1dfa935c56ba2aafea6eb2a59d",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "",
+      "notes": "running throw",
+      "origin": [
+        65.292053,
+        -379.626465,
+        0.266546
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -11.088435,
+        109.262711
+      ],
+      "target_end": [
+        -86.83725,
+        732.257202,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "f2165dd6c0995d5fa13b7db1f8930235",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Dark Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        837.965271,
+        -763.96875,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -13.656658,
+        151.81308
+      ],
+      "target_end": [
+        -594.626221,
+        171.45845,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "30920f7c346d5d4c9a1e5b8cca5f6a38",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Mid Solo Flash",
+      "notes": "standing throw",
+      "origin": [
+        84.350883,
+        583.49823,
+        -19.246094
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -18.511147,
+        154.312347
+      ],
+      "target_end": [
+        152.461395,
+        841.672485,
+        -7.182393
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "c9f35686fc115291b7c93a05708ab146",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Dark Flash",
+      "notes": "crouched throw",
+      "origin": [
+        307.478851,
+        154.031128,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -13.244229,
+        179.90451
+      ],
+      "target_end": [
+        -641.794983,
+        155.613724,
+        -81.990929
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "893bcbbd5cde5ee28ff9fcdf6354ccc6",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Plateau Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        165.62717,
+        33.040306,
+        -151.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -71.7066,
+        149.29465
+      ],
+      "target_end": [
+        -822.4612,
+        614.79486,
+        37.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "98ab2736a33b59858a216b3ab2f22d4c",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Dark Flash",
+      "notes": "running throw",
+      "origin": [
+        713.96875,
+        285.968384,
+        -188.283691
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -12.317776,
+        -169.919647
+      ],
+      "target_end": [
+        -694.187988,
+        48.451271,
+        -89.125755
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "cda41994a97a516abaf3a86ec11c16a4",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Heaven Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        744.043274,
+        625.967529,
+        -151.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -0.338885,
+        78.772949
+      ],
+      "target_end": [
+        960.488464,
+        2261.164795,
+        -37.965958
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "1dc413ff939651d48d9514ddf18f9630",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A Site Molotov",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        744.064453,
+        628.024048,
+        -107.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        7.022307,
+        78.77298
+      ],
+      "target_end": [
+        1028.285156,
+        2059.93042,
+        -109.563469
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "92f705e64a735b0b8a3d12491648fb44",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A GOD Flash",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        732.03125,
+        520.041138,
+        -151.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        0.837169,
+        59.428436
+      ],
+      "target_end": [
+        1329.084839,
+        1530.647827,
+        133.190979
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "5317d4f68e8250e49de3ebbf330dd763",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "walking",
+      "name": "A Main Smoke",
+      "notes": "running/walking throw",
+      "origin": [
+        850.03125,
+        934.968689,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -20.020369,
+        -2.853943
+      ],
+      "target_end": [
+        1678.185181,
+        1439.343872,
+        -149.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "ed0dc1dfff3d5a5797c13bb6ede2a69b",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "walking",
+      "name": "A Main Molotov",
+      "notes": "running/walking throw",
+      "origin": [
+        850.03125,
+        934.96875,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -16.724783,
+        -9.198732
+      ],
+      "target_end": [
+        1542.278564,
+        1159.184082,
+        -145.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "9b05cbddefed59f7a8392425a0d27e69",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B plateau molotov",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -789.96875,
+        52.045792,
+        -87.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -24.131573,
+        74.483749
+      ],
+      "target_end": [
+        -620.643188,
+        662.934937,
+        38.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "c13c022db62055c686cb2db9f62f0e09",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A Connector Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        1063.9688,
+        -519.6087,
+        -23.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -20.447685,
+        125.134384
+      ],
+      "target_end": [
+        522.07495,
+        1392.833,
+        -45.968735
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "73002049a044580c8a3fad02dde0f02e",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Museum Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        1063.9716,
+        -519.6236,
+        -23.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -36.263763,
+        114.103485
+      ],
+      "target_end": [
+        100.5094,
+        1577.347,
+        -29.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "4ce7972230835bdbb53c099a7fcdc8e8",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A Main Flash",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        1311.796387,
+        -273.043091,
+        -23.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        0.476824,
+        79.156029
+      ],
+      "target_end": [
+        1520.279419,
+        815.281433,
+        268.798035
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "ae326a10c14f576c8dd2b022540643fa",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "walking",
+      "name": "A Site Molotov",
+      "notes": "walking throw",
+      "origin": [
+        1276.982056,
+        489.041504,
+        2.031252
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -12.875047,
+        102.375275
+      ],
+      "target_end": [
+        936.985168,
+        2040.648682,
+        -132.755203
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "12b48e30c0bd50b197fe8eac4a807b08",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "A Connector Molotov",
+      "notes": "running throw",
+      "origin": [
+        1374.269165,
+        445.305664,
+        0.031251
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -6.853655,
+        125.713699
+      ],
+      "target_end": [
+        582.41687,
+        1270.352295,
+        -85.71875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "7cfab44fba305a03ac36d43f105c5396",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Doors Flash",
+      "notes": "running jumpthrow",
+      "origin": [
+        1495.967041,
+        451.96875,
+        0.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        10.056477,
+        170.798218
+      ],
+      "target_end": [
+        270.092468,
+        677.840698,
+        112.714287
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "ce6038ded64f500fa22c21466cebecc5",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Museum Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        1493.960327,
+        92.707169,
+        0.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -17.291061,
+        130.376755
+      ],
+      "target_end": [
+        -78.407936,
+        1489.919189,
+        26.875969
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "e2c2889be1835b68aebf7e44f5e0fabb",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "A Heaven/Site Molotov",
+      "notes": "running Jumpthrow",
+      "origin": [
+        1154.967896,
+        154.03125,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -0.489975,
+        92.705322
+      ],
+      "target_end": [
+        1055.362671,
+        2264.421631,
+        17.766357
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "7263e05e0d56506fb577bc03ef892072",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A Connector/Broken Molotov",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        1154.9688,
+        154.032837,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        0.649581,
+        105.147964
+      ],
+      "target_end": [
+        778.206543,
+        1545.740479,
+        -11.296642
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "e672933fdb0256fbb33bcc968f824ebf",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B CT Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        1154.9688,
+        154.031464,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -34.662796,
+        160.159897
+      ],
+      "target_end": [
+        -1204.380615,
+        1005.310181,
+        2.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "a49380f80d58547fbe15b164d3748ad6",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A Connector Smoke",
+      "notes": "standing throw",
+      "origin": [
+        1282.294556,
+        571.961121,
+        2.031252
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -12.274449,
+        125.645096
+      ],
+      "target_end": [
+        577.588684,
+        1266.7771,
+        -85.71875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "bc2721d1996c522dbcc3163439282880",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Heaven Smoke",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        1149.967529,
+        610.03125,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -5.402418,
+        94.013916
+      ],
+      "target_end": [
+        1013.073181,
+        2195.313232,
+        -37.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "57f9f6583bc85454a65dd3787166e9a1",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Broken Wall Molotov",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        1149.971924,
+        610.060303,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        0.370546,
+        115.527077
+      ],
+      "target_end": [
+        828.201538,
+        1719.025757,
+        20.559509
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "fe01606b731459d38fae0fa549322feb",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "A Site Flash",
+      "notes": "standing throw",
+      "origin": [
+        1149.953735,
+        610.029663,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -32.860744,
+        89.716911
+      ],
+      "target_end": [
+        1154.244751,
+        1480.493408,
+        154.523056
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "2fd0b8d7210a5ce893933551e5ceffa5",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Fountain Molotov",
+      "notes": "running throw",
+      "origin": [
+        1517.168457,
+        992.327637,
+        -145.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -11.150095,
+        64.83493
+      ],
+      "target_end": [
+        1685.942993,
+        1920.468994,
+        -81.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "e10ed1135cce5e47953820a569e42882",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Broken-Wall Molotov",
+      "notes": "standing throw",
+      "origin": [
+        1780.96521,
+        1526.291016,
+        -148.081299
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -25.964865,
+        171.618286
+      ],
+      "target_end": [
+        778.880737,
+        1693.035034,
+        9.59156
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "c506775b61eb5da1b4e52d4d6eb54f56",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Dark Solo Flashes",
+      "notes": "standing throw",
+      "origin": [
+        -104.190308,
+        291.96875,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -18.707037,
+        -139.580688
+      ],
+      "target_end": [
+        -616.548523,
+        196.444214,
+        -90.438927
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "flash",
+      "id": "18ff2fb60f17538e8b6765209a8dbce2",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "",
+      "notes": "crouch-waking M2 Jumpthrow",
+      "origin": [
+        -104.190308,
+        291.96875,
+        -188.833618
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "secondary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        7.965775,
+        -154.62915
+      ],
+      "target_end": [
+        -591.296204,
+        60.503712,
+        -92.414627
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "c6848ab44af353369c0f808e1a36f72f",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "running",
+      "name": "Anti hole-drop \n Molotov+HE combo",
+      "notes": "running Jumpthrow \n (throw Molotov first, then HE)",
+      "origin": [
+        -1151.924316,
+        -1143.991211,
+        64.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        9.28628,
+        47.596062
+      ],
+      "target_end": [
+        220.997162,
+        447.04306,
+        28.847279
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "cc3223b78d6c5b33997778b5b1f8a3e5",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched W-Jumpthrow",
+      "origin": [
+        -416.0,
+        -1696.0,
+        2.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -44.591446,
+        99.480164
+      ],
+      "target_end": [
+        -638.085754,
+        76.213676,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "987821700fc75814a68401d766747147",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched Jumpthrow",
+      "origin": [
+        -416.0,
+        -1608.0,
+        2.0312495
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -41.795673,
+        98.039566
+      ],
+      "target_end": [
+        -594.4298,
+        173.72766,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "6249e0054a135592856bac9b1f323b77",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched Jumpthrow",
+      "origin": [
+        -384.0,
+        -1552.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -47.92717,
+        99.075378
+      ],
+      "target_end": [
+        -585.143921,
+        145.389206,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "2f6967523bab5f46ba6020530e96ef8c",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched Jumpthrow",
+      "origin": [
+        -328.0,
+        -1528.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -48.371037,
+        100.709259
+      ],
+      "target_end": [
+        -583.861572,
+        143.872849,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "5dc7c0d911255eeea2cca0b7b2bdb800",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched W-Jumpthrow",
+      "origin": [
+        -304.0,
+        -1608.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -42.665741,
+        103.424622
+      ],
+      "target_end": [
+        -630.859131,
+        60.140301,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "a24fae07dfd351899c44729547d04754",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched W-Jumpthrow",
+      "origin": [
+        -264.0,
+        -1560.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -35.849075,
+        101.928406
+      ],
+      "target_end": [
+        -702.745667,
+        51.930523,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "5dde4933c9f75b7989c1eb857f767a61",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched Jumpthrow",
+      "origin": [
+        -234.0,
+        -1503.079956,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -39.766724,
+        104.106445
+      ],
+      "target_end": [
+        -592.011597,
+        104.025299,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "4577e9f4f5555160b064f04bd90851f4",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched W-Jumpthrow",
+      "origin": [
+        -192.0,
+        -1608.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -38.313446,
+        104.464874
+      ],
+      "target_end": [
+        -579.737976,
+        81.485374,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "9f223e7b2f5a5a6db39d5529978cb5de",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched W-Jumpthrow",
+      "origin": [
+        -154.0,
+        -1503.079956,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -35.757065,
+        109.27655
+      ],
+      "target_end": [
+        -623.694214,
+        57.32785,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "659059d1f21a5bdd9ee2e1fc0ae94af1",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched W-Jumpthrow",
+      "origin": [
+        -144.0,
+        -1568.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -39.982681,
+        109.336609
+      ],
+      "target_end": [
+        -594.669983,
+        78.53009,
+        -93.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "af39e35a527051fba01bfcc7de956ef5",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Dark Smoke",
+      "notes": "crouched W-Jumpthrow",
+      "origin": [
+        -128.004028,
+        -1632.0,
+        -0.960938
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -39.254837,
+        105.83197
+      ],
+      "target_end": [
+        -578.815369,
+        84.04258,
+        -93.966064
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "0f6bd00ef696594f9a71ae99c7f11573",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -416.0,
+        -1696.0,
+        2.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -10.441818,
+        82.026337
+      ],
+      "target_end": [
+        -46.215214,
+        908.168274,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "9a3d29ed02c658a5a4c20db251f1e9ba",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -416.0,
+        -1608.0,
+        2.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -12.9206085,
+        78.835815
+      ],
+      "target_end": [
+        -119.66706,
+        784.7327,
+        2.2665443
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "38967f1049235b9796ce7365a1c28a73",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -384.0,
+        -1552.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -15.816879,
+        83.212524
+      ],
+      "target_end": [
+        -75.305313,
+        807.125122,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "9edd787d54b35119aaca44b5b9e84bf9",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke ",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -328.0,
+        -1528.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -14.415436,
+        83.751526
+      ],
+      "target_end": [
+        -46.179405,
+        805.848206,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "d825564b4ccd532cae0e007787232900",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke ",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -304.0,
+        -1608.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -14.122925,
+        84.289856
+      ],
+      "target_end": [
+        -40.735775,
+        826.86499,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "49c5c0a0e50f5aaa9c0e7915e47099c8",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke ",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -264.0,
+        -1560.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -14.92424,
+        85.200348
+      ],
+      "target_end": [
+        -45.325367,
+        807.891602,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "e7f9d63bf9575707b6c539fc0ce267b6",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke ",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -234.0,
+        -1503.079956,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -14.293722,
+        86.569466
+      ],
+      "target_end": [
+        -84.250397,
+        852.891174,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "72ee9d2719c85ba58c94ba127ed9f370",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke ",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -192.0,
+        -1608.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -7.91806,
+        87.28363
+      ],
+      "target_end": [
+        -70.682205,
+        899.93103,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "0f5e5522a3545bb5b03a69f4a47e48bf",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke ",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -154.0,
+        -1503.079956,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -13.215515,
+        87.267822
+      ],
+      "target_end": [
+        -32.255135,
+        802.853882,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "7d461293d38b5dc9a9331fdaad3adb58",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke ",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -144.0,
+        -1568.0,
+        -11.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -10.227936,
+        87.452881
+      ],
+      "target_end": [
+        -29.577633,
+        843.063965,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "4cb5829ca2d05325a6026dab2f262bfc",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Instant Window Smoke ",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -128.004028,
+        -1632.0,
+        -0.960938
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -10.782394,
+        89.038696
+      ],
+      "target_end": [
+        -84.31369,
+        869.01532,
+        2.266544
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "fire",
+      "id": "9c98129b2c51585fac518733e3dff77a",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Deep Door Molotov",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -267.26392,
+        -110.02887,
+        0.266544
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        8.762283,
+        46.32831
+      ],
+      "target_end": [
+        174.30656,
+        675.55695,
+        18.381939
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "aa69db67668a54ea9523ffd13413975f",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Temple Smoke",
+      "notes": "crouched W-Jumpthrow",
+      "origin": [
+        -789.9395,
+        52.041676,
+        -87.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "crouched",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -22.838148,
+        64.85374
+      ],
+      "target_end": [
+        -1020.0057,
+        1170.8667,
+        37.03125
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "c489f695a6525b8180c80da11625a94b",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Dark Smoke",
+      "notes": "standing Jumpthrow",
+      "origin": [
+        -1151.9316,
+        -1144.0177,
+        64.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -29.075172,
+        70.64284
+      ],
+      "target_end": [
+        -697.74805,
+        337.84222,
+        -53.96875
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "88356f42b06750f69b6e4df596ac379d",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": false,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "CT Smoke",
+      "notes": "standing throw",
+      "origin": [
+        -1267.9373,
+        -314.8302,
+        5.708547
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -46.43083,
+        83.70086
+      ],
+      "target_end": [
+        -1290.5355,
+        1036.6844,
+        2.03125
+      ]
+    }
+  ],
+  "map": "de_anubis",
+  "version": 1
+}

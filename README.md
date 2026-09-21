@@ -46,6 +46,8 @@ nades/
     train.txt
 ```
 
+Folders ending in `_instant_smoke` (case-insensitive) are ignored: their lineups are already included in the main map folders. They are not merged or exported as separate maps. Regenerating HBN or Sensory also removes their legacy `*_instant_smoke.json` output files.
+
 ## Generate JSON
 
 Run:
@@ -65,6 +67,8 @@ out/hbn/de_anubis.json
 out/hbn/de_cache.json
 out/hbn/de_dust2.json
 out/secretservice/grenade_helper.json
+out/sensory/de_ancient.json
+out/sensory/de_dust2.json
 ```
 
 ## Manual Usage
@@ -87,7 +91,53 @@ By default, all formats are generated. You can limit the output to one format:
 env\Scripts\python.exe script.py --format default
 env\Scripts\python.exe script.py --format hbn
 env\Scripts\python.exe script.py --format secretservice
+env\Scripts\python.exe script.py --format sensory
 ```
+
+## Sensory Export
+
+Sensory receives one JSON file per map in `out/sensory/`, with `version: 1`, the game map name, and a `lineups` array.
+
+- `desc` becomes `notes`, preserving the original text. As in the other formats, the first aim-target description takes precedence over the main annotation description.
+- `pos` becomes `origin`; the first two aim angles become `view_angle`.
+- `target_end` is included only when the source has a linked destination position. It is not the aim-target position.
+- IDs are generated deterministically from the map, relative source filename, and annotation ID. They remain stable across repeated conversions, lineup reordering, and note edits.
+- `jump_throw` is enabled by the source `JumpThrow` flag or a recognized description such as `jt`, `J.T.`, `JumpThrow`, `jump throw`, `jump-throw`, or `jump_throw`, regardless of case.
+- Lineups missing a position or view angle are skipped with a warning in Sensory only; no coordinates are invented.
+
+### Grenade and Action Values
+
+| Source grenade | Sensory value |
+| --- | --- |
+| Smoke | `smoke` |
+| Molotov / incendiary / fire | `fire` |
+| HE | `grenade` (provisional) |
+| Flashbang | `flash` (provisional) |
+
+Movement, stance, and mouse-button mode are inferred from recognizable description cues:
+
+| Field | Inferred values |
+| --- | --- |
+| `movement` | `stationary`, `walking`, `running` |
+| `stance` | `standing`, `crouched` |
+| `throw` | `primary` (M1 or unspecified), `secondary` (M2), `both` (M1+M2) |
+
+The inference distinguishes setup instructions such as `crouched line-up, then standing throw` from the actual throw, and ignores hints after the throw. Unspecified settings use `stationary`, `standing`, and `primary`. The complete description remains in `notes`; this is a heuristic, not a full parser of every possible instruction.
+
+**The HE/flash names and non-template action values are provisional, pending confirmation from the Sensory developer.** They are inferred choices, not a verified Sensory schema. Imports have not been tested inside Sensory.
+
+### Fixed Template Values
+
+| Field | Value |
+| --- | --- |
+| `angle_tolerance` | `0.11999999731779099` |
+| `landing_tolerance` | `24.0` |
+| `manual_action` | `false` |
+| `max_speed` | `8.0` |
+| `position_tolerance` | `4.0` |
+| `vertical_tolerance` | `3.0` |
+
+These values remain fixed, including for moving lineups, until the Sensory developer confirms otherwise.
 
 ## Project Structure
 
@@ -96,6 +146,7 @@ install.bat        Install Python dependencies
 update_nades.bat   Download latest nade files
 start.bat          Generate JSON files
 script.py          KV3 to JSON converter
+test_script.py     Regression tests for Sensory and source discovery
 requirements.txt   Python dependencies
 nades/             Downloaded source nade files
 out/               Generated JSON files
