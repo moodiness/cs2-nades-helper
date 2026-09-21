@@ -139,6 +139,16 @@ The inference distinguishes setup instructions such as `crouched line-up, then s
 
 These values remain fixed, including for moving lineups, until the Sensory developer confirms otherwise.
 
+## Tests
+
+Run the regression tests locally:
+
+```bat
+env\Scripts\python.exe -m unittest -v test_script
+```
+
+The `Tests` GitHub Actions workflow runs on pull requests and pushes to `main`, with read-only repository permissions. The `Sync nades` workflow also runs the tests before updating nade files, generating outputs, or committing changes.
+
 ## Project Structure
 
 ```text
