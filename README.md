@@ -103,7 +103,7 @@ Sensory receives one JSON file per map in `out/sensory/`, with `version: 1`, the
 - `target_end` is included only when the source has a linked destination position. It is not the aim-target position.
 - IDs are generated deterministically from the map, relative source filename, and annotation ID. They remain stable across repeated conversions, lineup reordering, and note edits.
 - `jump_throw` is enabled by the source `JumpThrow` flag or a recognized description such as `jt`, `J.T.`, `JumpThrow`, `jump throw`, `jump-throw`, or `jump_throw`, regardless of case.
-- Lineups missing a position or view angle are skipped with a warning in Sensory only; no coordinates are invented.
+- Annotations missing a position or view angle are excluded during shared parsing for every format (`default`, HBN, SecretService, and Sensory). A warning identifies the annotation and source file; no coordinates are invented.
 
 ### Grenade and Action Values
 

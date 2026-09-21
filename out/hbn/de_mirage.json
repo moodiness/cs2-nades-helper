@@ -1546,17 +1546,6 @@
       ]
     },
     {
-      "name": "Connector Flash",
-      "desc": "",
-      "type": 43,
-      "img": "",
-      "pos": [
-        176.035324,
-        -230.206909,
-        -151.96875
-      ]
-    },
-    {
       "name": "Jungle Smoke",
       "desc": "standing Jumpthrow",
       "type": 45,
@@ -1629,17 +1618,6 @@
       "ang": [
         -15.226274,
         179.700775
-      ]
-    },
-    {
-      "name": "Window Smoke",
-      "desc": "",
-      "type": 45,
-      "img": "",
-      "pos": [
-        502.96875,
-        -630.692749,
-        -160.002014
       ]
     },
     {

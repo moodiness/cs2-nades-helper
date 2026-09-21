@@ -616,17 +616,6 @@
       ]
     },
     {
-      "name": "H",
-      "desc": "",
-      "type": 45,
-      "img": "",
-      "pos": [
-        -595,
-        415,
-        -55
-      ]
-    },
-    {
       "name": "Back Six Molotov",
       "desc": "running throw",
       "type": 46,

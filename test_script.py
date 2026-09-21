@@ -4,7 +4,12 @@ import unittest
 from dataclasses import replace
 from pathlib import Path
 
-from script import SensoryExporter, build_grenades, convert_sources
+from script import (
+    SensoryExporter,
+    build_grenades,
+    convert_sources,
+    selected_exporters,
+)
 
 
 class SensoryExporterTests(unittest.TestCase):
@@ -142,6 +147,59 @@ class SensoryExporterTests(unittest.TestCase):
         self.assertNotEqual(before["Smoke"], before["Second smoke"])
         cache_id = self.export_lineups([smoke], map_name="cache")[0]["id"]
         self.assertNotEqual(before["Smoke"], cache_id)
+
+
+class AnnotationValidationTests(unittest.TestCase):
+    def test_incomplete_annotations_are_excluded_from_every_export(self):
+        main = {
+            "Type": "grenade",
+            "SubType": "main",
+            "Id": "valid",
+            "Title": {"Text": "Usable lineup"},
+            "GrenadeType": "smoke",
+            "Position": [0.0, 0.0, 0.0],
+        }
+        aim = {
+            "Type": "grenade",
+            "SubType": "aim_target",
+            "MasterNodeId": "valid",
+            "Angles": [0.0, 0.0, 0.0],
+        }
+        source = {
+            "MapAnnotationNode0": main,
+            "MapAnnotationNode1": aim,
+            "MapAnnotationNode2": {
+                **main,
+                "Id": "no-aim",
+                "Title": {"Text": "Missing aim target"},
+                "Angles": [0.0, 90.0, 0.0],
+            },
+            "MapAnnotationNode3": {
+                **main,
+                "Id": "no-position",
+                "Title": {"Text": "Missing position"},
+                "Position": None,
+            },
+            "MapAnnotationNode4": {**aim, "MasterNodeId": "no-position"},
+        }
+        with self.assertLogs("nades-helper", level="WARNING"):
+            grenades = build_grenades(source, "dust2_CT/dust2_CT.txt")
+
+        output_dir = Path(self.enterContext(tempfile.TemporaryDirectory()))
+        for exporter in selected_exporters(output_dir, "all"):
+            exporter.export({"dust2": grenades})
+
+        for filename, keys, name_key in (
+            ("default/nades.json", ("maps", "de_dust2"), "name"),
+            ("hbn/de_dust2.json", ("grenades",), "name"),
+            ("secretservice/grenade_helper.json", ("spots",), "Name"),
+            ("sensory/de_dust2.json", ("lineups",), "name"),
+        ):
+            with self.subTest(output=filename):
+                records = json.loads((output_dir / filename).read_text(encoding="utf-8"))
+                for key in keys:
+                    records = records[key]
+                self.assertEqual([record[name_key] for record in records], ["Usable lineup"])
 
 
 class MapGroupingTests(unittest.TestCase):
