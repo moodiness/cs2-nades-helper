@@ -114,10 +114,6 @@ class SensoryExporterTests(unittest.TestCase):
         self.assertNotIn("aim_point", lineup)
 
     def test_destination_before_main_is_not_confused_with_aim_position(self):
-        grenades = build_grenades(self.source, "dust2_CT/dust2_CT.txt")
-        lineup = self.export_lineups(grenades)[0]
-        self.assertEqual(lineup["aim_point"], [10.0, 20.0, 30.0])
-        self.assertNotIn("target_end", lineup)
         source = {
             "MapAnnotationNode2": {
                 "Type": "grenade",
@@ -135,7 +131,7 @@ class SensoryExporterTests(unittest.TestCase):
         }
         grenades = build_grenades(source, "dust2_CT/dust2_CT.txt")
         lineup = self.export_lineups(grenades)[0]
-        self.assertEqual(lineup["target_end"], [100.0, 200.0, 300.0])
+        self.assertNotIn("target_end", lineup)
         self.assertEqual(lineup["aim_point"], [10.0, 20.0, 30.0])
 
     def test_ids_distinguish_source_node_ids_reused_between_teams(self):

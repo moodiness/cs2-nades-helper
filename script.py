@@ -91,7 +91,6 @@ class Grenade:
     source_id: str
     img: str = ""
     jump_throw: bool = False
-    target_end: list[Any] | None = None
     aim_point: list[Any] | None = None
 
 
@@ -149,7 +148,6 @@ def list_value(value: Any, limit: int | None = None) -> list[Any] | None:
 def build_grenades(data: dict[str, Any], source_name: str) -> list[Grenade]:
     main_nodes: dict[str, dict[str, Any]] = {}
     aims_by_master: dict[str, list[dict[str, Any]]] = {}
-    destinations_by_master: dict[str, list[Any]] = {}
 
     nodes = (
         value
@@ -177,23 +175,18 @@ def build_grenades(data: dict[str, Any], source_name: str) -> list[Grenade]:
             }
             continue
 
-        if subtype in ("aim_target", "destination"):
+        if subtype == "aim_target":
             master_id = node.get("MasterNodeId")
             if not isinstance(master_id, str) or not master_id:
                 continue
 
-            if subtype == "aim_target":
-                aims_by_master.setdefault(master_id, []).append(
-                    {
-                        "angles": list_value(node.get("Angles"), limit=2),
-                        "position": list_value(node.get("Position")),
-                        "desc": text_value(node.get("Desc")),
-                    }
-                )
-            else:
-                position = list_value(node.get("Position"))
-                if position is not None:
-                    destinations_by_master.setdefault(master_id, position)
+            aims_by_master.setdefault(master_id, []).append(
+                {
+                    "angles": list_value(node.get("Angles"), limit=2),
+                    "position": list_value(node.get("Position")),
+                    "desc": text_value(node.get("Desc")),
+                }
+            )
 
     for master_id, aims in aims_by_master.items():
         if master_id in main_nodes:
@@ -231,7 +224,6 @@ def build_grenades(data: dict[str, Any], source_name: str) -> list[Grenade]:
                 ang=angles,
                 source_id=f"{source_name}/{node_id}",
                 jump_throw=node["jump_throw"] or bool(JUMP_THROW_PATTERN.search(desc)),
-                target_end=destinations_by_master.get(node_id),
                 aim_point=first_aim["position"] if first_aim else None,
             )
         )
@@ -461,9 +453,6 @@ class SensoryExporter(JsonExporter):
 
         if grenade.aim_point is not None:
             payload["aim_point"] = grenade.aim_point
-
-        if grenade.target_end is not None:
-            payload["target_end"] = grenade.target_end
 
         return payload
 

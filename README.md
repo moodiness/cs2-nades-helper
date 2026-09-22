@@ -101,7 +101,6 @@ Sensory receives one JSON file per map in `out/sensory/`, with `version: 1`, the
 - `desc` becomes `notes`, preserving the original text. As in the other formats, the first aim-target description takes precedence over the main annotation description.
 - `pos` becomes `origin`; the first two aim angles become `view_angle`.
 - `aim_point` comes from the same aim-target node as `view_angle`. If its position is unavailable, the field is omitted, never `null` and never replaced with invented coordinates.
-- `target_end` is included only when the source has a linked destination position. It is not the aim-target position.
 - IDs are generated deterministically from the map, relative source filename, and annotation ID. They remain stable across repeated conversions, lineup reordering, and note edits.
 - `jump_throw` is enabled by the source `JumpThrow` flag or a recognized description such as `jt`, `J.T.`, `JumpThrow`, `jump throw`, `jump-throw`, or `jump_throw`, regardless of case.
 - Annotations missing a position or view angle are excluded during shared parsing for every format (`default`, HBN, SecretService, and Sensory). A warning identifies the annotation and source file; no coordinates are invented.
