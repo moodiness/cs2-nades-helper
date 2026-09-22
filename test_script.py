@@ -78,24 +78,24 @@ class SensoryExporterTests(unittest.TestCase):
 
     def test_actions_use_throw_instructions_instead_of_setup_or_later_hints(self):
         cases = (
-            ("crouched Jumpthrow", ("stationary", "crouched", "primary")),
-            ("walking M2 throw", ("walking", "standing", "secondary")),
-            ("crouch-walking M1 + M2 JT", ("walking", "crouched", "both")),
+            ("crouched Jumpthrow", ("crouched", "primary")),
+            ("walking M2 throw", ("standing", "secondary")),
+            ("crouch-walking M1 + M2 JT", ("crouched", "both")),
             (
                 "crouched line-up, then running M2 Jumpthrow",
-                ("running", "standing", "secondary"),
+                ("standing", "secondary"),
             ),
             (
                 "crouched throw \n line-up while standing",
-                ("stationary", "crouched", "primary"),
+                ("crouched", "primary"),
             ),
             (
                 "running Jumpthrow (throw Molotov first, then HE)",
-                ("running", "standing", "primary"),
+                ("standing", "primary"),
             ),
             (
                 "run left, then standing M1+M2 throw",
-                ("stationary", "standing", "both"),
+                ("standing", "both"),
             ),
         )
         for desc, expected in cases:
@@ -103,13 +103,21 @@ class SensoryExporterTests(unittest.TestCase):
                 self.source["MapAnnotationNode1"]["Desc"]["Text"] = desc
                 grenades = build_grenades(self.source, "dust2_CT/dust2_CT.txt")
                 lineup = self.export_lineups(grenades)[0]
-                self.assertEqual(
-                    (lineup["movement"], lineup["stance"], lineup["throw"]), expected
-                )
+                self.assertEqual((lineup["stance"], lineup["throw"]), expected)
+                self.assertEqual(lineup["movement"], "stationary")
+                self.assertIs(lineup["manual_action"], True)
+
+    def test_missing_aim_point_is_omitted_without_dropping_the_lineup(self):
+        del self.source["MapAnnotationNode1"]["Position"]
+        grenades = build_grenades(self.source, "dust2_CT/dust2_CT.txt")
+        lineup = self.export_lineups(grenades)[0]
+        self.assertNotIn("aim_point", lineup)
 
     def test_destination_before_main_is_not_confused_with_aim_position(self):
         grenades = build_grenades(self.source, "dust2_CT/dust2_CT.txt")
-        self.assertNotIn("target_end", self.export_lineups(grenades)[0])
+        lineup = self.export_lineups(grenades)[0]
+        self.assertEqual(lineup["aim_point"], [10.0, 20.0, 30.0])
+        self.assertNotIn("target_end", lineup)
         source = {
             "MapAnnotationNode2": {
                 "Type": "grenade",
@@ -128,6 +136,7 @@ class SensoryExporterTests(unittest.TestCase):
         grenades = build_grenades(source, "dust2_CT/dust2_CT.txt")
         lineup = self.export_lineups(grenades)[0]
         self.assertEqual(lineup["target_end"], [100.0, 200.0, 300.0])
+        self.assertEqual(lineup["aim_point"], [10.0, 20.0, 30.0])
 
     def test_ids_distinguish_source_node_ids_reused_between_teams(self):
         ct_grenades = build_grenades(self.source, "nuke_CT/nuke_CT.txt")

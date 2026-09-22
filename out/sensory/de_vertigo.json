@@ -6,7 +6,7 @@
       "id": "8072edab6661589c8071b7cad335af2e",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Stairs Flash",
@@ -24,6 +24,11 @@
         -5.463842,
         -92.52211
       ],
+      "aim_point": [
+        -2319.02832,
+        997.521729,
+        11826.594727
+      ],
       "target_end": [
         -2362.445068,
         12.156769,
@@ -36,7 +41,7 @@
       "id": "05a7b2e529f755c5bed18a7bfdbee969",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Stairs Flash",
@@ -54,6 +59,11 @@
         -5.895033,
         -109.215767
       ],
+      "aim_point": [
+        -2088.925293,
+        942.108398,
+        11819.862305
+      ],
       "target_end": [
         -2344.837646,
         86.609253,
@@ -66,7 +76,7 @@
       "id": "8e10a3c5a2b55801ae7c9b70014074e1",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Stairs Solo Flash",
@@ -84,6 +94,11 @@
         -31.982563,
         90.122353
       ],
+      "aim_point": [
+        -2217.903564,
+        455.120544,
+        11818.582031
+      ],
       "target_end": [
         -2218.717041,
         65.696823,
@@ -92,11 +107,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "6c9d481630745f3b8ab317d0e75374b1",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Main HE",
@@ -114,6 +129,11 @@
         49.113667,
         -53.743786
       ],
+      "aim_point": [
+        -2270.02002,
+        196.478668,
+        11777.958008
+      ],
       "target_end": [
         -2031.399902,
         -128.880844,
@@ -126,9 +146,9 @@
       "id": "b168218de494556a895543eed95a2848",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "B Main Solo Flash",
       "notes": "running throw",
       "origin": [
@@ -144,6 +164,11 @@
         7.314964,
         -115.886444
       ],
+      "aim_point": [
+        -2316.670654,
+        455.58374,
+        11795.138672
+      ],
       "target_end": [
         -2470.243164,
         128.495224,
@@ -156,7 +181,7 @@
       "id": "821ba7d3970c519ead71cb268a277809",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "White Solo Flash",
@@ -174,6 +199,11 @@
         -18.15324,
         -23.944868
       ],
+      "aim_point": [
+        -2446.954834,
+        584.994263,
+        11839.027344
+      ],
       "target_end": [
         -2512.466064,
         365.900879,
@@ -186,7 +216,7 @@
       "id": "f848413e880b5064841e8cde4633f250",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Main Solo Flash",
@@ -204,6 +234,11 @@
         -76.737984,
         -90.696571
       ],
+      "aim_point": [
+        -2285.61499,
+        194.424438,
+        11887.204102
+      ],
       "target_end": [
         -2286.196289,
         146.226624,
@@ -216,9 +251,9 @@
       "id": "07fda2b312555a52981e3b46b61ba3fa",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "B Stairs Incendiary",
       "notes": "running throw",
       "origin": [
@@ -234,6 +269,11 @@
         2.05146,
         -84.388855
       ],
+      "aim_point": [
+        -2263.595703,
+        445.360565,
+        11804.291016
+      ],
       "target_end": [
         -2207.671875,
         -104.969566,
@@ -246,7 +286,7 @@
       "id": "883481ca71cd52a9b6a9f5547d5c1b97",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Main Smoke",
@@ -264,6 +304,11 @@
         8.535048,
         -72.086906
       ],
+      "aim_point": [
+        -2603.542969,
+        954.897583,
+        11802.228516
+      ],
       "target_end": [
         -2084.782227,
         30.177494,
@@ -276,9 +321,9 @@
       "id": "1ee85d04ea8e564ea6f73a29434a42e6",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Under Stairs Molotov",
       "notes": "running throw",
       "origin": [
@@ -294,6 +339,11 @@
         2.298054,
         -84.098923
       ],
+      "aim_point": [
+        -2623.695557,
+        949.592346,
+        11813.061523
+      ],
       "target_end": [
         -2494.134521,
         28.114056,
@@ -306,9 +356,9 @@
       "id": "6d00248569ba54e2b190a8fa848e3e95",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "walking",
+      "movement": "stationary",
       "name": "B Main Smoke",
       "notes": "walking Jumpthrow",
       "origin": [
@@ -324,6 +374,11 @@
         6.43716,
         -127.109436
       ],
+      "aim_point": [
+        -2113.527588,
+        1017.72345,
+        11805.862305
+      ],
       "target_end": [
         -2039.72644,
         -17.059778,
@@ -336,7 +391,7 @@
       "id": "2e8f65939ffd5712833819335b89791d",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Yellow Solo Flash",
@@ -354,6 +409,11 @@
         0.66242,
         51.780125
       ],
+      "aim_point": [
+        -1074.103882,
+        -1143.40979,
+        11838.714844
+      ],
       "target_end": [
         -988.436768,
         -1034.63147,
@@ -366,7 +426,7 @@
       "id": "19f55b5becad578dbd3f36cc8f328db3",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp Solo Flash",
@@ -384,6 +444,11 @@
         -13.520966,
         53.997715
       ],
+      "aim_point": [
+        -1078.815308,
+        -1143.311523,
+        11863.250977
+      ],
       "target_end": [
         -806.666626,
         -874.642151,
@@ -396,7 +461,7 @@
       "id": "d4db3681b4fb596fa0aeca03dd59504c",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Yellow Solo Flash",
@@ -414,6 +479,11 @@
         2.18705,
         60.902996
       ],
+      "aim_point": [
+        -1007.373474,
+        -1251.715088,
+        11844.054688
+      ],
       "target_end": [
         -930.994568,
         -1114.466553,
@@ -426,7 +496,7 @@
       "id": "03830d03d02f503594c34eff1a87d3d0",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp Solo Flash",
@@ -444,6 +514,11 @@
         -2.509951,
         35.570068
       ],
+      "aim_point": [
+        -974.70459,
+        -1280.917236,
+        11852.25
+      ],
       "target_end": [
         -804.111755,
         -874.304504,
@@ -456,9 +531,9 @@
       "id": "68c263a3d03a5d73b7f173fa653713da",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Yellow Incendiary",
       "notes": "running throw",
       "origin": [
@@ -474,6 +549,11 @@
         -6.483179,
         -78.242104
       ],
+      "aim_point": [
+        -1115.723755,
+        -818.175293,
+        11851.162109
+      ],
       "target_end": [
         -920.741272,
         -925.566467,
@@ -486,7 +566,7 @@
       "id": "b9a87bd0fe1d51aea6aca22ad1a5b986",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Gap \n One-Way Smoke",
@@ -504,6 +584,11 @@
         -37.591782,
         -170.299072
       ],
+      "aim_point": [
+        -1119.135986,
+        -727.317871,
+        11942.874023
+      ],
       "target_end": [
         -1127.649292,
         -758.841614,
@@ -516,9 +601,9 @@
       "id": "9915b7ec6bd1556d9ae1d7f7e9fc7008",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Yellow Smoke",
       "notes": "running throw",
       "origin": [
@@ -534,6 +619,11 @@
         -21.76034,
         -70.441574
       ],
+      "aim_point": [
+        -1032.877441,
+        -47.546734,
+        11876.943359
+      ],
       "target_end": [
         -980.533997,
         -868.031799,
@@ -546,9 +636,9 @@
       "id": "d45e403334b9511a97e8ecc9f98ae13f",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Mid Smoke",
       "notes": "running throw",
       "origin": [
@@ -564,6 +654,11 @@
         -22.160248,
         -138.674805
       ],
+      "aim_point": [
+        -1475.0354,
+        270.059387,
+        11877.59082
+      ],
       "target_end": [
         -1701.687988,
         -492.526611,
@@ -572,11 +667,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "97ea2c986df957f099b6432dd827f121",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Mid HE",
@@ -594,6 +689,11 @@
         8.100707,
         -106.243568
       ],
+      "aim_point": [
+        -1791.997314,
+        59.980927,
+        11825.779297
+      ],
       "target_end": [
         -1970.088989,
         -551.312866,
@@ -602,11 +702,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "19d057e7d4c351a5a1be8c9d9d27085f",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Mid HE",
@@ -624,6 +724,11 @@
         -12.427486,
         -106.028275
       ],
+      "aim_point": [
+        -1713.745483,
+        345.10379,
+        11925.547852
+      ],
       "target_end": [
         -1976.270508,
         -568.753479,
@@ -632,11 +737,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "35d39d57356151a9a12b78f26e627be1",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Mid HE",
@@ -654,6 +759,11 @@
         13.382887,
         -113.768631
       ],
+      "aim_point": [
+        -1591.178589,
+        354.935883,
+        11896.885742
+      ],
       "target_end": [
         -2003.131592,
         -580.452881,
@@ -666,9 +776,9 @@
       "id": "eed6fe7a705057eaa7e8dd2adc76b263",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Mid Solo Flash",
       "notes": "running M2 Jumpthrow",
       "origin": [
@@ -684,6 +794,11 @@
         7.592359,
         -87.061295
       ],
+      "aim_point": [
+        -1774.959229,
+        -35.111977,
+        11826.658203
+      ],
       "target_end": [
         -1764.513916,
         -422.266357,
@@ -696,9 +811,9 @@
       "id": "2a4027adef10558eb98c8dbffeed4a82",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Mid Incendiary",
       "notes": "running throw",
       "origin": [
@@ -714,6 +829,11 @@
         -19.049749,
         -107.265289
       ],
+      "aim_point": [
+        -1324.022949,
+        890.098694,
+        11872.509766
+      ],
       "target_end": [
         -1920.876221,
         -473.338104,
@@ -726,7 +846,7 @@
       "id": "cc2695769f905e6e81788dd74c6118a2",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B White Flash",
@@ -744,6 +864,11 @@
         10.105534,
         179.780197
       ],
+      "aim_point": [
+        -1451.437134,
+        412.120605,
+        11828.916016
+      ],
       "target_end": [
         -2513.130371,
         416.195129,
@@ -756,7 +881,7 @@
       "id": "ac629f7c2b625fcf88951eef9d2c6186",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Bottom B Stairs \n Incendiary/HE",
@@ -774,6 +899,11 @@
         -7.465852,
         -146.970886
       ],
+      "aim_point": [
+        -1943.161011,
+        384.92392,
+        11852.864258
+      ],
       "target_end": [
         -2408.075928,
         82.666603,
@@ -782,11 +912,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "5cc5781f616759a39f9fe0f13af79759",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "",
@@ -804,6 +934,11 @@
         -7.465852,
         -146.970886
       ],
+      "aim_point": [
+        -1943.161011,
+        384.92392,
+        11852.864258
+      ],
       "target_end": [
         -2408.076904,
         82.667336,
@@ -816,7 +951,7 @@
       "id": "3ccc53b9084d55048234e9f60401824b",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Main Smoke",
@@ -834,6 +969,11 @@
         -35.832619,
         -157.335464
       ],
+      "aim_point": [
+        -1468.969238,
+        641.790955,
+        11958.261719
+      ],
       "target_end": [
         -2044.335938,
         -4.039153,
@@ -846,7 +986,7 @@
       "id": "a97ea8c3a4ef5403b21e1c6ffd26020a",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Stairs Smoke",
@@ -864,6 +1004,11 @@
         -2.768848,
         -111.86541
       ],
+      "aim_point": [
+        -1750.230591,
+        1004.270142,
+        11821.904297
+      ],
       "target_end": [
         -2446.580322,
         90.959862,
@@ -872,11 +1017,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "64c94fbe99ee5c13ac8a8cae11090cca",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "",
@@ -894,6 +1039,11 @@
         -2.014089,
         145.660934
       ],
+      "aim_point": [
+        -1575.322266,
+        635.365234,
+        11941.385742
+      ],
       "target_end": [
         -2229.082764,
         889.956116,
@@ -906,7 +1056,7 @@
       "id": "81e2ff44f7df50ad9a7605e336d044f9",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Default \n Incendiary/HE",
@@ -924,6 +1074,11 @@
         -2.014089,
         145.660934
       ],
+      "aim_point": [
+        -1575.322266,
+        635.365234,
+        11941.385742
+      ],
       "target_end": [
         -2229.082764,
         889.956116,
@@ -936,7 +1091,7 @@
       "id": "7485c91da70f50659027ba5c434ce069",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "A Ramp re-Smoke",
@@ -954,6 +1109,11 @@
         -27.67358,
         151.566284
       ],
+      "aim_point": [
+        -167.910782,
+        -1412.776489,
+        11886.314453
+      ],
       "target_end": [
         -783.320435,
         -829.874695,
@@ -966,7 +1126,7 @@
       "id": "34d6e878b3c6514893c7929eccd8f3ae",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp Solo Flash",
@@ -984,6 +1144,11 @@
         -20.589523,
         145.326767
       ],
+      "aim_point": [
+        -223.957336,
+        -1364.662598,
+        11875.038086
+      ],
       "target_end": [
         -679.782532,
         -1049.350952,
@@ -996,7 +1161,7 @@
       "id": "093270a9d0fb521b867ee818b299d1db",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "X-Box Smoke",
@@ -1014,6 +1179,11 @@
         -12.997937,
         160.972076
       ],
+      "aim_point": [
+        -239.083282,
+        -1386.150391,
+        11862.362305
+      ],
       "target_end": [
         -654.898376,
         -1058.063477,
@@ -1026,9 +1196,9 @@
       "id": "10e4c35d64c25a17bc6d87e449cab2e4",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Bridge Smoke / \n Forklift Molotov",
       "notes": "go a few steps back, then \n [smoke:] running throw \n [molly:] walking throw",
       "origin": [
@@ -1044,6 +1214,11 @@
         5.932494,
         107.701591
       ],
+      "aim_point": [
+        -663.749084,
+        -1083.85376,
+        11691.233398
+      ],
       "target_end": [
         -1115.681152,
         -96.730293,
@@ -1056,7 +1231,7 @@
       "id": "5c30bfbb87445c128406f8b5c40aca2c",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp Incendiary",
@@ -1074,6 +1249,11 @@
         -12.135358,
         -126.621925
       ],
+      "aim_point": [
+        -826.351685,
+        -469.434296,
+        11842.893555
+      ],
       "target_end": [
         -860.104492,
         -961.166809,
@@ -1086,7 +1266,7 @@
       "id": "ac80399f94935ab28baebe286c1798f7",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp GOD Flash",
@@ -1104,6 +1284,11 @@
         -18.649261,
         -113.277458
       ],
+      "aim_point": [
+        -541.406128,
+        -600.093506,
+        11871.848633
+      ],
       "target_end": [
         -901.009094,
         -1435.985962,
@@ -1116,7 +1301,7 @@
       "id": "bffa46dbad5552f88bc7abd945bebc4e",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp GOD Flash",
@@ -1134,6 +1319,11 @@
         -12.797195,
         -97.353386
       ],
+      "aim_point": [
+        -780.428467,
+        -487.032867,
+        11861.87207
+      ],
       "target_end": [
         -910.084961,
         -1428.49939,
@@ -1142,11 +1332,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "ce597f443e095230b0db56c881c6d138",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Xantares HE",
@@ -1164,6 +1354,11 @@
         -8.624446,
         -113.103226
       ],
+      "aim_point": [
+        -101.845245,
+        -296.195007,
+        11854.867188
+      ],
       "target_end": [
         -483.078766,
         -1189.846436,
@@ -1176,7 +1371,7 @@
       "id": "edc62a02c45050fbab5766e489fae430",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp Molotov",
@@ -1194,6 +1389,11 @@
         -60.090515,
         -179.948456
       ],
+      "aim_point": [
+        -467.831848,
+        -848.059448,
+        11955.552734
+      ],
       "target_end": [
         -742.658997,
         -848.310913,
@@ -1202,11 +1402,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "8e5176289839500bbbc49e11940f123f",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp HE",
@@ -1224,6 +1424,11 @@
         -60.105915,
         -179.948456
       ],
+      "aim_point": [
+        -467.808563,
+        -848.059448,
+        11955.566406
+      ],
       "target_end": [
         -742.478271,
         -848.310913,
@@ -1236,7 +1441,7 @@
       "id": "7dfb4c5b8b275e82aa93756e2afedb07",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "X-Box Solo Flash",
@@ -1254,6 +1459,11 @@
         -56.902729,
         -141.232864
       ],
+      "aim_point": [
+        -460.545074,
+        -882.206909,
+        11952.645508
+      ],
       "target_end": [
         -681.52002,
         -1059.664673,
@@ -1266,7 +1476,7 @@
       "id": "6ea1aa8d030e5f3e99af15f33530b34d",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp Flash",
@@ -1284,6 +1494,11 @@
         -9.578976,
         -83.223419
       ],
+      "aim_point": [
+        -941.417236,
+        -569.878235,
+        11857.511719
+      ],
       "target_end": [
         -879.854187,
         -902.520874,
@@ -1292,11 +1507,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "a8259d2b16795bd29e17d0c2daa55b14",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp HE",
@@ -1314,6 +1529,11 @@
         -3.788719,
         -131.144867
       ],
+      "aim_point": [
+        -867.697937,
+        -572.07196,
+        11889.638672
+      ],
       "target_end": [
         -803.11499,
         -1008.268127,
@@ -1326,7 +1546,7 @@
       "id": "e254394591645cb4bb468ad325ddc92e",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "X-Box Smoke",
@@ -1344,6 +1564,11 @@
         -10.533908,
         -140.908554
       ],
+      "aim_point": [
+        -580.268677,
+        -575.049805,
+        11858.152344
+      ],
       "target_end": [
         -665.086914,
         -1058.208252,
@@ -1352,13 +1577,13 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "294c2a140d9458fc96265d6732813063",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Default HE",
       "notes": "running throw",
       "origin": [
@@ -1374,6 +1599,11 @@
         -13.136512,
         -30.126575
       ],
+      "aim_point": [
+        -636.740234,
+        -156.909012,
+        11862.598633
+      ],
       "target_end": [
         -362.298096,
         -692.488831,
@@ -1386,9 +1616,9 @@
       "id": "06f7f1e2fc9956318fcc03d3fad85ffa",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Yellow Smoke",
       "notes": "running throw",
       "origin": [
@@ -1404,6 +1634,11 @@
         -19.019169,
         -90.831863
       ],
+      "aim_point": [
+        -920.400024,
+        -16.66703,
+        11872.459961
+      ],
       "target_end": [
         -954.591125,
         -629.256531,
@@ -1416,9 +1651,9 @@
       "id": "79ff37d50e485d13afce0f25cabc4904",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "A Ramp Smoke",
       "notes": "running throw",
       "origin": [
@@ -1434,6 +1669,11 @@
         -23.392521,
         -86.358383
       ],
+      "aim_point": [
+        -913.211426,
+        -73.110092,
+        11879.574219
+      ],
       "target_end": [
         -776.665283,
         -441.75766,
@@ -1446,7 +1686,7 @@
       "id": "c1fd6230c9dd5be1b2348b2f6c68b231",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Gap GOD Flash",
@@ -1464,6 +1704,11 @@
         12.276767,
         -164.018005
       ],
+      "aim_point": [
+        -127.366653,
+        -437.237396,
+        11871.707031
+      ],
       "target_end": [
         -1179.799927,
         -739.902954,
@@ -1476,7 +1721,7 @@
       "id": "199173bed5db5bb697ce562c725e352a",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Crane Smoke",
@@ -1494,6 +1739,11 @@
         -11.008016,
         -113.706543
       ],
+      "aim_point": [
+        -102.497772,
+        -168.908234,
+        11858.96582
+      ],
       "target_end": [
         -406.729248,
         -1007.6474,
@@ -1506,7 +1756,7 @@
       "id": "09b950d3148a5fde8bf64323375c6097",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Crane Flash",
@@ -1524,6 +1774,11 @@
         7.256815,
         -112.020523
       ],
+      "aim_point": [
+        -100.221619,
+        -170.993759,
+        11827.239258
+      ],
       "target_end": [
         -484.000702,
         -1119.90332,
@@ -1536,9 +1791,9 @@
       "id": "95a1cc9b9b715ed19b612d68f29eae2f",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Sandbags Retake Incendiary",
       "notes": "running throw",
       "origin": [
@@ -1554,6 +1809,11 @@
         -17.340744,
         -85.151894
       ],
+      "aim_point": [
+        -178.967484,
+        143.855362,
+        11876.676758
+      ],
       "target_end": [
         -82.020645,
         -1411.24939,
@@ -1562,11 +1822,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "7e88cbb9de3650d5a38edce05b6dd0b0",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Default HE",
@@ -1584,6 +1844,11 @@
         -8.100764,
         -98.495407
       ],
+      "aim_point": [
+        -201.656845,
+        141.052826,
+        11860.962891
+      ],
       "target_end": [
         -330.673889,
         -722.693665,
@@ -1596,7 +1861,7 @@
       "id": "d7254e8ca5be5c69883539531189630b",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Retake Smoke",
@@ -1614,6 +1879,11 @@
         -57.057274,
         -118.376572
       ],
+      "aim_point": [
+        -212.87616,
+        191.122833,
+        11930.792969
+      ],
       "target_end": [
         -318.3927,
         -743.159119,
@@ -1626,7 +1896,7 @@
       "id": "615e62adaf415e31afcfd4159bb066e5",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Default Incendiary",
@@ -1644,6 +1914,11 @@
         8.885461,
         -174.948395
       ],
+      "aim_point": [
+        -913.447388,
+        959.266235,
+        11824.424805
+      ],
       "target_end": [
         -2312.885498,
         835.573792,
@@ -1656,9 +1931,9 @@
       "id": "03aac003dbf05131a484a2c16216e17d",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "walking",
+      "movement": "stationary",
       "name": "Lobby Smoke",
       "notes": "crouch-walking Jumpthrow",
       "origin": [
@@ -1674,6 +1949,11 @@
         -12.353439,
         37.665253
       ],
+      "aim_point": [
+        -2128.645752,
+        -1470.618774,
+        11843.265625
+      ],
       "target_end": [
         -1009.974487,
         -39.641747,
@@ -1686,7 +1966,7 @@
       "id": "e84899ff01765a69a6fc5a544bd60609",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Stairs Flash",
@@ -1704,6 +1984,11 @@
         -53.825394,
         73.909317
       ],
+      "aim_point": [
+        -2336.604492,
+        -552.777344,
+        11632.59375
+      ],
       "target_end": [
         -2310.186768,
         -196.653519,
@@ -1716,9 +2001,9 @@
       "id": "538c341bff70585896be6d0bbf9d4b4c",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "B Stairs Extinguish/ \n Lurk Smoke",
       "notes": "running throw",
       "origin": [
@@ -1734,6 +2019,11 @@
         -8.441689,
         36.765194
       ],
+      "aim_point": [
+        -2020.929321,
+        -448.941345,
+        11598.339844
+      ],
       "target_end": [
         -2165.64624,
         27.237267,
@@ -1746,9 +2036,9 @@
       "id": "7e9bbfce4db75cf391f3838e9649e2f5",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "B Stairs Flash",
       "notes": "running throw",
       "origin": [
@@ -1764,6 +2054,11 @@
         -4.499279,
         107.435989
       ],
+      "aim_point": [
+        -1974.117554,
+        -328.113739,
+        11623.71582
+      ],
       "target_end": [
         -2275.293701,
         -218.14006,
@@ -1776,7 +2071,7 @@
       "id": "bc7b01b72e105757a03f5f8c197b2105",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Right Gen Smoke",
@@ -1794,6 +2089,11 @@
         -62.819019,
         57.580177
       ],
+      "aim_point": [
+        -2349.77832,
+        -74.394608,
+        11686.828125
+      ],
       "target_end": [
         -1808.766968,
         576.168335,
@@ -1806,7 +2106,7 @@
       "id": "2edf007201bf580f89240523bcacbaae",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Left Gen Smoke",
@@ -1824,6 +2124,11 @@
         -62.819019,
         57.580177
       ],
+      "aim_point": [
+        -2352.251221,
+        -83.146332,
+        11678.234375
+      ],
       "target_end": [
         -1689.043213,
         815.16156,
@@ -1836,7 +2141,7 @@
       "id": "82c92f95268751a980d37649a0365d1e",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Default Molotov",
@@ -1854,6 +2159,11 @@
         -32.71233,
         77.662064
       ],
+      "aim_point": [
+        -2356.292236,
+        -30.772125,
+        11669.913086
+      ],
       "target_end": [
         -2131.934082,
         994.943848,
@@ -1866,7 +2176,7 @@
       "id": "dbf9336a808f51c38ae84b7ac0798d08",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Flash",
@@ -1884,6 +2194,11 @@
         -37.68668,
         65.57283
       ],
+      "aim_point": [
+        -2341.545654,
+        -40.917793,
+        11677.005859
+      ],
       "target_end": [
         -2142.770752,
         540.914856,
@@ -1896,7 +2211,7 @@
       "id": "ba8ec39f7eb555088eada6813c0da6a6",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Lurk Smoke",
@@ -1914,6 +2229,11 @@
         -8.134143,
         74.935234
       ],
+      "aim_point": [
+        -2503.240479,
+        -90.765564,
+        11630.020508
+      ],
       "target_end": [
         -2180.776367,
         643.081177,
@@ -1926,7 +2246,7 @@
       "id": "118ac05381a45b968cbab2e780018a3b",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Quad Molotov",
@@ -1944,6 +2264,11 @@
         1.460009,
         85.51487
       ],
+      "aim_point": [
+        -2521.151367,
+        -86.69101,
+        11613.323242
+      ],
       "target_end": [
         -2424.606934,
         1077.755859,
@@ -1956,7 +2281,7 @@
       "id": "a629d0e8a63c5f69b70cb652dfdbdb0e",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Default Molotov",
@@ -1974,6 +2299,11 @@
         2.738208,
         70.977249
       ],
+      "aim_point": [
+        -2496.565186,
+        -92.266899,
+        11661.253906
+      ],
       "target_end": [
         -2074.073486,
         1088.867554,
@@ -1986,7 +2316,7 @@
       "id": "431ee247539b543e93ca296d0e2961bf",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Flash",
@@ -2004,6 +2334,11 @@
         -32.989742,
         63.461552
       ],
+      "aim_point": [
+        -2491.64624,
+        -111.658775,
+        11720.480469
+      ],
       "target_end": [
         -2140.813965,
         590.78302,
@@ -2016,7 +2351,7 @@
       "id": "c860e9b891eb556293c5deaa6387ee08",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Default Molotov",
@@ -2034,6 +2369,11 @@
         -29.617096,
         82.742226
       ],
+      "aim_point": [
+        -2246.429443,
+        -112.501892,
+        11729.291016
+      ],
       "target_end": [
         -2108.749268,
         968.830627,
@@ -2046,7 +2386,7 @@
       "id": "7a53ab9d55905d2f9f171dcd75703ee0",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Quad Molotov",
@@ -2064,6 +2404,11 @@
         -0.095321,
         99.959068
       ],
+      "aim_point": [
+        -2234.259521,
+        -197.466339,
+        11680.037109
+      ],
       "target_end": [
         -2465.727539,
         1120.716553,
@@ -2072,11 +2417,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "c67cd158f1c15111ab9ae3e71f0c6115",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "White HE",
@@ -2094,6 +2439,11 @@
         -22.533123,
         88.038094
       ],
+      "aim_point": [
+        -2530.806396,
+        88.343422,
+        11654.192383
+      ],
       "target_end": [
         -2510.124756,
         692.316833,
@@ -2102,11 +2452,11 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "grenade",
+      "grenade": "he",
       "id": "8f329a5586a45974be7384684de67503",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "White HE",
@@ -2124,6 +2474,11 @@
         -21.701494,
         113.86586
       ],
+      "aim_point": [
+        -2165.625244,
+        -126.004997,
+        11698.848633
+      ],
       "target_end": [
         -2524.455566,
         685.04657,
@@ -2136,7 +2491,7 @@
       "id": "b21888161d8b5c76bfe9580444313427",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "",
@@ -2154,6 +2509,11 @@
         -28.954863,
         114.803902
       ],
+      "aim_point": [
+        -2294.143799,
+        -119.316109,
+        11728.283203
+      ],
       "target_end": [
         -2640.18042,
         628.912109,
@@ -2166,7 +2526,7 @@
       "id": "7fbfb22ddc1d5aa2be4b8378a52df564",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Heaven Molotov",
@@ -2184,6 +2544,11 @@
         3.822596,
         16.344481
       ],
+      "aim_point": [
+        -2392.505859,
+        197.109818,
+        11806.170898
+      ],
       "target_end": [
         -1509.003174,
         531.846375,
@@ -2196,7 +2561,7 @@
       "id": "3bbcfad3ef85574b8a2b647daa80e70c",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Right Gen Smoke",
@@ -2214,6 +2579,11 @@
         -52.562786,
         89.453766
       ],
+      "aim_point": [
+        -1875.386108,
+        -1107.105957,
+        11631.273438
+      ],
       "target_end": [
         -1857.285156,
         572.842346,
@@ -2226,7 +2596,7 @@
       "id": "ef47f2de64385a82832fed4a952e9a1a",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "B Left Gen Smoke",
@@ -2244,6 +2614,11 @@
         -51.946789,
         84.540771
       ],
+      "aim_point": [
+        -1914.10498,
+        -1134.672363,
+        11685.472656
+      ],
       "target_end": [
         -1722.202759,
         873.019226,
@@ -2256,7 +2631,7 @@
       "id": "01f775570c6e53e4a696ba419601318b",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Gap Smoke",
@@ -2274,6 +2649,11 @@
         -80.974602,
         56.590847
       ],
+      "aim_point": [
+        -1409.393921,
+        -1586.873657,
+        11651.632812
+      ],
       "target_end": [
         -1103.338745,
         -1122.900635,
@@ -2286,7 +2666,7 @@
       "id": "00bc2fd7efeb5b2db7fe8358d205a786",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Heaven Smoke",
@@ -2304,6 +2684,11 @@
         -62.982693,
         76.38575
       ],
+      "aim_point": [
+        -1967.276245,
+        -993.818665,
+        11640.958008
+      ],
       "target_end": [
         -1577.977295,
         614.142578,
@@ -2316,7 +2701,7 @@
       "id": "8fc569f7b6ed5f92badc1f40e5c1c3e4",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Left B Smoke",
@@ -2334,6 +2719,11 @@
         -62.767197,
         80.23642
       ],
+      "aim_point": [
+        -1970.208496,
+        -992.87085,
+        11622.786133
+      ],
       "target_end": [
         -1669.127319,
         757.413086,
@@ -2346,7 +2736,7 @@
       "id": "ed7a3b25795259dd8844c40467faf93c",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "CT Smoke",
@@ -2364,6 +2754,11 @@
         -11.427002,
         26.456072
       ],
+      "aim_point": [
+        -1882.214478,
+        -28.499176,
+        11859.682617
+      ],
       "target_end": [
         -1086.15918,
         438.998199,
@@ -2376,7 +2771,7 @@
       "id": "2164e7a25c035bc4a4987017e35a3f93",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Heaven Molotov",
@@ -2394,6 +2789,11 @@
         -13.829371,
         61.389729
       ],
+      "aim_point": [
+        -1901.03418,
+        -210.723343,
+        11886.774414
+      ],
       "target_end": [
         -1514.939819,
         497.127167,
@@ -2406,7 +2806,7 @@
       "id": "69de08917fb95a34ac54d48f95d0d742",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Lobby Smoke",
@@ -2424,6 +2824,11 @@
         2.544633,
         47.188454
       ],
+      "aim_point": [
+        -1902.073486,
+        1.11972,
+        11817.431641
+      ],
       "target_end": [
         -985.619019,
         13.82083,
@@ -2436,7 +2841,7 @@
       "id": "602df45146c55e419abfd3ad8bc035db",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Heaven/B Flash",
@@ -2454,6 +2859,11 @@
         0.049937,
         85.057159
       ],
+      "aim_point": [
+        -1909.006836,
+        -492.405426,
+        11839.78418
+      ],
       "target_end": [
         -1822.288086,
         510.394958,
@@ -2466,7 +2876,7 @@
       "id": "5e3e8d4c7b1f529cb62254ada82bc3ed",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "",
@@ -2484,6 +2894,11 @@
         -0.011663,
         93.357986
       ],
+      "aim_point": [
+        -1923.480469,
+        -492.2052,
+        11839.891602
+      ],
       "target_end": [
         -1982.428101,
         512.385864,
@@ -2496,7 +2911,7 @@
       "id": "25ba756572c35ad093a3f525ce75582a",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Gap + 51 Molotov",
@@ -2514,6 +2929,11 @@
         -9.4214,
         -136.179398
       ],
+      "aim_point": [
+        -1287.209473,
+        -799.577881,
+        11880.400391
+      ],
       "target_end": [
         -978.944092,
         -1240.814819,
@@ -2526,7 +2946,7 @@
       "id": "6e8e3f6f448e541384d1ca9fddf59116",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "A Site Smoke",
@@ -2544,6 +2964,11 @@
         -65.215904,
         8.991033
       ],
+      "aim_point": [
+        -1382.564819,
+        -683.418823,
+        11930.660156
+      ],
       "target_end": [
         -325.701141,
         -516.19043,
@@ -2556,7 +2981,7 @@
       "id": "b86b1851e6cf5cbfa70ba1d8a4550898",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp Lurk Smoke",
@@ -2574,6 +2999,11 @@
         -15.674319,
         -56.880188
       ],
+      "aim_point": [
+        -1030.381348,
+        -244.607208,
+        11578.887695
+      ],
       "target_end": [
         -731.046021,
         -937.10614,
@@ -2586,7 +3016,7 @@
       "id": "e3ef7e9b800054d9adf7c1c36d239774",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp Flash",
@@ -2604,6 +3034,11 @@
         -32.244736,
         -66.321823
       ],
+      "aim_point": [
+        -1048.002319,
+        -89.49028,
+        11605.224609
+      ],
       "target_end": [
         -851.221252,
         -538.227539,
@@ -2616,7 +3051,7 @@
       "id": "113b9de5b4e05133996c70fd27ca0799",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Ramp Close Lurk Smoke",
@@ -2634,6 +3069,11 @@
         -10.145805,
         -50.439362
       ],
+      "aim_point": [
+        -1019.279175,
+        -87.920906,
+        11569.486328
+      ],
       "target_end": [
         -870.185242,
         -650.531311,
@@ -2646,7 +3086,7 @@
       "id": "316840c898cd587ba83fbaa2a2f10eae",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "A Short Molotov",
@@ -2664,6 +3104,11 @@
         -33.35252,
         95.300018
       ],
+      "aim_point": [
+        -1009.687378,
+        -846.215942,
+        11766.849609
+      ],
       "target_end": [
         -1033.947998,
         -584.773193,
@@ -2676,7 +3121,7 @@
       "id": "09690e9bd9045425a2fb911002fd8fb8",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Gap Solo Flash",
@@ -2694,6 +3139,11 @@
         -24.528353,
         -43.931343
       ],
+      "aim_point": [
+        -936.453491,
+        -992.507812,
+        11753.385742
+      ],
       "target_end": [
         -1110.680298,
         -1222.639893,
@@ -2706,7 +3156,7 @@
       "id": "cfdb747b41f75941b47c0cffb51d01f8",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Catwalk Smoke",
@@ -2724,6 +3174,11 @@
         -57.654362,
         20.440071
       ],
+      "aim_point": [
+        -951.837708,
+        -910.70459,
+        11796.354492
+      ],
       "target_end": [
         5.52124,
         -499.838959,
@@ -2736,7 +3191,7 @@
       "id": "d7a366eb882d5602b8ea2559e426ce2a",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "51 Molotov",
@@ -2754,6 +3209,11 @@
         -41.792034,
         -9.372032
       ],
+      "aim_point": [
+        -1350.406616,
+        -837.100403,
+        11888.513672
+      ],
       "target_end": [
         -936.56012,
         -1355.110107,
@@ -2766,7 +3226,7 @@
       "id": "49be8eefc62e58be96ed77ca6e77d46d",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "51 Flash",
@@ -2784,6 +3244,11 @@
         -43.547626,
         -9.279633
       ],
+      "aim_point": [
+        -1352.437134,
+        -836.654907,
+        11908.766602
+      ],
       "target_end": [
         -898.915405,
         -1381.434448,
@@ -2796,7 +3261,7 @@
       "id": "496ec6bddc905c83aed7b9e612420959",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Mid Lurk Smoke",
@@ -2814,6 +3279,11 @@
         -2.290982,
         169.078918
       ],
+      "aim_point": [
+        -1778.141724,
+        38.898663,
+        11843.868164
+      ],
       "target_end": [
         -1385.679077,
         231.872971,
@@ -2826,9 +3296,9 @@
       "id": "e0742dc1984b59a0b798ced771a96779",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "walking",
+      "movement": "stationary",
       "name": "B Split Smoke",
       "notes": "walking throw",
       "origin": [
@@ -2844,6 +3314,11 @@
         2.621619,
         38.286747
       ],
+      "aim_point": [
+        -1847.53894,
+        71.756027,
+        11835.296875
+      ],
       "target_end": [
         -1278.005127,
         195.397949,
@@ -2856,7 +3331,7 @@
       "id": "70f0e23b0b0b5c559b8fc11102fbae2a",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Left A Smoke",
@@ -2874,6 +3349,11 @@
         -38.958015,
         150.692276
       ],
+      "aim_point": [
+        -723.839661,
+        -978.904907,
+        11773.476562
+      ],
       "target_end": [
         -512.233032,
         -665.960388,
@@ -2886,7 +3366,7 @@
       "id": "f42fa75aa16554218574d8054a008645",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "A Short Molotov",
@@ -2904,6 +3384,11 @@
         -52.050064,
         130.57045
       ],
+      "aim_point": [
+        -696.031189,
+        -970.255005,
+        11789.456055
+      ],
       "target_end": [
         -994.862244,
         -621.246338,
@@ -2916,9 +3401,9 @@
       "id": "b1c9f4c2c84757b58b5d365116b40d48",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "walking",
+      "movement": "stationary",
       "name": "Gap Flash",
       "notes": "walking M2 Jumpthrow",
       "origin": [
@@ -2934,6 +3419,11 @@
         -35.462303,
         -140.485077
       ],
+      "aim_point": [
+        -718.868103,
+        -1068.793579,
+        11768.618164
+      ],
       "target_end": [
         -1112.231812,
         -1182.831299,
@@ -2946,7 +3436,7 @@
       "id": "4d738d1b8bfa5a9cb263c476647df839",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "New Gap Smoke",
@@ -2964,6 +3454,11 @@
         -51.878841,
         111.29467
       ],
+      "aim_point": [
+        -678.45282,
+        -959.450928,
+        11789.272461
+      ],
       "target_end": [
         -888.999634,
         -419.282166,
@@ -2976,9 +3471,9 @@
       "id": "b84793c4f2145fcfab4747305a849ccc",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "walking",
+      "movement": "stationary",
       "name": "Lobby Smoke",
       "notes": "walking Jumpthrow",
       "origin": [
@@ -2994,6 +3489,11 @@
         -6.125671,
         37.654213
       ],
+      "aim_point": [
+        -801.309143,
+        -1235.228149,
+        11722.541992
+      ],
       "target_end": [
         -571.483704,
         -223.876083,
@@ -3006,7 +3506,7 @@
       "id": "4d0e86d01c6854d5b9293460c9244c76",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Heaven Molotov",
@@ -3024,6 +3524,11 @@
         -3.646277,
         62.70993
       ],
+      "aim_point": [
+        -834.271606,
+        -1207.278931,
+        11718.230469
+      ],
       "target_end": [
         -13.900862,
         -30.877684,
@@ -3036,7 +3541,7 @@
       "id": "abff2cd9cb285ff685d8edb3b9cf49ed",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "A GOD Flash",
@@ -3054,6 +3559,11 @@
         -2.907077,
         34.266235
       ],
+      "aim_point": [
+        -797.491638,
+        -1239.737305,
+        11716.942383
+      ],
       "target_end": [
         4653.819336,
         2474.184814,
@@ -3066,7 +3576,7 @@
       "id": "296649e268c256c69c6a1e3847b010db",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "New Gap Smoke",
@@ -3084,6 +3594,11 @@
         -0.843478,
         93.110909
       ],
+      "aim_point": [
+        -847.592468,
+        -1259.101074,
+        11713.342773
+      ],
       "target_end": [
         -901.835083,
         -334.861603,
@@ -3096,9 +3611,9 @@
       "id": "03bc9b83cb3d5e7182915f3381584c1b",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Lobby Smoke",
       "notes": "running throw",
       "origin": [
@@ -3114,6 +3629,11 @@
         -29.010149,
         45.668434
       ],
+      "aim_point": [
+        -574.186157,
+        -1296.406372,
+        11762.792969
+      ],
       "target_end": [
         -496.469177,
         -277.74588,
@@ -3126,7 +3646,7 @@
       "id": "e4e70c7079315c849262b47a81ad08ef",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Right A Smoke",
@@ -3144,6 +3664,11 @@
         -13.594802,
         43.389244
       ],
+      "aim_point": [
+        -392.243805,
+        -1069.26001,
+        11795.276367
+      ],
       "target_end": [
         -271.50824,
         -513.717712,
@@ -3156,7 +3681,7 @@
       "id": "7a6d36e6338c58e5bb8b15a7b53f6f7f",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Orange Molotov",
@@ -3174,6 +3699,11 @@
         -21.95697,
         56.109589
       ],
+      "aim_point": [
+        -411.162109,
+        -1059.041016,
+        11809.161133
+      ],
       "target_end": [
         -250.37178,
         -187.52478,
@@ -3186,9 +3716,9 @@
       "id": "c3ddf90a85105064b850cc115ae2f0b5",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "walking",
+      "movement": "stationary",
       "name": "Solo A Smoke",
       "notes": "walking Jumpthrow",
       "origin": [
@@ -3204,6 +3734,11 @@
         -11.83939,
         143.141968
       ],
+      "aim_point": [
+        -734.341553,
+        -958.261353,
+        11731.118164
+      ],
       "target_end": [
         -329.21579,
         -410.708496,
@@ -3216,7 +3751,7 @@
       "id": "7032c51bf31456c3819d9b240a40bf81",
       "jump_throw": true,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "A GOD Flash",
@@ -3234,6 +3769,11 @@
         -11.839356,
         156.754745
       ],
+      "aim_point": [
+        -745.958984,
+        -978.340942,
+        11731.118164
+      ],
       "target_end": [
         -671.927368,
         -789.615967,
@@ -3246,7 +3786,7 @@
       "id": "1d1b93ca083c5c3f845158b7b544369c",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "A Site Waterfall Smoke",
@@ -3264,6 +3804,11 @@
         -70.206238,
         59.847107
       ],
+      "aim_point": [
+        -825.156128,
+        -1329.663086,
+        11805.962891
+      ],
       "target_end": [
         -371.761108,
         -549.202576,
@@ -3276,7 +3821,7 @@
       "id": "58a736b6dbc65b6eb3c2a06781d103a4",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Orange Waterfall Smoke",
@@ -3294,6 +3839,11 @@
         -64.461914,
         52.162472
       ],
+      "aim_point": [
+        -853.58313,
+        -1261.921631,
+        11802.100586
+      ],
       "target_end": [
         -181.30278,
         -396.389923,
@@ -3306,9 +3856,9 @@
       "id": "7ec4f3daa80f526c93f4e007a69b3d29",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Gap Molotov",
       "notes": "running throw",
       "origin": [
@@ -3324,6 +3874,11 @@
         -29.826954,
         -107.517258
       ],
+      "aim_point": [
+        -822.515442,
+        -454.656067,
+        11601.609375
+      ],
       "target_end": [
         -1142.106079,
         -1005.199036,
@@ -3336,7 +3891,7 @@
       "id": "1923e96c8ec459c9bc40b3f94f1290be",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
       "name": "Sandbags Molotov",
@@ -3354,6 +3909,11 @@
         -25.545137,
         -36.706318
       ],
+      "aim_point": [
+        -804.626221,
+        -922.583679,
+        11716.645508
+      ],
       "target_end": [
         -112.996529,
         -1443.612061,
@@ -3366,9 +3926,9 @@
       "id": "2fc46243f8f856118d5954d44216f222",
       "jump_throw": false,
       "landing_tolerance": 24.0,
-      "manual_action": false,
+      "manual_action": true,
       "max_speed": 8.0,
-      "movement": "running",
+      "movement": "stationary",
       "name": "Side-Ramp Flash",
       "notes": "running throw",
       "origin": [
@@ -3383,6 +3943,11 @@
       "view_angle": [
         -8.559274,
         -89.814034
+      ],
+      "aim_point": [
+        -880.170227,
+        -25.918625,
+        11598.753906
       ],
       "target_end": [
         -876.491211,

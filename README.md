@@ -100,6 +100,7 @@ Sensory receives one JSON file per map in `out/sensory/`, with `version: 1`, the
 
 - `desc` becomes `notes`, preserving the original text. As in the other formats, the first aim-target description takes precedence over the main annotation description.
 - `pos` becomes `origin`; the first two aim angles become `view_angle`.
+- `aim_point` comes from the same aim-target node as `view_angle`. If its position is unavailable, the field is omitted, never `null` and never replaced with invented coordinates.
 - `target_end` is included only when the source has a linked destination position. It is not the aim-target position.
 - IDs are generated deterministically from the map, relative source filename, and annotation ID. They remain stable across repeated conversions, lineup reordering, and note edits.
 - `jump_throw` is enabled by the source `JumpThrow` flag or a recognized description such as `jt`, `J.T.`, `JumpThrow`, `jump throw`, `jump-throw`, or `jump_throw`, regardless of case.
@@ -111,33 +112,33 @@ Sensory receives one JSON file per map in `out/sensory/`, with `version: 1`, the
 | --- | --- |
 | Smoke | `smoke` |
 | Molotov / incendiary / fire | `fire` |
-| HE | `grenade` (provisional) |
-| Flashbang | `flash` (provisional) |
+| HE | `he` |
+| Flashbang | `flash` |
 
-Movement, stance, and mouse-button mode are inferred from recognizable description cues:
+Stance and mouse-button mode are inferred from recognizable description cues. For manual use, `movement` is always forced to `stationary` and `manual_action` to `true`, even when the notes describe movement.
 
-| Field | Inferred values |
+| Field | Output values |
 | --- | --- |
-| `movement` | `stationary`, `walking`, `running` |
+| `movement` | `stationary` (forced) |
 | `stance` | `standing`, `crouched` |
 | `throw` | `primary` (M1 or unspecified), `secondary` (M2), `both` (M1+M2) |
 
-The inference distinguishes setup instructions such as `crouched line-up, then standing throw` from the actual throw, and ignores hints after the throw. Unspecified settings use `stationary`, `standing`, and `primary`. The complete description remains in `notes`; this is a heuristic, not a full parser of every possible instruction.
+The inference distinguishes setup instructions such as `crouched line-up, then standing throw` from the actual throw, and ignores hints after the throw. Unspecified stance and button mode use `standing` and `primary`. The complete description remains in `notes`, including walking, running, and directional instructions to follow manually; this is a heuristic, not a full parser of every possible instruction.
 
-**The HE/flash names and non-template action values are provisional, pending confirmation from the Sensory developer.** They are inferred choices, not a verified Sensory schema. Imports have not been tested inside Sensory.
+The grenade, stance, and throw enum names match values observed in the developer-provided Sensory export. Description interpretation remains heuristic, and imports have not been tested inside Sensory.
 
-### Fixed Template Values
+### Fixed Export Settings
 
 | Field | Value |
 | --- | --- |
 | `angle_tolerance` | `0.11999999731779099` |
 | `landing_tolerance` | `24.0` |
-| `manual_action` | `false` |
+| `manual_action` | `true` |
 | `max_speed` | `8.0` |
 | `position_tolerance` | `4.0` |
 | `vertical_tolerance` | `3.0` |
 
-These values remain fixed, including for moving lineups, until the Sensory developer confirms otherwise.
+These are deliberately fixed export settings, not universal Sensory constants. In particular, `position_tolerance: 4.0` is a conservative default; the developer-provided lineups use values from `1.0` to `10.0`.
 
 ## Tests
 

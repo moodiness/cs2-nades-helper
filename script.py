@@ -53,8 +53,7 @@ SENSORY_GRENADE_NAMES = {
     "smoke": "smoke",
     "molotov": "fire",
     "incendiary": "fire",
-    # HE and flash names are provisional pending confirmation from Sensory.
-    "he": "grenade",
+    "he": "he",
     "flash": "flash",
 }
 
@@ -68,8 +67,7 @@ SENSORY_SETUP_PATTERN = re.compile(
     r"\([^)]*\)|\b(?:crouched|standing)\s+line[- ]up\b"
 )
 SENSORY_ACTION_PATTERN = re.compile(
-    r"\b(?:stand(?:ing)?|stationary|crouch(?:ed|ing)?|duck(?:ed|ing)?|"
-    r"walk(?:ing)?|run(?:ning)?|m[12])\b"
+    r"\b(?:stand(?:ing)?|crouch(?:ed|ing)?|duck(?:ed|ing)?|run(?:ning)?|m[12])\b"
 )
 
 LOGGER = logging.getLogger("nades-helper")
@@ -94,6 +92,7 @@ class Grenade:
     img: str = ""
     jump_throw: bool = False
     target_end: list[Any] | None = None
+    aim_point: list[Any] | None = None
 
 
 def parse_args() -> argparse.Namespace:
@@ -187,6 +186,7 @@ def build_grenades(data: dict[str, Any], source_name: str) -> list[Grenade]:
                 aims_by_master.setdefault(master_id, []).append(
                     {
                         "angles": list_value(node.get("Angles"), limit=2),
+                        "position": list_value(node.get("Position")),
                         "desc": text_value(node.get("Desc")),
                     }
                 )
@@ -232,6 +232,7 @@ def build_grenades(data: dict[str, Any], source_name: str) -> list[Grenade]:
                 source_id=f"{source_name}/{node_id}",
                 jump_throw=node["jump_throw"] or bool(JUMP_THROW_PATTERN.search(desc)),
                 target_end=destinations_by_master.get(node_id),
+                aim_point=first_aim["position"] if first_aim else None,
             )
         )
 
@@ -404,14 +405,13 @@ class SecretServiceExporter(JsonExporter):
         return [self.write_json(output_path, payload)]
 
 
-def sensory_throw_settings(desc: str) -> tuple[str, str, str]:
+def sensory_throw_settings(desc: str) -> tuple[str, str]:
     # Ignore setup posture and hints after the throw; preserve the original notes.
     description = SENSORY_SETUP_PATTERN.sub(" ", desc.lower())
     action = THROW_ACTION_PATTERN.search(description)
     if action is not None:
         description = description[:action.start()]
 
-    movement = "stationary"
     stance = "standing"
     primary = False
     secondary = False
@@ -419,26 +419,17 @@ def sensory_throw_settings(desc: str) -> tuple[str, str, str]:
         word = match.group()
         if word in ("stand", "standing"):
             stance = "standing"
-            movement = "stationary"
-        elif word == "stationary":
-            movement = "stationary"
         elif word.startswith(("crouch", "duck")):
             stance = "crouched"
-            if movement == "running":
-                movement = "stationary"
-        elif word.startswith("walk"):
-            movement = "walking"
         elif word.startswith("run"):
-            movement = "running"
             stance = "standing"
         elif word == "m1":
             primary = True
         elif word == "m2":
             secondary = True
 
-    # Non-template enum names are provisional pending confirmation from Sensory.
     throw = "both" if primary and secondary else "secondary" if secondary else "primary"
-    return movement, stance, throw
+    return stance, throw
 
 
 class SensoryExporter(JsonExporter):
@@ -446,7 +437,7 @@ class SensoryExporter(JsonExporter):
 
     @staticmethod
     def grenade_to_dict(map_name: str, grenade: Grenade) -> dict[str, Any]:
-        movement, stance, throw = sensory_throw_settings(grenade.desc)
+        stance, throw = sensory_throw_settings(grenade.desc)
         payload = {
             "angle_tolerance": 0.11999999731779099,
             "grenade": SENSORY_GRENADE_NAMES.get(grenade.nade_type, grenade.nade_type),
@@ -455,9 +446,9 @@ class SensoryExporter(JsonExporter):
             ).hex,
             "jump_throw": grenade.jump_throw,
             "landing_tolerance": 24.0,
-            "manual_action": False,
+            "manual_action": True,
             "max_speed": 8.0,
-            "movement": movement,
+            "movement": "stationary",
             "name": grenade.name,
             "notes": grenade.desc,
             "origin": grenade.pos,
@@ -467,6 +458,9 @@ class SensoryExporter(JsonExporter):
             "vertical_tolerance": 3.0,
             "view_angle": grenade.ang,
         }
+
+        if grenade.aim_point is not None:
+            payload["aim_point"] = grenade.aim_point
 
         if grenade.target_end is not None:
             payload["target_end"] = grenade.target_end
