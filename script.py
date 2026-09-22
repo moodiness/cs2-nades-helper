@@ -3,9 +3,11 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+from uuid import NAMESPACE_URL, uuid5
 
 from kv3parser import kv3_to_json
 
@@ -17,7 +19,8 @@ DEFAULT_FILENAME = "nades.json"
 HBN_OUTPUT_FOLDER = "hbn"
 SECRET_SERVICE_OUTPUT_FOLDER = "secretservice"
 SECRET_SERVICE_FILENAME = "grenade_helper.json"
-FORMAT_CHOICES = ("all", "default", "hbn", "secretservice")
+SENSORY_OUTPUT_FOLDER = "sensory"
+FORMAT_CHOICES = ("all", "default", "hbn", "secretservice", "sensory")
 
 MAP_ORDER = (
     "ancient",
@@ -46,6 +49,27 @@ SECRET_SERVICE_GRENADE_NAMES = {
     "he": "hegrenade",
 }
 
+SENSORY_GRENADE_NAMES = {
+    "smoke": "smoke",
+    "molotov": "fire",
+    "incendiary": "fire",
+    "he": "he",
+    "flash": "flash",
+}
+
+JUMP_THROW_PATTERN = re.compile(
+    r"\b(?:j[\s._-]*t|jump(?:ing)?[\s_-]*throws?)\b", re.IGNORECASE
+)
+THROW_ACTION_PATTERN = re.compile(
+    JUMP_THROW_PATTERN.pattern + r"|\bthrows?\b", re.IGNORECASE
+)
+SENSORY_SETUP_PATTERN = re.compile(
+    r"\([^)]*\)|\b(?:crouched|standing)\s+line[- ]up\b"
+)
+SENSORY_ACTION_PATTERN = re.compile(
+    r"\b(?:stand(?:ing)?|crouch(?:ed|ing)?|duck(?:ed|ing)?|run(?:ning)?|m[12])\b"
+)
+
 LOGGER = logging.getLogger("nades-helper")
 
 
@@ -62,9 +86,12 @@ class Grenade:
     desc: str
     nade_type: str
     type_id: int
-    pos: list[Any] | None
-    ang: list[Any] | None
+    pos: list[Any]
+    ang: list[Any]
+    source_id: str
     img: str = ""
+    jump_throw: bool = False
+    aim_point: list[Any] | None = None
 
 
 def parse_args() -> argparse.Namespace:
@@ -118,7 +145,7 @@ def list_value(value: Any, limit: int | None = None) -> list[Any] | None:
     return value[:limit] if limit is not None else value
 
 
-def build_grenades(data: dict[str, Any]) -> list[Grenade]:
+def build_grenades(data: dict[str, Any], source_name: str) -> list[Grenade]:
     main_nodes: dict[str, dict[str, Any]] = {}
     aims_by_master: dict[str, list[dict[str, Any]]] = {}
 
@@ -143,6 +170,7 @@ def build_grenades(data: dict[str, Any]) -> list[Grenade]:
                 "desc": text_value(node.get("Desc")),
                 "position": list_value(node.get("Position")),
                 "grenade_type": str(node.get("GrenadeType") or "").lower(),
+                "jump_throw": node.get("JumpThrow") is True,
                 "aim_targets": [],
             }
             continue
@@ -155,6 +183,7 @@ def build_grenades(data: dict[str, Any]) -> list[Grenade]:
             aims_by_master.setdefault(master_id, []).append(
                 {
                     "angles": list_value(node.get("Angles"), limit=2),
+                    "position": list_value(node.get("Position")),
                     "desc": text_value(node.get("Desc")),
                 }
             )
@@ -164,23 +193,38 @@ def build_grenades(data: dict[str, Any]) -> list[Grenade]:
             main_nodes[master_id]["aim_targets"].extend(aims)
 
     grenades: list[Grenade] = []
-    for node in main_nodes.values():
+    for node_id, node in main_nodes.items():
         grenade_type = node["grenade_type"]
         if not grenade_type:
             continue
 
         aim_targets = node["aim_targets"]
         first_aim = aim_targets[0] if aim_targets else None
+        position = node["position"]
+        angles = first_aim["angles"] if first_aim else None
+        if position is None or angles is None:
+            LOGGER.warning(
+                "Skipping annotation %r (%s) in %s: missing position or view angle",
+                node["name"],
+                node_id,
+                source_name,
+            )
+            continue
+
         aim_desc = first_aim["desc"] if first_aim else ""
+        desc = aim_desc or node["desc"]
 
         grenades.append(
             Grenade(
                 name=node["name"],
-                desc=aim_desc or node["desc"],
+                desc=desc,
                 nade_type=grenade_type,
                 type_id=GRENADE_TYPE_IDS.get(grenade_type, -1),
-                pos=node["position"],
-                ang=first_aim["angles"] if first_aim else None,
+                pos=position,
+                ang=angles,
+                source_id=f"{source_name}/{node_id}",
+                jump_throw=node["jump_throw"] or bool(JUMP_THROW_PATTERN.search(desc)),
+                aim_point=first_aim["position"] if first_aim else None,
             )
         )
 
@@ -206,7 +250,7 @@ def discover_source_files(input_dir: Path) -> dict[str, list[SourceFile]]:
     sources_by_map: dict[str, list[SourceFile]] = {}
 
     for folder in sorted(input_dir.iterdir(), key=lambda path: path.name.lower()):
-        if not folder.is_dir():
+        if not folder.is_dir() or folder.name.lower().endswith("_instant_smoke"):
             continue
 
         text_files = sorted(folder.glob("*.txt"), key=lambda path: path.name.lower())
@@ -268,19 +312,13 @@ class DefaultExporter(JsonExporter):
 
     @staticmethod
     def grenade_to_dict(grenade: Grenade) -> dict[str, Any]:
-        payload = {
+        return {
             "name": grenade.name,
             "desc": grenade.desc,
             "type": grenade.type_id,
+            "pos": grenade.pos,
+            "ang": grenade.ang,
         }
-
-        if grenade.pos is not None:
-            payload["pos"] = grenade.pos
-
-        if grenade.ang is not None:
-            payload["ang"] = grenade.ang
-
-        return payload
 
     def export(self, grenades_by_map: dict[str, list[Grenade]]) -> list[Path]:
         maps = {
@@ -300,20 +338,14 @@ class HbnExporter(JsonExporter):
 
     @staticmethod
     def grenade_to_dict(grenade: Grenade) -> dict[str, Any]:
-        payload = {
+        return {
             "name": grenade.name,
             "desc": grenade.desc,
             "type": grenade.type_id,
             "img": grenade.img,
+            "pos": grenade.pos,
+            "ang": grenade.ang,
         }
-
-        if grenade.pos is not None:
-            payload["pos"] = grenade.pos
-
-        if grenade.ang is not None:
-            payload["ang"] = grenade.ang
-
-        return payload
 
     def export(self, grenades_by_map: dict[str, list[Grenade]]) -> list[Path]:
         output_dir = self.format_output_dir()
@@ -336,21 +368,16 @@ class SecretServiceExporter(JsonExporter):
 
     @staticmethod
     def grenade_to_spot(map_name: str, grenade: Grenade) -> dict[str, Any]:
-        spot = {}
-        if grenade.ang is not None:
-            spot["Angle"] = grenade.ang
-
-        spot["Desc"] = grenade.desc
-        spot["MapName"] = map_name
-        spot["Nade"] = SECRET_SERVICE_GRENADE_NAMES.get(
-            grenade.nade_type, grenade.nade_type
-        )
-        spot["Name"] = grenade.name
-
-        if grenade.pos is not None:
-            spot["Pos"] = grenade.pos
-
-        return spot
+        return {
+            "Angle": grenade.ang,
+            "Desc": grenade.desc,
+            "MapName": map_name,
+            "Nade": SECRET_SERVICE_GRENADE_NAMES.get(
+                grenade.nade_type, grenade.nade_type
+            ),
+            "Name": grenade.name,
+            "Pos": grenade.pos,
+        }
 
     def export(self, grenades_by_map: dict[str, list[Grenade]]) -> list[Path]:
         known_maps = ["<empty>"]
@@ -370,10 +397,88 @@ class SecretServiceExporter(JsonExporter):
         return [self.write_json(output_path, payload)]
 
 
+def sensory_throw_settings(desc: str) -> tuple[str, str]:
+    # Ignore setup posture and hints after the throw; preserve the original notes.
+    description = SENSORY_SETUP_PATTERN.sub(" ", desc.lower())
+    action = THROW_ACTION_PATTERN.search(description)
+    if action is not None:
+        description = description[:action.start()]
+
+    stance = "standing"
+    primary = False
+    secondary = False
+    for match in SENSORY_ACTION_PATTERN.finditer(description):
+        word = match.group()
+        if word in ("stand", "standing"):
+            stance = "standing"
+        elif word.startswith(("crouch", "duck")):
+            stance = "crouched"
+        elif word.startswith("run"):
+            stance = "standing"
+        elif word == "m1":
+            primary = True
+        elif word == "m2":
+            secondary = True
+
+    throw = "both" if primary and secondary else "secondary" if secondary else "primary"
+    return stance, throw
+
+
+class SensoryExporter(JsonExporter):
+    output_folder = SENSORY_OUTPUT_FOLDER
+
+    @staticmethod
+    def grenade_to_dict(map_name: str, grenade: Grenade) -> dict[str, Any]:
+        stance, throw = sensory_throw_settings(grenade.desc)
+        payload = {
+            "angle_tolerance": 0.11999999731779099,
+            "grenade": SENSORY_GRENADE_NAMES.get(grenade.nade_type, grenade.nade_type),
+            "id": uuid5(
+                NAMESPACE_URL, f"cs2-nades-helper/{map_name}/{grenade.source_id}"
+            ).hex,
+            "jump_throw": grenade.jump_throw,
+            "landing_tolerance": 24.0,
+            "manual_action": True,
+            "max_speed": 8.0,
+            "movement": "stationary",
+            "name": grenade.name,
+            "notes": grenade.desc,
+            "origin": grenade.pos,
+            "position_tolerance": 4.0,
+            "stance": stance,
+            "throw": throw,
+            "vertical_tolerance": 3.0,
+            "view_angle": grenade.ang,
+        }
+
+        if grenade.aim_point is not None:
+            payload["aim_point"] = grenade.aim_point
+
+        return payload
+
+    def export(self, grenades_by_map: dict[str, list[Grenade]]) -> list[Path]:
+        output_dir = self.format_output_dir()
+        output_paths: list[Path] = []
+
+        for map_name in sorted(grenades_by_map, key=map_sort_key):
+            formatted_map_name = game_map_name(map_name)
+            lineups = [
+                self.grenade_to_dict(formatted_map_name, grenade)
+                for grenade in grenades_by_map[map_name]
+            ]
+
+            payload = {"lineups": lineups, "map": formatted_map_name, "version": 1}
+            output_path = output_dir / f"{formatted_map_name}.json"
+            output_paths.append(self.write_json(output_path, payload))
+
+        return output_paths
+
+
 EXPORTERS = {
     "default": DefaultExporter,
     "hbn": HbnExporter,
     "secretservice": SecretServiceExporter,
+    "sensory": SensoryExporter,
 }
 
 
@@ -405,7 +510,10 @@ def convert_sources(input_dir: Path, output_dir: Path, output_format: str) -> in
         grenades: list[Grenade] = []
 
         for source in sorted(sources_by_map[map_name], key=source_sort_key):
-            parsed_grenades = build_grenades(load_kv3_as_dict(source.path))
+            parsed_grenades = build_grenades(
+                load_kv3_as_dict(source.path),
+                source.path.relative_to(input_dir).as_posix(),
+            )
             grenades.extend(parsed_grenades)
             LOGGER.info("Parsed %s (%s grenades)", source.path, len(parsed_grenades))
 
@@ -420,6 +528,13 @@ def convert_sources(input_dir: Path, output_dir: Path, output_format: str) -> in
     for exporter in selected_exporters(output_dir, output_format):
         for output_path in exporter.export(grenades_by_map):
             LOGGER.info("Wrote %s", output_path)
+
+        if isinstance(exporter, (HbnExporter, SensoryExporter)):
+            format_dir = output_dir / exporter.output_folder
+            for obsolete_path in format_dir.glob("*_instant_smoke.json"):
+                if obsolete_path.is_file():
+                    obsolete_path.unlink()
+                    LOGGER.info("Removed obsolete map export %s", obsolete_path)
 
     LOGGER.info("Done: %s maps, %s grenades", total_maps, total_grenades)
     return 0
