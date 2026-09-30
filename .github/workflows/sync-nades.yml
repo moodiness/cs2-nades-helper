@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: sync-nades
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -16,31 +20,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Checkout source repository
-        uses: actions/checkout@v5
-        with:
-          repository: FNScence/CSAFAP-config-package
-          path: source
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Install nades-helper
+        run: pip install -e ".[dev]"
 
       - name: Run tests
-        run: python -m unittest -v test_script
+        run: pytest
 
-      - name: Sync nades folder
-        run: |
-          rm -rf nades
-          mkdir -p nades
-          cp -R source/csafap/csgo/annotations/local/. nades/
+      - name: Update annotations
+        run: nades-helper update
 
       - name: Generate outputs
-        run: python script.py
+        run: nades-helper build
 
       - name: Commit changes
         run: |
