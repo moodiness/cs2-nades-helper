@@ -212,6 +212,36 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
+      "grenade": "he",
+      "id": "49e96e7c488658f2bc6a74bb2bb39fb6",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": true,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "B Short HE",
+      "notes": "standing throw",
+      "origin": [
+        -2018.977783,
+        -416.033508,
+        132.03125
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -30.180967,
+        3.4891202
+      ],
+      "aim_point": [
+        -1932.6434,
+        -410.83054,
+        246.27328
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
       "grenade": "flash",
       "id": "ec7308a0312753d0b6ed2c4f55177b90",
       "jump_throw": false,
@@ -748,6 +778,36 @@
         -1188.0438,
         251.7942,
         84.1567
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "e8215cb5943553669bce9b43f52cb3a8",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": true,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Left Dildo Smoke",
+      "notes": "standing throw",
+      "origin": [
+        -1288.0314,
+        253.28384,
+        24.891338
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -15.350792,
+        49.981754
+      ],
+      "aim_point": [
+        -1226.0223,
+        327.13553,
+        111.14539
       ]
     },
     {

@@ -1,111 +1,115 @@
 # Nades Helper
 
-Nades Helper converts CS2 grenade annotation files from KV3/TXT format into JSON files grouped by map.
+Nades Helper converts CS2 grenade annotation files (KV3) into JSON files for grenade-helper plugins.
 
-The nade data is pulled from the CSAFAP config package:
+The nade data comes from the CSAFAP config package:
 
 https://github.com/FNScence/CSAFAP-config-package/tree/main/csafap/csgo/annotations/local
 
+The `Sync nades` GitHub Actions workflow refreshes `nades/` and regenerates `out/` every 30
+minutes, so the committed JSON files are always up to date.
+
 ## Requirements
 
-- Windows
 - Python 3.11 or newer
-- Internet connection for the first install and nade updates
+- Internet connection for the install and nade updates
 
 ## Installation
 
-Run:
-
-```bat
-install.bat
+```sh
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -e .
 ```
 
-This creates the local Python environment in `env/` and installs the dependencies from `requirements.txt`.
+## Usage
 
-## Update Nades
-
-Run:
-
-```bat
-update_nades.bat
+```sh
+nades-helper update              # download the latest annotation files into nades/
+nades-helper build               # generate every JSON format into out/
 ```
 
-This downloads the latest nade annotation files from GitHub and replaces the local `nades/` folder.
+`python -m nades_helper <command>` works the same way. Add `-v` for debug details or `-q` for
+warnings and errors only.
 
-Expected source layout:
+### `build`
+
+| Option | Default | Description |
+| --- | --- | --- |
+| `--input-dir` | `nades` | Folder containing one sub-folder per annotation file |
+| `--output-dir` | `out` | Folder receiving one sub-folder per format |
+| `--format` | all | `default`, `hbn`, `secretservice` or `sensory`; repeatable |
+
+Files are written atomically and left untouched when their content did not change. If any
+annotation file fails to parse, nothing is written.
+
+### `update`
+
+| Option | Default | Description |
+| --- | --- | --- |
+| `--nades-dir` | `nades` | Folder replaced with the downloaded annotation files |
+| `--url` | CSAFAP `main` branch zip | Archive to download |
+| `--source-path` | `csafap/csgo/annotations/local` | Annotation folder inside the archive |
+| `--timeout` | `60` | Network timeout in seconds |
+
+The archive is downloaded and extracted next to `nades/` first; the folder is only swapped once
+extraction succeeded, so a failed update never leaves partial data. The log lists how many files
+were added, removed and changed.
+
+## Source layout
 
 ```text
 nades/
-  ancient_CT/
-    ancient_CT.txt
-  ancient_T/
-    ancient_T.txt
-  cache/
-    cache.txt
-  train/
-    train.txt
+  ancient_CT/ancient_CT.txt     side CT
+  ancient_T/ancient_T.txt       side T
+  cache/cache.txt               no side
 ```
 
-Folders ending in `_instant_smoke` (case-insensitive) are ignored: their lineups are already included in the main map folders. They are not merged or exported as separate maps. Regenerating HBN or Sensory also removes their legacy `*_instant_smoke.json` output files.
+- The map comes from the file name: `ancient_CT.txt` becomes `de_ancient`.
+- Within a map, grenades are ordered CT files first, then T, then side-less files, then file order.
+- A folder contributes `<folder>.txt`, or every `.txt` it contains when that file is missing.
+- Folders ending in `_instant_smoke` (case-insensitive) are ignored: their lineups are already
+  included in the main map folders. Building HBN or Sensory also removes their legacy
+  `*_instant_smoke.json` files; other files in the output folders are left alone.
 
-## Generate JSON
+## Conversion rules
 
-Run:
+Every `grenade` node with `SubType = "main"` is a throwing position; its `aim_target` nodes
+(linked through `MasterNodeId`) are the aims.
 
-```bat
-start.bat
-```
+- One lineup is exported per aim target, so a position with two throws yields two lineups.
+- `desc` is the aim target description, or the main node description when empty.
+- Lineups missing a position or aim angles are excluded from every format; no coordinates are
+  invented. The log counts them (details with `-v`).
+- When a file reuses the same main `Id`, aim targets belong to the closest preceding main node.
+- `GrenadeType = "fire"` is treated as `molotov`; unknown types are skipped with a warning.
+- Nodes with `Enabled = false` are ignored.
 
-This executes `script.py` and writes all generated formats into `out/`.
-
-Example output:
+## Output formats
 
 ```text
-out/default/nades.json
-out/hbn/de_ancient.json
-out/hbn/de_anubis.json
-out/hbn/de_cache.json
-out/hbn/de_dust2.json
-out/secretservice/grenade_helper.json
-out/sensory/de_ancient.json
-out/sensory/de_dust2.json
+out/default/nades.json                  {"version": 1, "maps": {"de_ancient": [...]}}
+out/hbn/de_<map>.json                   {"grenades": [...]}
+out/secretservice/grenade_helper.json   {"knownMaps": ["<empty>", ...], "spots": [...]}
+out/sensory/de_<map>.json               {"lineups": [...], "map": "de_<map>", "version": 1}
 ```
 
-## Manual Usage
+`default` and `hbn` entries use CS weapon ids for `type`: flash `43`, HE `44`, smoke `45`,
+molotov/incendiary `46`. `secretservice` uses names (`smoke`, `flash`, `hegrenade`, `molotov`,
+`incendiary`).
 
-After running `install.bat`, you can also run the converter manually:
+### Sensory
 
-```bat
-env\Scripts\python.exe script.py
-```
-
-Optional custom paths:
-
-```bat
-env\Scripts\python.exe script.py --input-dir nades --output-dir out
-```
-
-By default, all formats are generated. You can limit the output to one format:
-
-```bat
-env\Scripts\python.exe script.py --format default
-env\Scripts\python.exe script.py --format hbn
-env\Scripts\python.exe script.py --format secretservice
-env\Scripts\python.exe script.py --format sensory
-```
-
-## Sensory Export
-
-Sensory receives one JSON file per map in `out/sensory/`, with `version: 1`, the game map name, and a `lineups` array.
-
-- `desc` becomes `notes`, preserving the original text. As in the other formats, the first aim-target description takes precedence over the main annotation description.
+- `desc` becomes `notes`, preserving the original text.
 - `pos` becomes `origin`; the first two aim angles become `view_angle`.
-- `aim_point` comes from the same aim-target node as `view_angle`. If its position is unavailable, the field is omitted, never `null` and never replaced with invented coordinates.
-- IDs are generated deterministically from the map, relative source filename, and annotation ID. They remain stable across repeated conversions, lineup reordering, and note edits.
-- `jump_throw` is enabled by the source `JumpThrow` flag or a recognized description such as `jt`, `J.T.`, `JumpThrow`, `jump throw`, `jump-throw`, or `jump_throw`, regardless of case.
-- Annotations missing a position or view angle are excluded during shared parsing for every format (`default`, HBN, SecretService, and Sensory). A warning identifies the annotation and source file; no coordinates are invented.
-
-### Grenade and Action Values
+- `aim_point` comes from the same aim-target node as `view_angle`. If its position is
+  unavailable, the field is omitted, never `null` and never replaced with invented coordinates.
+- IDs are generated deterministically from the map, relative source filename, and annotation
+  ID. They remain stable across repeated conversions, lineup reordering, and note edits. When a
+  position has several aim targets, the first keeps this ID and the next ones are derived from
+  it with a `#2`, `#3`... suffix.
+- `jump_throw` is enabled by the source `JumpThrow` flag or a recognized description such as
+  `jt`, `J.T.`, `JumpThrow`, `jump throw`, `jump-throw`, or `jump_throw`, regardless of case.
 
 | Source grenade | Sensory value |
 | --- | --- |
@@ -114,7 +118,9 @@ Sensory receives one JSON file per map in `out/sensory/`, with `version: 1`, the
 | HE | `he` |
 | Flashbang | `flash` |
 
-Stance and mouse-button mode are inferred from recognizable description cues. For manual use, `movement` is always forced to `stationary` and `manual_action` to `true`, even when the notes describe movement.
+Stance and mouse-button mode are inferred from recognizable description cues. For manual use,
+`movement` is always forced to `stationary` and `manual_action` to `true`, even when the notes
+describe movement.
 
 | Field | Output values |
 | --- | --- |
@@ -122,13 +128,17 @@ Stance and mouse-button mode are inferred from recognizable description cues. Fo
 | `stance` | `standing`, `crouched` |
 | `throw` | `primary` (M1 or unspecified), `secondary` (M2), `both` (M1+M2) |
 
-The inference distinguishes setup instructions such as `crouched line-up, then standing throw` from the actual throw, and ignores hints after the throw. Unspecified stance and button mode use `standing` and `primary`. The complete description remains in `notes`, including walking, running, and directional instructions to follow manually; this is a heuristic, not a full parser of every possible instruction.
+The inference distinguishes setup instructions such as `crouched line-up, then standing throw`
+from the actual throw, and ignores hints after the throw. Unspecified stance and button mode use
+`standing` and `primary`. The complete description remains in `notes`, including walking,
+running, and directional instructions to follow manually; this is a heuristic, not a full parser
+of every possible instruction.
 
-The grenade, stance, and throw enum names match values observed in the developer-provided Sensory export. Description interpretation remains heuristic, and imports have not been tested inside Sensory.
+The grenade, stance, and throw enum names match values observed in the developer-provided
+Sensory export. Description interpretation remains heuristic, and imports have not been tested
+inside Sensory.
 
-### Fixed Export Settings
-
-| Field | Value |
+| Fixed setting | Value |
 | --- | --- |
 | `angle_tolerance` | `0.11999999731779099` |
 | `landing_tolerance` | `24.0` |
@@ -137,37 +147,29 @@ The grenade, stance, and throw enum names match values observed in the developer
 | `position_tolerance` | `4.0` |
 | `vertical_tolerance` | `3.0` |
 
-These are deliberately fixed export settings, not universal Sensory constants. In particular, `position_tolerance: 4.0` is a conservative default; the developer-provided lineups use values from `1.0` to `10.0`.
+These are deliberately fixed export settings, not universal Sensory constants. In particular,
+`position_tolerance: 4.0` is a conservative default; the developer-provided lineups use values
+from `1.0` to `10.0`.
 
-## Tests
+## Development
 
-Run the regression tests locally:
-
-```bat
-env\Scripts\python.exe -m unittest -v test_script
+```sh
+pip install -e ".[dev]"
+ruff check . && ruff format --check .
+pytest
 ```
 
-The `Tests` GitHub Actions workflow runs on pull requests and pushes to `main`, with read-only repository permissions. The `Sync nades` workflow also runs the tests before updating nade files, generating outputs, or committing changes.
-
-## Project Structure
+The `Tests` workflow runs the same checks on pull requests and pushes to `main`, with read-only
+repository permissions. `Sync nades` runs the tests before updating annotations and outputs.
 
 ```text
-install.bat        Install Python dependencies
-update_nades.bat   Download latest nade files
-start.bat          Generate JSON files
-script.py          KV3 to JSON converter
-test_script.py     Regression tests for Sensory and source discovery
-requirements.txt   Python dependencies
-nades/             Downloaded source nade files
-out/               Generated JSON files
+nades_helper/
+  cli.py          argument parsing, logging setup, exit codes
+  build.py        build pipeline and log summaries
+  sources.py      discovery of annotation files, sides and map names
+  annotations.py  KV3 loading and lineup extraction
+  throws.py       jump-throw, stance and mouse-button heuristics
+  exporters.py    default / hbn / secretservice / sensory JSON formats
+  update.py       CSAFAP download and atomic folder swap
+tests/            pytest suite
 ```
-
-## Recommended Workflow
-
-```bat
-install.bat
-update_nades.bat
-start.bat
-```
-
-Run `update_nades.bat` again whenever you want to refresh the nade data.

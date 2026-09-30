@@ -1719,11 +1719,11 @@
       "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
-      "name": "Diagonal Smoke-Wall #3",
+      "name": "Diagonal Smoke-Wall #1",
       "notes": "standing Jumpthrow",
       "origin": [
-        -732.873,
-        -1322.1388,
+        -732.8762,
+        -1322.1384,
         -407.96875
       ],
       "position_tolerance": 4.0,
@@ -3118,6 +3118,36 @@
         1318.601685,
         -580.190552,
         -566.387573
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "a04696ea1ca9531e8ad5caad5151208c",
+      "jump_throw": true,
+      "landing_tolerance": 24.0,
+      "manual_action": true,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "Diagonal Smoke-Wall #3",
+      "notes": "standing W-Jumpthrow",
+      "origin": [
+        -732.873,
+        -1322.1388,
+        -407.96875
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -25.456026,
+        -8.401239
+      ],
+      "aim_point": [
+        -643.55035,
+        -1335.3308,
+        -305.9713
       ]
     },
     {

@@ -106,6 +106,21 @@
       ]
     },
     {
+      "name": "B Short HE",
+      "desc": "standing throw",
+      "type": 44,
+      "img": "",
+      "pos": [
+        -2018.977783,
+        -416.033508,
+        132.03125
+      ],
+      "ang": [
+        -30.180967,
+        3.4891202
+      ]
+    },
+    {
       "name": "B Short Flash",
       "desc": "standing throw",
       "type": 43,
@@ -373,6 +388,21 @@
       "ang": [
         0.29558384,
         -0.85354745
+      ]
+    },
+    {
+      "name": "Left Dildo Smoke",
+      "desc": "standing throw",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -1288.0314,
+        253.28384,
+        24.891338
+      ],
+      "ang": [
+        -15.350792,
+        49.981754
       ]
     },
     {

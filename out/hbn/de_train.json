@@ -993,7 +993,7 @@
     {
       "name": "Ivy Molotov",
       "desc": "running throw",
-      "type": -1,
+      "type": 46,
       "img": "",
       "pos": [
         1224.031372,
