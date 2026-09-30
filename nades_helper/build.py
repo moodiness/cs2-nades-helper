@@ -136,7 +136,7 @@ def _log_maps(grenades: MapGrenades, parsed: list[ParsedSource]) -> None:
 
 def _log_issues(parsed: list[ParsedSource]) -> None:
     """Details at DEBUG level, one aggregated line per issue kind otherwise."""
-    incomplete = 0
+    incomplete = duplicate_ids = orphan_aims = 0
 
     for result in parsed:
         issues, label = result.issues, result.source.label
@@ -149,11 +149,29 @@ def _log_issues(parsed: list[ParsedSource]) -> None:
                 label,
                 ", ".join(issues.incomplete),
             )
+        if issues.duplicate_ids:
+            LOGGER.debug(
+                "%s: duplicated main node Id(s): %s", label, ", ".join(issues.duplicate_ids)
+            )
+        if issues.orphan_aims:
+            LOGGER.debug(
+                "%s: aim target(s) without main node: %s", label, ", ".join(issues.orphan_aims)
+            )
 
         incomplete += len(issues.incomplete)
+        duplicate_ids += len(issues.duplicate_ids)
+        orphan_aims += len(issues.orphan_aims)
 
     if incomplete:
         LOGGER.warning(
             "%d lineup(s) skipped: missing position or aim angles (details with --verbose)",
             incomplete,
         )
+    if orphan_aims:
+        LOGGER.warning(
+            "%d aim target(s) reference a missing main node and were ignored "
+            "(details with --verbose)",
+            orphan_aims,
+        )
+    if duplicate_ids:
+        LOGGER.info("%d duplicated main node Id(s) resolved by file order", duplicate_ids)

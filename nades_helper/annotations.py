@@ -22,6 +22,8 @@ class SourceIssues:
 
     incomplete: list[str] = field(default_factory=list)
     unknown_types: list[str] = field(default_factory=list)
+    duplicate_ids: list[str] = field(default_factory=list)
+    orphan_aims: list[str] = field(default_factory=list)
 
 
 @dataclass(frozen=True, slots=True)
@@ -80,12 +82,14 @@ def extract_grenades(
     """Build one grenade per (main node, aim target) pair, in file order.
 
     Aim targets reference their main node through ``MasterNodeId``; a position with several
-    aim targets yields several lineups. Lineups without a position or aim angles are skipped:
-    no coordinates are invented.
+    aim targets yields several lineups. Some files reuse the same main ``Id`` twice: aim
+    targets then belong to the closest preceding main node. Lineups without a position or aim
+    angles are skipped: no coordinates are invented.
     """
     issues = SourceIssues()
-    lineups: dict[str, _Lineup] = {}
-    aims_by_master: dict[str, list[_Aim]] = {}
+    lineups: list[_Lineup] = []
+    latest_by_id: dict[str, _Lineup] = {}
+    forward_aims: list[tuple[str, _Aim]] = []
 
     for key, node in document.items():
         if not key.startswith(NODE_KEY_PREFIX) or not isinstance(node, dict):
@@ -98,7 +102,10 @@ def extract_grenades(
             node_id = _string(node.get("Id"))
             if not node_id:
                 continue
-            lineups[node_id] = _Lineup(
+            if node_id in latest_by_id:
+                issues.duplicate_ids.append(node_id)
+
+            lineup = _Lineup(
                 node_id=node_id,
                 name=_text(node.get("Title")),
                 desc=_text(node.get("Desc")),
@@ -106,26 +113,33 @@ def extract_grenades(
                 pos=_vector(node.get("Position"), 3),
                 jump_throw=node.get("JumpThrow") is True,
             )
+            lineups.append(lineup)
+            latest_by_id[node_id] = lineup
 
         elif subtype == "aim_target":
             master_id = _string(node.get("MasterNodeId"))
             if not master_id:
                 continue
-            aims_by_master.setdefault(master_id, []).append(
-                _Aim(
-                    angles=_vector(node.get("Angles"), 2),
-                    position=_vector(node.get("Position"), 3),
-                    desc=_text(node.get("Desc")),
-                )
-            )
 
-    for master_id, aims in aims_by_master.items():
-        if master_id in lineups:
-            lineups[master_id].aims.extend(aims)
+            aim = _Aim(
+                angles=_vector(node.get("Angles"), 2),
+                position=_vector(node.get("Position"), 3),
+                desc=_text(node.get("Desc")),
+            )
+            if master_id in latest_by_id:
+                latest_by_id[master_id].aims.append(aim)
+            else:
+                forward_aims.append((master_id, aim))
+
+    for master_id, aim in forward_aims:
+        if master_id in latest_by_id:
+            latest_by_id[master_id].aims.append(aim)
+        else:
+            issues.orphan_aims.append(master_id)
 
     grenades: list[Grenade] = []
     used_ids: set[str] = set()
-    for lineup in lineups.values():
+    for lineup in lineups:
         title = f"{lineup.name or UNTITLED} ({lineup.node_id})"
         kind = GrenadeKind.parse(lineup.grenade_type)
         if kind is None:

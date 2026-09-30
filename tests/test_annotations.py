@@ -57,6 +57,34 @@ def test_each_aim_target_of_a_position_is_a_separate_lineup(tmp_path: Path) -> N
     ]
 
 
+def test_duplicated_main_id_keeps_each_lineup_with_its_own_aim(tmp_path: Path) -> None:
+    result = parse(
+        tmp_path,
+        [
+            main_node("dup", "Wall #1", position=(1.0, 1.0, 1.0)),
+            aim_node("dup", (-1.0, -1.0, 0.0)),
+            main_node("dup", "Wall #3", position=(3.0, 3.0, 3.0)),
+            aim_node("dup", (-3.0, -3.0, 0.0)),
+        ],
+    )
+
+    assert [(g.name, g.pos, g.ang, g.source_id) for g in result.grenades] == [
+        ("Wall #1", [1.0, 1.0, 1.0], [-1.0, -1.0], "dust2_CT/dust2_CT.txt/dup"),
+        ("Wall #3", [3.0, 3.0, 3.0], [-3.0, -3.0], "dust2_CT/dust2_CT.txt/dup#2"),
+    ]
+    assert result.issues.duplicate_ids == ["dup"]
+
+
+def test_aim_target_declared_before_its_main_node_is_attached(tmp_path: Path) -> None:
+    result = parse(
+        tmp_path,
+        [aim_node("m", (-5.0, 5.0, 0.0)), aim_node("gone"), main_node("m", "B")],
+    )
+
+    assert [g.ang for g in result.grenades] == [[-5.0, 5.0]]
+    assert result.issues.orphan_aims == ["gone"]
+
+
 def test_aim_point_is_optional(tmp_path: Path) -> None:
     result = parse(tmp_path, [main_node("a", "Smoke"), aim_node("a", position=None)])
 
