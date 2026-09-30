@@ -10,6 +10,12 @@ from nades_helper.build import run_build
 from nades_helper.errors import NadesHelperError
 from nades_helper.exporters import EXPORTERS
 from nades_helper.log import configure_logging
+from nades_helper.update import (
+    DEFAULT_ARCHIVE_URL,
+    DEFAULT_SOURCE_PATH,
+    DEFAULT_TIMEOUT,
+    run_update,
+)
 
 LOGGER = logging.getLogger(__name__)
 
@@ -55,12 +61,39 @@ def build_parser() -> argparse.ArgumentParser:
     )
     build.set_defaults(handler=_build)
 
+    update = commands.add_parser(
+        "update", parents=[common], help="download the latest annotation files from CSAFAP"
+    )
+    update.add_argument(
+        "--nades-dir",
+        type=Path,
+        default=DEFAULT_INPUT_DIR,
+        help="folder to replace with the downloaded files (default: %(default)s)",
+    )
+    update.add_argument("--url", default=DEFAULT_ARCHIVE_URL, help="zip archive to download")
+    update.add_argument(
+        "--source-path",
+        default=DEFAULT_SOURCE_PATH,
+        help="annotation folder inside the archive (default: %(default)s)",
+    )
+    update.add_argument(
+        "--timeout",
+        type=float,
+        default=DEFAULT_TIMEOUT,
+        help="network timeout in seconds (default: %(default)s)",
+    )
+    update.set_defaults(handler=_update)
+
     return parser
 
 
 def _build(args: argparse.Namespace) -> None:
     formats = list(dict.fromkeys(args.formats or EXPORTERS))
     run_build(args.input_dir, args.output_dir, formats)
+
+
+def _update(args: argparse.Namespace) -> None:
+    run_update(args.nades_dir, url=args.url, source_path=args.source_path, timeout=args.timeout)
 
 
 def main(argv: Sequence[str] | None = None) -> int:
