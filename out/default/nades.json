@@ -3155,8 +3155,22 @@
         ]
       },
       {
-        "name": "",
+        "name": "Window Molotov/Smoke",
         "desc": "running throw",
+        "type": 46,
+        "pos": [
+          65.292053,
+          -379.626465,
+          0.266546
+        ],
+        "ang": [
+          -11.088435,
+          109.262711
+        ]
+      },
+      {
+        "name": "",
+        "desc": "",
         "type": 45,
         "pos": [
           65.292053,
@@ -11355,12 +11369,12 @@
         ]
       },
       {
-        "name": "Diagonal Smoke-Wall #3",
+        "name": "Diagonal Smoke-Wall #1",
         "desc": "standing Jumpthrow",
         "type": 45,
         "pos": [
-          -732.873,
-          -1322.1388,
+          -732.8762,
+          -1322.1384,
           -407.96875
         ],
         "ang": [
@@ -12013,6 +12027,20 @@
         ]
       },
       {
+        "name": "Diagonal Smoke-Wall #3",
+        "desc": "standing W-Jumpthrow",
+        "type": 45,
+        "pos": [
+          -732.873,
+          -1322.1388,
+          -407.96875
+        ],
+        "ang": [
+          -25.456026,
+          -8.401239
+        ]
+      },
+      {
         "name": "Old Smoke-Wall #2",
         "desc": "standing Jumpthrow",
         "type": 45,
@@ -12124,6 +12152,20 @@
         "ang": [
           11.907511,
           -46.347809
+        ]
+      },
+      {
+        "name": "B Short HE",
+        "desc": "standing throw",
+        "type": 44,
+        "pos": [
+          -2018.977783,
+          -416.033508,
+          132.03125
+        ],
+        "ang": [
+          -30.180967,
+          3.4891202
         ]
       },
       {
@@ -12376,6 +12418,20 @@
         "ang": [
           0.29558384,
           -0.85354745
+        ]
+      },
+      {
+        "name": "Left Dildo Smoke",
+        "desc": "standing throw",
+        "type": 45,
+        "pos": [
+          -1288.0314,
+          253.28384,
+          24.891338
+        ],
+        "ang": [
+          -15.350792,
+          49.981754
         ]
       },
       {
@@ -14357,7 +14413,7 @@
       {
         "name": "Ivy Molotov",
         "desc": "running throw",
-        "type": -1,
+        "type": 46,
         "pos": [
           1224.031372,
           1743.96875,

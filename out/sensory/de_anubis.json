@@ -2312,15 +2312,45 @@
     },
     {
       "angle_tolerance": 0.11999999731779099,
-      "grenade": "smoke",
+      "grenade": "fire",
       "id": "e7268d1dfa935c56ba2aafea6eb2a59d",
       "jump_throw": false,
       "landing_tolerance": 24.0,
       "manual_action": true,
       "max_speed": 8.0,
       "movement": "stationary",
-      "name": "",
+      "name": "Window Molotov/Smoke",
       "notes": "running throw",
+      "origin": [
+        65.292053,
+        -379.626465,
+        0.266546
+      ],
+      "position_tolerance": 4.0,
+      "stance": "standing",
+      "throw": "primary",
+      "vertical_tolerance": 3.0,
+      "view_angle": [
+        -11.088435,
+        109.262711
+      ],
+      "aim_point": [
+        32.917923,
+        -286.987213,
+        83.338936
+      ]
+    },
+    {
+      "angle_tolerance": 0.11999999731779099,
+      "grenade": "smoke",
+      "id": "d33c38cb5b7454c0a05547acdc99be66",
+      "jump_throw": false,
+      "landing_tolerance": 24.0,
+      "manual_action": true,
+      "max_speed": 8.0,
+      "movement": "stationary",
+      "name": "",
+      "notes": "",
       "origin": [
         65.292053,
         -379.626465,

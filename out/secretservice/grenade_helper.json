@@ -3395,6 +3395,21 @@
       ],
       "Desc": "running throw",
       "MapName": "de_anubis",
+      "Nade": "molotov",
+      "Name": "Window Molotov/Smoke",
+      "Pos": [
+        65.292053,
+        -379.626465,
+        0.266546
+      ]
+    },
+    {
+      "Angle": [
+        -11.088435,
+        109.262711
+      ],
+      "Desc": "",
+      "MapName": "de_anubis",
       "Nade": "smoke",
       "Name": "",
       "Pos": [
@@ -12171,10 +12186,10 @@
       "Desc": "standing Jumpthrow",
       "MapName": "de_nuke",
       "Nade": "smoke",
-      "Name": "Diagonal Smoke-Wall #3",
+      "Name": "Diagonal Smoke-Wall #1",
       "Pos": [
-        -732.873,
-        -1322.1388,
+        -732.8762,
+        -1322.1384,
         -407.96875
       ]
     },
@@ -12870,6 +12885,21 @@
     },
     {
       "Angle": [
+        -25.456026,
+        -8.401239
+      ],
+      "Desc": "standing W-Jumpthrow",
+      "MapName": "de_nuke",
+      "Nade": "smoke",
+      "Name": "Diagonal Smoke-Wall #3",
+      "Pos": [
+        -732.873,
+        -1322.1388,
+        -407.96875
+      ]
+    },
+    {
+      "Angle": [
         -37.687206,
         -23.43676
       ],
@@ -12979,6 +13009,21 @@
         -46.347809
       ],
       "Desc": "standing Jumpthrow",
+      "MapName": "de_overpass",
+      "Nade": "hegrenade",
+      "Name": "B Short HE",
+      "Pos": [
+        -2018.977783,
+        -416.033508,
+        132.03125
+      ]
+    },
+    {
+      "Angle": [
+        -30.180967,
+        3.4891202
+      ],
+      "Desc": "standing throw",
       "MapName": "de_overpass",
       "Nade": "hegrenade",
       "Name": "B Short HE",
@@ -13247,6 +13292,21 @@
       "Angle": [
         0.29558384,
         -0.85354745
+      ],
+      "Desc": "standing throw",
+      "MapName": "de_overpass",
+      "Nade": "smoke",
+      "Name": "Left Dildo Smoke",
+      "Pos": [
+        -1288.0314,
+        253.28384,
+        24.891338
+      ]
+    },
+    {
+      "Angle": [
+        -15.350792,
+        49.981754
       ],
       "Desc": "standing throw",
       "MapName": "de_overpass",
@@ -15380,7 +15440,7 @@
       ],
       "Desc": "running throw",
       "MapName": "de_train",
-      "Nade": "fire",
+      "Nade": "molotov",
       "Name": "Ivy Molotov",
       "Pos": [
         1224.031372,

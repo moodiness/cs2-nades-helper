@@ -856,13 +856,13 @@
       ]
     },
     {
-      "name": "Diagonal Smoke-Wall #3",
+      "name": "Diagonal Smoke-Wall #1",
       "desc": "standing Jumpthrow",
       "type": 45,
       "img": "",
       "pos": [
-        -732.873,
-        -1322.1388,
+        -732.8762,
+        -1322.1384,
         -407.96875
       ],
       "ang": [
@@ -1558,6 +1558,21 @@
       "ang": [
         -5.590124,
         153.90416
+      ]
+    },
+    {
+      "name": "Diagonal Smoke-Wall #3",
+      "desc": "standing W-Jumpthrow",
+      "type": 45,
+      "img": "",
+      "pos": [
+        -732.873,
+        -1322.1388,
+        -407.96875
+      ],
+      "ang": [
+        -25.456026,
+        -8.401239
       ]
     },
     {
