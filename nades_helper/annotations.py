@@ -77,10 +77,11 @@ def load_document(source: SourceFile) -> dict[str, Any]:
 def extract_grenades(
     document: dict[str, Any], source_label: str
 ) -> tuple[list[Grenade], SourceIssues]:
-    """Build one grenade per main node from its first aim target, in file order.
+    """Build one grenade per (main node, aim target) pair, in file order.
 
-    Aim targets reference their main node through ``MasterNodeId``. Lineups without a
-    position or aim angles are skipped: no coordinates are invented.
+    Aim targets reference their main node through ``MasterNodeId``; a position with several
+    aim targets yields several lineups. Lineups without a position or aim angles are skipped:
+    no coordinates are invented.
     """
     issues = SourceIssues()
     lineups: dict[str, _Lineup] = {}
@@ -123,6 +124,7 @@ def extract_grenades(
             lineups[master_id].aims.extend(aims)
 
     grenades: list[Grenade] = []
+    used_ids: set[str] = set()
     for lineup in lineups.values():
         title = f"{lineup.name or UNTITLED} ({lineup.node_id})"
         kind = GrenadeKind.parse(lineup.grenade_type)
@@ -130,26 +132,40 @@ def extract_grenades(
             issues.unknown_types.append(f"{title}: GrenadeType={lineup.grenade_type!r}")
             continue
 
-        aim = lineup.aims[0] if lineup.aims else None
-        if lineup.pos is None or aim is None or aim.angles is None:
+        if lineup.pos is None or not lineup.aims:
             issues.incomplete.append(title)
             continue
 
-        desc = aim.desc or lineup.desc
-        grenades.append(
-            Grenade(
-                name=lineup.name,
-                desc=desc,
-                kind=kind,
-                pos=lineup.pos,
-                ang=aim.angles,
-                source_id=f"{source_label}/{lineup.node_id}",
-                jump_throw=lineup.jump_throw or is_jump_throw(desc),
-                aim_point=aim.position,
+        for aim in lineup.aims:
+            if aim.angles is None:
+                issues.incomplete.append(title)
+                continue
+
+            desc = aim.desc or lineup.desc
+            grenades.append(
+                Grenade(
+                    name=lineup.name,
+                    desc=desc,
+                    kind=kind,
+                    pos=lineup.pos,
+                    ang=aim.angles,
+                    source_id=_unique_id(f"{source_label}/{lineup.node_id}", used_ids),
+                    jump_throw=lineup.jump_throw or is_jump_throw(desc),
+                    aim_point=aim.position,
+                )
             )
-        )
 
     return grenades, issues
+
+
+def _unique_id(base: str, used: set[str]) -> str:
+    """``base`` for the first lineup of a node, then ``base#2``, ``base#3``..."""
+    candidate, index = base, 1
+    while candidate in used:
+        index += 1
+        candidate = f"{base}#{index}"
+    used.add(candidate)
+    return candidate
 
 
 def _string(value: Any) -> str:

@@ -45,7 +45,8 @@ class Grenade:
     pos: list[float]
     ang: list[float]
     source_id: str
-    """``<source label>/<main node Id>``: stable across runs, reordering and text edits."""
+    """``<source label>/<main node Id>``, suffixed ``#2``, ``#3``... for further aim targets
+    of the same node. Stable across runs, reordering and text edits."""
     jump_throw: bool = False
     aim_point: list[float] | None = None
 

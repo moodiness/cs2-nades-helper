@@ -40,6 +40,23 @@ def test_lineup_combines_main_node_and_aim_target(tmp_path: Path) -> None:
     ]
 
 
+def test_each_aim_target_of_a_position_is_a_separate_lineup(tmp_path: Path) -> None:
+    result = parse(
+        tmp_path,
+        [
+            main_node("he", "B Short HE", "he"),
+            aim_node("he", (11.9, -46.3, 0.0), desc="standing Jumpthrow"),
+            destination_node("he"),
+            aim_node("he", (-30.2, 3.5, 0.0), desc="standing throw"),
+        ],
+    )
+
+    assert [(g.ang, g.desc, g.source_id) for g in result.grenades] == [
+        ([11.9, -46.3], "standing Jumpthrow", "dust2_CT/dust2_CT.txt/he"),
+        ([-30.2, 3.5], "standing throw", "dust2_CT/dust2_CT.txt/he#2"),
+    ]
+
+
 def test_aim_point_is_optional(tmp_path: Path) -> None:
     result = parse(tmp_path, [main_node("a", "Smoke"), aim_node("a", position=None)])
 
