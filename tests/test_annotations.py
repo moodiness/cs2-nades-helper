@@ -175,6 +175,22 @@ def test_grenade_types_are_normalized_and_unknown_types_skipped(tmp_path: Path) 
     assert result.issues.unknown_types == ["Decoy (decoy): GrenadeType='decoy'"]
 
 
+def test_disabled_nodes_are_ignored(tmp_path: Path) -> None:
+    result = parse(
+        tmp_path,
+        [
+            main_node("off", "Hidden", enabled=False),
+            aim_node("off"),
+            main_node("on", "Shown"),
+            aim_node("on"),
+        ],
+    )
+
+    assert [g.name for g in result.grenades] == ["Shown"]
+    assert result.issues.orphan_aims == []
+    assert result.issues.disabled == 1
+
+
 def test_invalid_kv3_names_the_file(tmp_path: Path) -> None:
     path = tmp_path / "broken" / "broken.txt"
     path.parent.mkdir()

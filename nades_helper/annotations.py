@@ -24,6 +24,7 @@ class SourceIssues:
     unknown_types: list[str] = field(default_factory=list)
     duplicate_ids: list[str] = field(default_factory=list)
     orphan_aims: list[str] = field(default_factory=list)
+    disabled: int = 0
 
 
 @dataclass(frozen=True, slots=True)
@@ -90,11 +91,18 @@ def extract_grenades(
     lineups: list[_Lineup] = []
     latest_by_id: dict[str, _Lineup] = {}
     forward_aims: list[tuple[str, _Aim]] = []
+    disabled_ids: set[str] = set()
 
     for key, node in document.items():
         if not key.startswith(NODE_KEY_PREFIX) or not isinstance(node, dict):
             continue
         if node.get("Type") != "grenade":
+            continue
+
+        if node.get("Enabled") is False:
+            issues.disabled += 1
+            if node.get("SubType") == "main":
+                disabled_ids.add(_string(node.get("Id")))
             continue
 
         subtype = node.get("SubType")
@@ -134,7 +142,7 @@ def extract_grenades(
     for master_id, aim in forward_aims:
         if master_id in latest_by_id:
             latest_by_id[master_id].aims.append(aim)
-        else:
+        elif master_id not in disabled_ids:
             issues.orphan_aims.append(master_id)
 
     grenades: list[Grenade] = []

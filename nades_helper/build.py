@@ -136,7 +136,7 @@ def _log_maps(grenades: MapGrenades, parsed: list[ParsedSource]) -> None:
 
 def _log_issues(parsed: list[ParsedSource]) -> None:
     """Details at DEBUG level, one aggregated line per issue kind otherwise."""
-    incomplete = duplicate_ids = orphan_aims = 0
+    incomplete = duplicate_ids = orphan_aims = disabled = 0
 
     for result in parsed:
         issues, label = result.issues, result.source.label
@@ -161,6 +161,7 @@ def _log_issues(parsed: list[ParsedSource]) -> None:
         incomplete += len(issues.incomplete)
         duplicate_ids += len(issues.duplicate_ids)
         orphan_aims += len(issues.orphan_aims)
+        disabled += issues.disabled
 
     if incomplete:
         LOGGER.warning(
@@ -175,3 +176,5 @@ def _log_issues(parsed: list[ParsedSource]) -> None:
         )
     if duplicate_ids:
         LOGGER.info("%d duplicated main node Id(s) resolved by file order", duplicate_ids)
+    if disabled:
+        LOGGER.info("%d disabled annotation node(s) ignored", disabled)
