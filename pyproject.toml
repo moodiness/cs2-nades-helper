@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nades-helper"
+dynamic = ["version"]
+description = "Convert CS2 grenade annotation files (KV3) into grenade-helper JSON formats."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["kv3parser>=1.1,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+nades-helper = "nades_helper.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "nades_helper.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["nades_helper*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
