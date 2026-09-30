@@ -21,10 +21,17 @@ class GrenadeKind(StrEnum):
 
     @classmethod
     def parse(cls, raw: str) -> GrenadeKind | None:
+        value = raw.strip().lower()
         try:
-            return cls(raw.strip().lower())
+            return cls(GRENADE_KIND_ALIASES.get(value, value))
         except ValueError:
             return None
+
+
+# GrenadeType values found in CSAFAP files that are not canonical kind names.
+GRENADE_KIND_ALIASES = {
+    "fire": GrenadeKind.MOLOTOV.value,
+}
 
 
 @dataclass(frozen=True, slots=True)

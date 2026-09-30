@@ -155,10 +155,12 @@ def test_jump_throw_spellings_match_whole_words(tmp_path: Path, desc: str, expec
     assert result.grenades[0].jump_throw is expected
 
 
-def test_unknown_grenade_type_is_skipped_and_reported(tmp_path: Path) -> None:
+def test_grenade_types_are_normalized_and_unknown_types_skipped(tmp_path: Path) -> None:
     result = parse(
         tmp_path,
         [
+            main_node("fire", "Ivy Molotov", "fire"),
+            aim_node("fire"),
             main_node("decoy", "Decoy", "decoy"),
             aim_node("decoy"),
             main_node("he", "Pop", "HE"),
@@ -166,7 +168,10 @@ def test_unknown_grenade_type_is_skipped_and_reported(tmp_path: Path) -> None:
         ],
     )
 
-    assert [(g.name, g.kind) for g in result.grenades] == [("Pop", GrenadeKind.HE)]
+    assert [(g.name, g.kind) for g in result.grenades] == [
+        ("Ivy Molotov", GrenadeKind.MOLOTOV),
+        ("Pop", GrenadeKind.HE),
+    ]
     assert result.issues.unknown_types == ["Decoy (decoy): GrenadeType='decoy'"]
 
 
